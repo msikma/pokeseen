@@ -1,0 +1,40 @@
+{
+  "name": "pokeseen",
+  "version": "1.0.0",
+  "description": "Script that determines when each Pokémon was last seen in an episode of the TV show",
+  "main": "index.js",
+  "scripts": {
+    "lint": "cross-env NODE_PATH=./ eslint src; exit 0",
+    "build": "babel src --out-dir dist"
+  },
+  "keywords": [],
+  "author": "Michiel Sikma <michiel@sikma.org> (https://michielsikma.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
+    "pokesprite": "^1.5.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "sprintf-js": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.0.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "repoinfojs": "^1.0.0"
+  }
+}
