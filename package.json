@@ -10,6 +10,11 @@
   "keywords": [],
   "author": "Michiel Sikma <michiel@sikma.org> (https://michielsikma.com/)",
   "license": "MIT",
+  "homepage": "https://github.com/msikma/pokeseen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msikma/pokeseen.git"
+  },
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "lodash": "^4.17.10",
