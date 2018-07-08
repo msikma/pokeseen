@@ -78,8 +78,7 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
         <p>asdf asdf adfs</p>
       </div>
       <div className="docs-container">
-        <h2>Icon overview (v{ version }; r{ commits })</h2>
-        <p>Generated on <span className="time">{ generationTime }</span> (<span className="amount">3301</span> icons).</p>
+        <p>Generated on <span className="time">{ generationTime }</span></p>
       </div>
     </div>
     <table className="table pkspr-overview">

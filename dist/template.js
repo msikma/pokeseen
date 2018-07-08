@@ -192,15 +192,6 @@ var SeenPage = function SeenPage(_ref2) {
         'div',
         { className: 'docs-container' },
         _react2.default.createElement(
-          'h2',
-          null,
-          'Icon overview (v',
-          version,
-          '; r',
-          commits,
-          ')'
-        ),
-        _react2.default.createElement(
           'p',
           null,
           'Generated on ',
@@ -208,14 +199,7 @@ var SeenPage = function SeenPage(_ref2) {
             'span',
             { className: 'time' },
             generationTime
-          ),
-          ' (',
-          _react2.default.createElement(
-            'span',
-            { className: 'amount' },
-            '3301'
-          ),
-          ' icons).'
+          )
         )
       )
     ),
