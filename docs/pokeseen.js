@@ -9,8 +9,6 @@ const PokeSeen = {
     const episodesRow = document.getElementById('episodes_' + id)
 
     itemRow.addEventListener('click', function(ev) {
-      console.log(ev)
-      console.log(episodesRow.classList)
       episodesRow.classList.toggle('displayed')
     }, false)
   },
@@ -28,7 +26,6 @@ const PokeSeen = {
           appSorter.classList.remove('active')
           lsSorter.classList.add('active')
         }
-        console.log(prop)
         ev.preventDefault()
       }
     }
