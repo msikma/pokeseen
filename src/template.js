@@ -16,7 +16,7 @@ import { saveFile } from './util/saveFile'
 
 const modulesPath = path.resolve(__dirname, '..', 'node_modules')
 const docsPath = path.resolve(__dirname, '..', 'docs')
-const staticPath = path.resolve(__dirname, 'static')
+const staticPath = path.resolve(__dirname, '..', 'static')
 
 const never = 'Never seen'
 
