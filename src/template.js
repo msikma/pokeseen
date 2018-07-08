@@ -128,7 +128,7 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
             </tr>,
             <tr id={ `episodes_${id}` } className="episode-info" data-id={ id } key={ `ep_info_${id}` }>
               { episodesInverse.length === 0
-                ? <td colSpan={ cols }>Appears in: every episode to date.</td>
+                ? <td colSpan={ cols }>Appears in every episode to date.</td>
                 : episodes.length === 0
                   ? <td colSpan={ cols }>No appearances in the TV series.</td>
                   : episodesInverse.length > episodes.length

@@ -333,7 +333,7 @@ var SeenPage = function SeenPage(_ref2) {
             episodesInverse.length === 0 ? _react2.default.createElement(
               'td',
               { colSpan: cols },
-              'Appears in: every episode to date.'
+              'Appears in every episode to date.'
             ) : episodes.length === 0 ? _react2.default.createElement(
               'td',
               { colSpan: cols },
