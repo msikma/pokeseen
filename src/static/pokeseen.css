@@ -1,0 +1,36 @@
+.main-info {
+  cursor: pointer;
+
+}
+.main-info:hover {
+  color: #1F85EB;
+}
+.minimal {
+  width: 1%;
+}
+.sort-link {
+  color: #050202 !important;
+  position: relative;
+  display: block;
+  padding-right: 12px;
+}
+.sort-link.active:before {
+  content: "⌃";
+  transform: rotate(180deg);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.sort-link:hover {
+  color: #1F85EB !important;
+}
+.episode-info {
+  display: none;
+}
+.episode-info.displayed {
+  display: table-row;
+}
+.episode-info td {
+  padding: 8px !important;
+}
