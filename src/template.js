@@ -136,6 +136,9 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
           const orderAppearances = n * 2
           const orderLastSeen = lastSeenRankingByID[id].n * 2
 
+          // Whether to use 'appears in all episodes *except*' type lists if they are shorter.
+          const useExceptLists = false
+
           return [
             <tr
               key={ `main_info_${id}` }
@@ -166,7 +169,7 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
                 ? <td colSpan={ cols } className="ep-cols-container">Appears in every episode to date.</td>
                 : episodes.length === 0
                   ? <td colSpan={ cols } className="ep-cols-container">No appearances in the TV series.</td>
-                  : episodesInverse.length > episodes.length
+                  : episodesInverse.length > episodes.length || !useExceptLists
                     ? (
                       <td colSpan={ cols } className="ep-cols-container">
                         <div className={ classnames('ep-cols', { short: episodes.length < fewEpisodes }) }>
