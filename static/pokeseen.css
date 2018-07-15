@@ -1,6 +1,8 @@
 .main-info {
   cursor: pointer;
-
+}
+a:hover {
+  text-decoration: none;
 }
 .main-info:hover {
   color: #1F85EB;
@@ -24,6 +26,7 @@
 }
 .sort-link:hover {
   color: #1F85EB !important;
+  text-decoration: underline;
 }
 .episode-info {
   display: none;
@@ -66,6 +69,14 @@
   padding-left: 20px;
   column-width: 60px;
   column-gap: 10px;
+}
+#top .table.pkspr-overview .episode-info .ep-cols .ep-content a {
+  color: #050202;
+  text-decoration: underline;
+}
+#top .table.pkspr-overview .episode-info .ep-cols .ep-content a:hover {
+  color: #1F85EB;
+  text-decoration: underline;
 }
 .table.pkspr-overview .episode-info .ep-cols.short .ep-content {
   column-width: inherit;
