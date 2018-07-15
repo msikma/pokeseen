@@ -34,3 +34,50 @@
 .episode-info td {
   padding: 8px !important;
 }
+.table.pkspr-overview .main-info.last td:first-child {
+  border-bottom-left-radius: 3px;
+}
+.table.pkspr-overview .main-info.last td:last-child {
+  border-bottom-right-radius: 3px;
+}
+.table.pkspr-overview .main-info.last.showing-episodes td:first-child,
+.table.pkspr-overview .main-info.last.showing-episodes td:last-child {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.table.pkspr-overview .episode-info .ep-cols-container {
+  background: #f5f4f4;
+  font-size: 13px;
+}
+.table.pkspr-overview .episode-info .ep-cols {
+  display: flex;
+}
+.table.pkspr-overview .episode-info .ep-cols .ep-header {
+  white-space: nowrap;
+}
+.table.pkspr-overview .episode-info .ep-cols .ep-content {
+  margin: 0;
+  padding-left: 20px;
+  column-width: 60px;
+  column-gap: 10px;
+}
+.table.pkspr-overview .episode-info .ep-cols.short .ep-content {
+  column-width: inherit;
+  column-gap: inherit;
+}
+.table.pkspr-overview .episode-info .ep-cols .ep-content li {
+  display: inline-block;
+  width: 70px;
+}
+.table.pkspr-overview .episode-info .ep-cols .ep-content li:before {
+  content: '\2022\00a0';
+}
+.table.pkspr-overview .episode-info.last td {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.description .docs-container.closing {
+  margin-top: 30px !important;
+  margin-bottom: 40px !important;
+}

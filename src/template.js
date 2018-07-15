@@ -6,10 +6,11 @@
 import fs from 'fs'
 import path from 'path'
 import React from 'react'
-import ReactDOMServer from 'react-dom/server';
+import ReactDOMServer from 'react-dom/server'
 import getRepoInfo from 'repoinfojs'
 import moment from 'moment'
 import { get, xor } from 'lodash'
+import classnames from 'classnames'
 
 import { pkgData, epURL, pokedex } from './data'
 import { saveFile } from './util/saveFile'
@@ -81,7 +82,7 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
         <p>Generated on <span className="time">{ generationTime }</span></p>
       </div>
     </div>
-    <table className="table pkspr-overview">
+    <table className="table pkspr-overview" id="data_table">
       <tbody>
         <tr>
           <th>#</th>
@@ -97,16 +98,13 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
           const { id, amount, lastSeen, episodes } = pokemon
 
           // Determine the last time this Pokémon was seen, if ever.
+          // The relative time is later humanized dynamically.
           const lastJa = get(lastSeen, 'ja', never)
-          const lastUS = get(lastSeen, 'us', never)
+          const lastJaInt = moment().diff(moment(lastJa), 'ms')
+          // const lastUS = get(lastSeen, 'us', never)
+          // const lastUSInt = moment().diff(moment(lastUS), 'ms')
           const neverSeenJa = !lastJa || lastJa === never
-          const neverSeenUS = !lastUS || lastUS === never
-
-          // And generate the relative time from today.
-          const relJaDays = moment().diff(moment(lastJa), 'days')
-          const relUSDays = moment().diff(moment(lastUS), 'days')
-          const relJa = moment.duration(relJaDays, 'days').humanize()
-          const relUS = moment.duration(relUSDays, 'days').humanize()
+          // const neverSeenUS = !lastUS || lastUS === never
 
           // Check if it's faster to see which episodes a Pokémon did *not* appear in.
           const episodesInverse = xor(airedEpisodesList, episodes)
@@ -114,9 +112,24 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
           const pkmnInfo = pokedex[id]
 
           const cols = 8
+          const isLast = n === lastSeenRanking.length - 1
+
+          // If listing fewer than this amount of episodes, switch to a different layout.
+          const fewEpisodes = 12
+
+          // Sort order. All * 2, since we've actually got two rows per item.
+          const orderLastSeen = n * 2
+          const orderAppearances = appearancesRankingByID[id].n * 2
 
           return [
-            <tr id={ `item_${id}` } className="main-info" data-id={ id } key={ `main_info_${id}` } data-last-seen-n={ n } data-appearances-n={ appearancesRankingByID[id].n }>
+            <tr
+              key={ `main_info_${id}` }
+              id={ `item_${id}` }
+              className={ classnames('main-info', { 'last': isLast }) }
+              data-id={ id }
+              data-last-seen-n={ orderLastSeen }
+              data-appearances-n={ orderAppearances }
+            >
               <td className="minimal">{ n + 1 }</td>
               <td className="minimal">{ id }</td>
               <td className="minimal"><span id={ `icon_${id}` } className={ `pkspr pkmn-${pkmnInfo.slug.eng}` }></span></td>
@@ -124,22 +137,35 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
               <td><span title={ pkmnInfo.name.jpn_ro }>{ pkmnInfo.name.jpn }</span></td>
               <td>{ amount }</td>
               <td className={ neverSeenJa ? 'never' : '' } { ...(neverSeenJa ? { colSpan: 2 } : {}) }>{ neverSeenJa ? never : lastJa }</td>
-              { !neverSeenJa ? <td>{ relJa } ago</td> : null }
+              { !neverSeenJa ? <td className="time-ago" data-time-ago-ms={ isNaN(lastJaInt) ? -1 : lastJaInt }></td> : null }
             </tr>,
-            <tr id={ `episodes_${id}` } className="episode-info" data-id={ id } key={ `ep_info_${id}` }>
+            <tr
+              id={ `episodes_${id}` }
+              className={ classnames('episode-info', { last: isLast }) }
+              data-id={ id }
+              data-last-seen-n={ orderLastSeen + 1 }
+              data-appearances-n={ orderAppearances + 1 }
+              key={ `ep_info_${id}` }
+            >
               { episodesInverse.length === 0
-                ? <td colSpan={ cols }>Appears in every episode to date.</td>
+                ? <td colSpan={ cols } className="ep-cols-container">Appears in every episode to date.</td>
                 : episodes.length === 0
-                  ? <td colSpan={ cols }>No appearances in the TV series.</td>
+                  ? <td colSpan={ cols } className="ep-cols-container">No appearances in the TV series.</td>
                   : episodesInverse.length > episodes.length
-                    ? <td colSpan={ cols }>Appears in: { episodes.map(ep => (<span key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a> </span>)) }</td>
-                    : <td colSpan={ cols }>Appears in every episode <em>except</em>: { episodesInverse.map(ep => (<span key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a> </span>)) }</td> }
+                    ? <td colSpan={ cols } className="ep-cols-container"><div className={ classnames('ep-cols', { short: episodes.length < fewEpisodes }) }><div className="ep-header">Appears in:</div><ul className="ep-content">{ episodes.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul></div></td>
+                    : <td colSpan={ cols } className="ep-cols-container"><div className={ classnames('ep-cols', { short: episodesInverse.length < fewEpisodes }) }><div className="ep-header">Appears in every episode <em>except</em>:</div><ul className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul></div></td> }
             </tr>,
             <script key={ `js_${id}` } dangerouslySetInnerHTML={{__html: `PkSpr.decorate('icon_${id}')\nPokeSeen.decorate('${id}')` }}></script>
           ]
         })}
       </tbody>
     </table>
+    <div className="description">
+      <div className="docs-container closing">
+        <p>Pokémon is © 1995-{ (new Date().getFullYear()) } Nintendo/Creatures Inc./GAME FREAK Inc.</p>
+        <p>The source code for this page is available on <a href="https://github.com/msikma/pokeseen">Github</a>. Statistics were determined from <a href="https://bulbapedia.bulbagarden.net/">Bulbapedia</a> data.</p>
+      </div>
+    </div>
   </div>
 )
 
