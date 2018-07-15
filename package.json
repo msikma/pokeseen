@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lint": "cross-env NODE_PATH=./ eslint src; exit 0",
-    "build": "babel src --out-dir dist"
+    "build": "babel src --out-dir dist",
+    "generate-page": "node ./dist/scripts/generatePage.js",
+    "check-data": "node ./dist/scripts/checkData.js",
+    "get-seen-data": "node ./dist/scripts/getSeenData.js"
   },
   "keywords": [],
   "author": "Michiel Sikma <michiel@sikma.org> (https://michielsikma.com/)",
