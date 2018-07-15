@@ -86909,6 +86909,10 @@
         "Marowak"
       ],
       [
+        "202",
+        "Wobbuffet"
+      ],
+      [
         "479",
         "Rotom"
       ],
@@ -86919,6 +86923,10 @@
       [
         "726",
         "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
       ],
       [
         "737",
@@ -86937,6 +86945,10 @@
         "Steenee"
       ],
       [
+        "777",
+        "Togedemaru"
+      ],
+      [
         "803",
         "Poipole"
       ],
@@ -86947,91 +86959,10 @@
       [
         "037",
         "Vulpix"
-      ]
-    ]
-  },
-  "SM083": {
-    "episode": "SM083",
-    "url": "https://bulbapedia.bulbagarden.net/wiki/SM083",
-    "broadcastDates": {
-      "ja": null,
-      "us": null
-    },
-    "episodeName": {
-      "jpn": "サトシ、ちいさくなる",
-      "eng": "Satoshi, Becomes Small"
-    },
-    "hasAired": false,
-    "seen": [
-      [
-        "479",
-        "Rotom"
       ],
       [
-        "803",
-        "Poipole"
-      ],
-      [
-        "025",
-        "Pikachu"
-      ]
-    ]
-  },
-  "SM084": {
-    "episode": "SM084",
-    "url": "https://bulbapedia.bulbagarden.net/wiki/SM084",
-    "broadcastDates": {
-      "ja": null,
-      "us": null
-    },
-    "episodeName": {
-      "jpn": "家族のカタチ、ベベノムのキモチ！",
-      "eng": "The Shape of Family, Bevenom's Feelings!"
-    },
-    "hasAired": false,
-    "seen": [
-      [
-        "479",
-        "Rotom"
-      ],
-      [
-        "803",
-        "Poipole"
-      ],
-      [
-        "025",
-        "Pikachu"
-      ]
-    ]
-  },
-  "SM085": {
-    "episode": "SM085",
-    "url": "https://bulbapedia.bulbagarden.net/wiki/SM085",
-    "broadcastDates": {
-      "ja": null,
-      "us": null
-    },
-    "episodeName": {
-      "jpn": "トンデノボッテ、ツンデツンデ！",
-      "eng": "Leap and Climb, Tundetunde!"
-    },
-    "hasAired": false,
-    "seen": [
-      [
-        "479",
-        "Rotom"
-      ],
-      [
-        "803",
-        "Poipole"
-      ],
-      [
-        "805",
-        "Stakataka"
-      ],
-      [
-        "025",
-        "Pikachu"
+        "052",
+        "Meowth"
       ]
     ]
   }
