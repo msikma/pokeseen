@@ -107,6 +107,7 @@ function humanize(nd, s) {
   return [en, '/', jp].join('')
 }
 
+// Converts plain numbers to fullwidth numbers.
 function numberConvert(numbers) {
   return numbers.replace(/[\u0030-\u0039]/g, function(m) {
     return String.fromCharCode(m.charCodeAt(0) + 0xfee0)
