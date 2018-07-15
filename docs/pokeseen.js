@@ -47,6 +47,12 @@ const PokeSeen = {
       for (let n = 0; n < trsSorted.length; ++n) {
         tbody.appendChild(trsSorted[n])
       }
+
+      // Rewrite the ID columns.
+      const idColumns = document.querySelectorAll('.main-info td.id')
+      for (let n = 0; n < idColumns.length; ++n) {
+        idColumns[n].innerHTML = n + 1
+      }
     }
 
     const callback = function(prop) {
@@ -66,11 +72,17 @@ const PokeSeen = {
 
     appSorter.addEventListener('click', callback('data-appearances-n'), false)
     lsSorter.addEventListener('click', callback('data-last-seen-n'), false)
+  },
+  humanizeGenerationTime: function() {
+    const generationSpan = document.querySelector('#generation_time .time')
+    const generationSpanPrefix = document.querySelector('#generation_time .time-abs-prefix')
+    generationSpan.innerHTML = humanize(new Date(generationSpan.innerHTML))
+    generationSpanPrefix.remove()
   }
 }
 
 // Various time units in ms.
-const timeUnits = {
+const timeUnitsEn = {
   second: 1000,
   minute: 60 * 1000,
   hour: 60 * 1000 * 60,
@@ -79,24 +91,45 @@ const timeUnits = {
   month: 30 * 24 * 60 * 1000 * 60,
   year: 365 * 24 * 60 * 1000 * 60
 }
+const timeUnitsJp = {
+  秒: 1000,
+  分: 60 * 1000,
+  時間: 60 * 1000 * 60,
+  日: 24 * 60 * 1000 * 60,
+  週間: 7 * 24 * 60 * 1000 * 60,
+  ヶ月: 30 * 24 * 60 * 1000 * 60,
+  年: 365 * 24 * 60 * 1000 * 60
+}
+
+function humanize(nd, s) {
+  const en = humanizeStr(nd, s, true, timeUnitsEn)
+  const jp = numberConvert(humanizeStr(nd, s, false, timeUnitsJp))
+  return [en, '/', jp].join('')
+}
+
+// Converts plain numbers to fullwidth numbers.
+function numberConvert(numbers) {
+  return numbers.replace(/[\u0030-\u0039]/g, function(m) {
+    return String.fromCharCode(m.charCodeAt(0) + 0xfee0)
+  })
+}
 
 /**
  * Returns a humanized string for how long ago something was.
- * Taken from <https://github.com/digplan/time-ago> (MIT license).
+ * Taken from <https://github.com/digplan/time-ago> (MIT license) and slightly modified.
  */
-function humanize(nd, s) {
-  var o = timeUnits;
+function humanizeStr(nd, s, en, o) {
   var r = Math.round,
-      dir = ' ago',
+      dir = en ? ' ago' : '前',
     pl = function(v, n) {
-      return (s === undefined) ? n + ' ' + v + (n > 1 ? 's' : '') + dir : n + v.substring(0, 1)
+      return (s === undefined) ? n + (en ? ' ' : '') + v + (n > 1 && en ? 's' : '') + dir : n + v.substring(0, 1)
     },
     ts = Date.now() - new Date(nd).getTime(),
     ii;
   if( ts < 0 )
   {
     ts *= -1;
-    dir = ' from now';
+    dir = en ? ' from now' : '後';
   }
   for (var i in o) {
     if (r(ts) < o[i]) return pl(ii || 'm', r(ts / (o[ii] || 1)))
