@@ -10,6 +10,6 @@ To generate the page, run `npm run generate-page`. This will retrieve statistica
 
 ## Copyright
 
-Pokémon is © 1995-2018 Nintendo/Creatures Inc./GAME FREAK Inc.
+The Pokémon icons are © Nintendo/Creatures Inc./GAME FREAK Inc.
 
-The code in this repository is MIT licensed.
+Everything else, and usage of the programming code, is governed by the MIT license.
