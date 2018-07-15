@@ -82,15 +82,16 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
       <div className="docs-container">
         <p>
           ポケモンは何回出たが「登場数」で書いてあります。「最後の出現」は日本の放送日程で決めています。
-          テーブルの行をクリックすると、エピソードのリストが表示されます。<br />
-          質問やコメントがあれば、ツイッターで連絡してください：<a href="https://twitter.com/dada78641">@dada78641</a>.
+          テーブルの行をクリックすると、エピソードのリストが表示されます。このランキングは現在{ airedEpisodesList.length }エピソードのデータで作れています。
         </p>
+        <p>質問やコメントがあれば、ツイッターで連絡してください：<a href="https://twitter.com/dada78641">@dada78641</a>.</p>
         <p>
           <em>Appearances</em> lists the number of episodes the Pokémon has appeared in.
           Its <em>last appearance</em> is based on the Japanese episode schedule.
-          Click on a Pokémon's table row to see the list of episodes it has appeared in.<br />
-          For questions or comments you can contact me on Twitter: <a href="https://twitter.com/dada78641">@dada78641</a>.
+          Click on a Pokémon's table row to see the list of episodes it has appeared in.
+          The ranking uses statistics from the currently released { airedEpisodesList.length } episodes.
         </p>
+        <p>For questions or comments you can contact me on Twitter: <a href="https://twitter.com/dada78641">@dada78641</a>.</p>
         <p id="generation_time">Generated <span className="time-abs-prefix">on</span><span className="time" data-time={ +new Date(generationTime) } title={ generationTime }>{ generationTime }</span>.</p>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.humanizeGenerationTime()` }}></script>
       </div>
@@ -146,8 +147,8 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
               <td className="minimal id">{ n + 1 }</td>
               <td className="minimal">{ id }</td>
               <td className="minimal"><span id={ `icon_${id}` } className={ `pkspr pkmn-${pkmnInfo.slug.eng}` }></span></td>
-              <td>{ pkmnInfo.name.eng }</td>
-              <td><span title={ pkmnInfo.name.jpn_ro }>{ pkmnInfo.name.jpn }</span></td>
+              <td className="name name-en">{ pkmnInfo.name.eng }</td>
+              <td className="name name-jp"><span title={ pkmnInfo.name.jpn_ro }>{ pkmnInfo.name.jpn }</span></td>
               <td>{ amount }</td>
               <td className={ neverSeenJa ? 'never' : '' } { ...(neverSeenJa ? { colSpan: 2 } : {}) }>{ neverSeenJa ? never : lastJa }</td>
               { !neverSeenJa ? <td className="time-ago" data-time-ago-ms={ isNaN(lastJaInt) ? -1 : lastJaInt }></td> : null }
@@ -165,8 +166,22 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
                 : episodes.length === 0
                   ? <td colSpan={ cols } className="ep-cols-container">No appearances in the TV series.</td>
                   : episodesInverse.length > episodes.length
-                    ? <td colSpan={ cols } className="ep-cols-container"><div className={ classnames('ep-cols', { short: episodes.length < fewEpisodes }) }><div className="ep-header">Appears in:</div><ul className="ep-content">{ episodes.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul></div></td>
-                    : <td colSpan={ cols } className="ep-cols-container"><div className={ classnames('ep-cols', { short: episodesInverse.length < fewEpisodes }) }><div className="ep-header">Appears in every episode <em>except</em>:</div><ul className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul></div></td> }
+                    ? (
+                      <td colSpan={ cols } className="ep-cols-container">
+                        <div className={ classnames('ep-cols', { short: episodes.length < fewEpisodes }) }>
+                          <div className="ep-header">Appears in:<br />登場エピソード：</div>
+                          <ul className="ep-content">{ episodes.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+                        </div>
+                      </td>
+                    )
+                    : (
+                      <td colSpan={ cols } className="ep-cols-container">
+                        <div className={ classnames('ep-cols', { short: episodesInverse.length < fewEpisodes }) }>
+                          <div className="ep-header">Appears in every episode <em>except</em>:</div>
+                          <ul className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+                        </div>
+                      </td>
+                    ) }
             </tr>,
             <script key={ `js_${id}` } dangerouslySetInnerHTML={{__html: `PkSpr.decorate('icon_${id}')\nPokeSeen.decorate('${id}')` }}></script>
           ]
