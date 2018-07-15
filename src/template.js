@@ -75,11 +75,24 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
   <div id="top">
     <div className="description">
       <div className="header">
-        <h1>PokéSeen</h1>
-        <p>asdf asdf adfs</p>
+        <h1>Pokémon TV appearance statistics</h1>
+        <p>This page ranks Pokémon based on how many times they've appeared in the TV show and lists when we last saw them.</p>
+        <p>このページはポケモンの登場数、そしていつ最後の出現と目録します。</p>
       </div>
       <div className="docs-container">
-        <p>Generated on <span className="time">{ generationTime }</span></p>
+        <p>
+          ポケモンは何回出たが「登場数」で書いてあります。「最後の出現」は日本の放送日程で決めています。
+          テーブルの行をクリックすると、エピソードのリストが表示されます。<br />
+          質問やコメントがあれば、ツイッターで連絡してください：<a href="https://twitter.com/dada78641">@dada78641</a>.
+        </p>
+        <p>
+          <em>Appearances</em> lists the number of episodes the Pokémon has appeared in.
+          Its <em>last appearance</em> is based on the Japanese episode schedule.
+          Click on a Pokémon's table row to see the list of episodes it has appeared in.<br />
+          For questions or comments you can contact me on Twitter: <a href="https://twitter.com/dada78641">@dada78641</a>.
+        </p>
+        <p id="generation_time">Generated <span className="time-abs-prefix">on</span><span className="time" data-time={ +new Date(generationTime) } title={ generationTime }>{ generationTime }</span>.</p>
+        <script dangerouslySetInnerHTML={{__html: `PokeSeen.humanizeGenerationTime()` }}></script>
       </div>
     </div>
     <table className="table pkspr-overview" id="data_table">
@@ -88,9 +101,9 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
           <th>#</th>
           <th>ID</th>
           <th>Icon</th>
-          <th colSpan={ 2 }>Name</th>
-          <th><a href="#" className="sort-link" id="appearance_sort">Appearances</a></th>
-          <th colSpan={ 2 }><a href="#" className="sort-link active" id="last_seen_sort">Last appearance (Japan)</a></th>
+          <th colSpan={ 2 }>Name/名前</th>
+          <th><a href="#" className="sort-link" id="appearance_sort">Appearances/登場数</a></th>
+          <th colSpan={ 2 }><a href="#" className="sort-link active" id="last_seen_sort">Last appearance/最後の出現</a></th>
         </tr>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.decorateSorters('appearance_sort', 'last_seen_sort')` }}></script>
         { lastSeenRanking.map((pokemon, n) => {

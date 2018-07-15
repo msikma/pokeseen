@@ -81,3 +81,7 @@
   margin-top: 30px !important;
   margin-bottom: 40px !important;
 }
+#generation_time {
+  color: #686868;
+  font-size: 12px;
+}

@@ -72,6 +72,12 @@ const PokeSeen = {
 
     appSorter.addEventListener('click', callback('data-appearances-n'), false)
     lsSorter.addEventListener('click', callback('data-last-seen-n'), false)
+  },
+  humanizeGenerationTime: function() {
+    const generationSpan = document.querySelector('#generation_time .time')
+    const generationSpanPrefix = document.querySelector('#generation_time .time-abs-prefix')
+    generationSpan.innerHTML = humanize(new Date(generationSpan.innerHTML))
+    generationSpanPrefix.remove()
   }
 }
 
