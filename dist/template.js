@@ -185,12 +185,17 @@ var SeenPage = function SeenPage(_ref2) {
         _react2.default.createElement(
           'h1',
           null,
-          'Pok\xE9Seen'
+          'Pok\xE9mon TV appearance statistics'
         ),
         _react2.default.createElement(
           'p',
           null,
-          'asdf asdf adfs'
+          'This page ranks Pok\xE9mon based on how many times they\'ve appeared in the TV show and lists when we last saw them.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '\u3053\u306E\u30DA\u30FC\u30B8\u306F\u30DD\u30B1\u30E2\u30F3\u306E\u767B\u5834\u6570\u3001\u305D\u3057\u3066\u3044\u3064\u6700\u5F8C\u306E\u51FA\u73FE\u3068\u76EE\u9332\u3057\u307E\u3059\u3002'
         )
       ),
       _react2.default.createElement(
@@ -199,13 +204,67 @@ var SeenPage = function SeenPage(_ref2) {
         _react2.default.createElement(
           'p',
           null,
-          'Generated on ',
+          '\u30DD\u30B1\u30E2\u30F3\u306F\u4F55\u56DE\u51FA\u305F\u304C\u300C\u767B\u5834\u6570\u300D\u3067\u66F8\u3044\u3066\u3042\u308A\u307E\u3059\u3002\u300C\u6700\u5F8C\u306E\u51FA\u73FE\u300D\u306F\u65E5\u672C\u306E\u653E\u9001\u65E5\u7A0B\u3067\u6C7A\u3081\u3066\u3044\u307E\u3059\u3002 \u30C6\u30FC\u30D6\u30EB\u306E\u884C\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u3001\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30EA\u30B9\u30C8\u304C\u8868\u793A\u3055\u308C\u307E\u3059\u3002\u3053\u306E\u30E9\u30F3\u30AD\u30F3\u30B0\u306F\u73FE\u5728',
+          airedEpisodesList.length,
+          '\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30C7\u30FC\u30BF\u3067\u4F5C\u308C\u3066\u3044\u307E\u3059\u3002'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '\u8CEA\u554F\u3084\u30B3\u30E1\u30F3\u30C8\u304C\u3042\u308C\u3070\u3001\u30C4\u30A4\u30C3\u30BF\u30FC\u3067\u9023\u7D61\u3057\u3066\u304F\u3060\u3055\u3044\uFF1A',
+          _react2.default.createElement(
+            'a',
+            { href: 'https://twitter.com/dada78641' },
+            '@dada78641'
+          ),
+          '.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          _react2.default.createElement(
+            'em',
+            null,
+            'Appearances'
+          ),
+          ' lists the number of episodes the Pok\xE9mon has appeared in. Its ',
+          _react2.default.createElement(
+            'em',
+            null,
+            'last appearance'
+          ),
+          ' is based on the Japanese episode schedule. Click on a Pok\xE9mon\'s table row to see the list of episodes it has appeared in. The ranking uses statistics from the currently released ',
+          airedEpisodesList.length,
+          ' episodes.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'For questions or comments you can contact me on Twitter: ',
+          _react2.default.createElement(
+            'a',
+            { href: 'https://twitter.com/dada78641' },
+            '@dada78641'
+          ),
+          '.'
+        ),
+        _react2.default.createElement(
+          'p',
+          { id: 'generation_time' },
+          'Generated ',
           _react2.default.createElement(
             'span',
-            { className: 'time' },
+            { className: 'time-abs-prefix' },
+            'on'
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'time', 'data-time': +new Date(generationTime), title: generationTime },
             generationTime
-          )
-        )
+          ),
+          '.'
+        ),
+        _react2.default.createElement('script', { dangerouslySetInnerHTML: { __html: 'PokeSeen.humanizeGenerationTime()' } })
       )
     ),
     _react2.default.createElement(
@@ -235,7 +294,7 @@ var SeenPage = function SeenPage(_ref2) {
           _react2.default.createElement(
             'th',
             { colSpan: 2 },
-            'Name'
+            'Name/\u540D\u524D'
           ),
           _react2.default.createElement(
             'th',
@@ -243,7 +302,7 @@ var SeenPage = function SeenPage(_ref2) {
             _react2.default.createElement(
               'a',
               { href: '#', className: 'sort-link', id: 'appearance_sort' },
-              'Appearances'
+              'Appearances/\u767B\u5834\u6570'
             )
           ),
           _react2.default.createElement(
@@ -252,7 +311,7 @@ var SeenPage = function SeenPage(_ref2) {
             _react2.default.createElement(
               'a',
               { href: '#', className: 'sort-link active', id: 'last_seen_sort' },
-              'Last appearance (Japan)'
+              'Last appearance/\u6700\u5F8C\u306E\u51FA\u73FE'
             )
           )
         ),
@@ -316,12 +375,12 @@ var SeenPage = function SeenPage(_ref2) {
             ),
             _react2.default.createElement(
               'td',
-              null,
+              { className: 'name name-en' },
               pkmnInfo.name.eng
             ),
             _react2.default.createElement(
               'td',
-              null,
+              { className: 'name name-jp' },
               _react2.default.createElement(
                 'span',
                 { title: pkmnInfo.name.jpn_ro },
@@ -366,7 +425,9 @@ var SeenPage = function SeenPage(_ref2) {
                 _react2.default.createElement(
                   'div',
                   { className: 'ep-header' },
-                  'Appears in:'
+                  'Appears in:',
+                  _react2.default.createElement('br', null),
+                  '\u767B\u5834\u30A8\u30D4\u30BD\u30FC\u30C9\uFF1A'
                 ),
                 _react2.default.createElement(
                   'ul',
