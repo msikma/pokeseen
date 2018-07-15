@@ -51,17 +51,22 @@ var _moment2 = _interopRequireDefault(_moment);
 
 var _lodash = require('lodash');
 
+var _classnames = require('classnames');
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 var _data = require('./data');
 
 var _saveFile = require('./util/saveFile');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var modulesPath = _path2.default.resolve(__dirname, '..', 'node_modules'); /**
-                                                                            * pokeseen - <https://github.com/msikma/pokeseen>
-                                                                            * Copyright © 2018, Michiel Sikma
-                                                                            */
+/**
+ * pokeseen - <https://github.com/msikma/pokeseen>
+ * Copyright © 2018, Michiel Sikma
+ */
 
+var modulesPath = _path2.default.resolve(__dirname, '..', 'node_modules');
 var docsPath = _path2.default.resolve(__dirname, '..', 'docs');
 var staticPath = _path2.default.resolve(__dirname, '..', 'static');
 
@@ -205,7 +210,7 @@ var SeenPage = function SeenPage(_ref2) {
     ),
     _react2.default.createElement(
       'table',
-      { className: 'table pkspr-overview' },
+      { className: 'table pkspr-overview', id: 'data_table' },
       _react2.default.createElement(
         'tbody',
         null,
@@ -260,17 +265,14 @@ var SeenPage = function SeenPage(_ref2) {
               episodes = pokemon.episodes;
 
           // Determine the last time this Pokémon was seen, if ever.
+          // The relative time is later humanized dynamically.
 
           var lastJa = (0, _lodash.get)(lastSeen, 'ja', never);
-          var lastUS = (0, _lodash.get)(lastSeen, 'us', never);
+          var lastJaInt = (0, _moment2.default)().diff((0, _moment2.default)(lastJa), 'ms');
+          // const lastUS = get(lastSeen, 'us', never)
+          // const lastUSInt = moment().diff(moment(lastUS), 'ms')
           var neverSeenJa = !lastJa || lastJa === never;
-          var neverSeenUS = !lastUS || lastUS === never;
-
-          // And generate the relative time from today.
-          var relJaDays = (0, _moment2.default)().diff((0, _moment2.default)(lastJa), 'days');
-          var relUSDays = (0, _moment2.default)().diff((0, _moment2.default)(lastUS), 'days');
-          var relJa = _moment2.default.duration(relJaDays, 'days').humanize();
-          var relUS = _moment2.default.duration(relUSDays, 'days').humanize();
+          // const neverSeenUS = !lastUS || lastUS === never
 
           // Check if it's faster to see which episodes a Pokémon did *not* appear in.
           var episodesInverse = (0, _lodash.xor)(airedEpisodesList, episodes);
@@ -278,10 +280,25 @@ var SeenPage = function SeenPage(_ref2) {
           var pkmnInfo = _data.pokedex[id];
 
           var cols = 8;
+          var isLast = n === lastSeenRanking.length - 1;
+
+          // If listing fewer than this amount of episodes, switch to a different layout.
+          var fewEpisodes = 12;
+
+          // Sort order. All * 2, since we've actually got two rows per item.
+          var orderLastSeen = n * 2;
+          var orderAppearances = appearancesRankingByID[id].n * 2;
 
           return [_react2.default.createElement(
             'tr',
-            { id: 'item_' + id, className: 'main-info', 'data-id': id, key: 'main_info_' + id, 'data-last-seen-n': n, 'data-appearances-n': appearancesRankingByID[id].n },
+            {
+              key: 'main_info_' + id,
+              id: 'item_' + id,
+              className: (0, _classnames2.default)('main-info', { 'last': isLast }),
+              'data-id': id,
+              'data-last-seen-n': orderLastSeen,
+              'data-appearances-n': orderAppearances
+            },
             _react2.default.createElement(
               'td',
               { className: 'minimal' },
@@ -321,64 +338,120 @@ var SeenPage = function SeenPage(_ref2) {
               (0, _extends4.default)({ className: neverSeenJa ? 'never' : '' }, neverSeenJa ? { colSpan: 2 } : {}),
               neverSeenJa ? never : lastJa
             ),
-            !neverSeenJa ? _react2.default.createElement(
-              'td',
-              null,
-              relJa,
-              ' ago'
-            ) : null
+            !neverSeenJa ? _react2.default.createElement('td', { className: 'time-ago', 'data-time-ago-ms': isNaN(lastJaInt) ? -1 : lastJaInt }) : null
           ), _react2.default.createElement(
             'tr',
-            { id: 'episodes_' + id, className: 'episode-info', 'data-id': id, key: 'ep_info_' + id },
+            {
+              id: 'episodes_' + id,
+              className: (0, _classnames2.default)('episode-info', { last: isLast }),
+              'data-id': id,
+              'data-last-seen-n': orderLastSeen + 1,
+              'data-appearances-n': orderAppearances + 1,
+              key: 'ep_info_' + id
+            },
             episodesInverse.length === 0 ? _react2.default.createElement(
               'td',
-              { colSpan: cols },
+              { colSpan: cols, className: 'ep-cols-container' },
               'Appears in every episode to date.'
             ) : episodes.length === 0 ? _react2.default.createElement(
               'td',
-              { colSpan: cols },
+              { colSpan: cols, className: 'ep-cols-container' },
               'No appearances in the TV series.'
             ) : episodesInverse.length > episodes.length ? _react2.default.createElement(
               'td',
-              { colSpan: cols },
-              'Appears in: ',
-              episodes.map(function (ep) {
-                return _react2.default.createElement(
-                  'span',
-                  { key: ep },
-                  _react2.default.createElement(
-                    'a',
-                    { target: '_blank', href: (0, _data.epURL)(ep) },
-                    ep
-                  ),
-                  ' '
-                );
-              })
+              { colSpan: cols, className: 'ep-cols-container' },
+              _react2.default.createElement(
+                'div',
+                { className: (0, _classnames2.default)('ep-cols', { short: episodes.length < fewEpisodes }) },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ep-header' },
+                  'Appears in:'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'ep-content' },
+                  episodes.map(function (ep) {
+                    return _react2.default.createElement(
+                      'li',
+                      { key: ep },
+                      _react2.default.createElement(
+                        'a',
+                        { target: '_blank', href: (0, _data.epURL)(ep) },
+                        ep
+                      )
+                    );
+                  })
+                )
+              )
             ) : _react2.default.createElement(
               'td',
-              { colSpan: cols },
-              'Appears in every episode ',
+              { colSpan: cols, className: 'ep-cols-container' },
               _react2.default.createElement(
-                'em',
-                null,
-                'except'
-              ),
-              ': ',
-              episodesInverse.map(function (ep) {
-                return _react2.default.createElement(
-                  'span',
-                  { key: ep },
+                'div',
+                { className: (0, _classnames2.default)('ep-cols', { short: episodesInverse.length < fewEpisodes }) },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'ep-header' },
+                  'Appears in every episode ',
                   _react2.default.createElement(
-                    'a',
-                    { target: '_blank', href: (0, _data.epURL)(ep) },
-                    ep
+                    'em',
+                    null,
+                    'except'
                   ),
-                  ' '
-                );
-              })
+                  ':'
+                ),
+                _react2.default.createElement(
+                  'ul',
+                  { className: 'ep-content' },
+                  episodesInverse.map(function (ep) {
+                    return _react2.default.createElement(
+                      'li',
+                      { key: ep },
+                      _react2.default.createElement(
+                        'a',
+                        { target: '_blank', href: (0, _data.epURL)(ep) },
+                        ep
+                      )
+                    );
+                  })
+                )
+              )
             )
           ), _react2.default.createElement('script', { key: 'js_' + id, dangerouslySetInnerHTML: { __html: 'PkSpr.decorate(\'icon_' + id + '\')\nPokeSeen.decorate(\'' + id + '\')' } })];
         })
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'description' },
+      _react2.default.createElement(
+        'div',
+        { className: 'docs-container closing' },
+        _react2.default.createElement(
+          'p',
+          null,
+          'Pok\xE9mon is \xA9 1995-',
+          new Date().getFullYear(),
+          ' Nintendo/Creatures Inc./GAME FREAK Inc.'
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          'The source code for this page is available on ',
+          _react2.default.createElement(
+            'a',
+            { href: 'https://github.com/msikma/pokeseen' },
+            'Github'
+          ),
+          '. Statistics were determined from ',
+          _react2.default.createElement(
+            'a',
+            { href: 'https://bulbapedia.bulbagarden.net/' },
+            'Bulbapedia'
+          ),
+          ' data.'
+        )
       )
     )
   );
