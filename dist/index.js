@@ -9,6 +9,14 @@ var _keys = require('babel-runtime/core-js/object/keys');
 
 var _keys2 = _interopRequireDefault(_keys);
 
+var _regenerator = require('babel-runtime/regenerator');
+
+var _regenerator2 = _interopRequireDefault(_regenerator);
+
+var _getIterator2 = require('babel-runtime/core-js/get-iterator');
+
+var _getIterator3 = _interopRequireDefault(_getIterator2);
+
 var _defineProperty2 = require('babel-runtime/helpers/defineProperty');
 
 var _defineProperty3 = _interopRequireDefault(_defineProperty2);
@@ -17,17 +25,13 @@ var _extends3 = require('babel-runtime/helpers/extends');
 
 var _extends4 = _interopRequireDefault(_extends3);
 
-var _regenerator = require('babel-runtime/regenerator');
+var _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');
 
-var _regenerator2 = _interopRequireDefault(_regenerator);
+var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 var _promise = require('babel-runtime/core-js/promise');
 
 var _promise2 = _interopRequireDefault(_promise);
-
-var _asyncToGenerator2 = require('babel-runtime/helpers/asyncToGenerator');
-
-var _asyncToGenerator3 = _interopRequireDefault(_asyncToGenerator2);
 
 var _data = require('./data');
 
@@ -46,82 +50,155 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * of the TV show. If the data already exists, we'll use cached data,
  * else we'll scrape the episode's Bulbapedia page to extract the information.
  */
-var cacheSeenData = exports.cacheSeenData = function () {
-  var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee2() {
-    var existingSeenData, gotNewData, seenList, newSeenData;
-    return _regenerator2.default.wrap(function _callee2$(_context2) {
-      while (1) {
-        switch (_context2.prev = _context2.next) {
-          case 0:
-            // Retrieve cached data to check if we can skip any episode.
-            existingSeenData = (0, _data.getSeenData)();
-            gotNewData = false;
-            _context2.next = 4;
-            return _promise2.default.all(_data.episodeList.map(function () {
-              var _ref2 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(episode, n) {
-                var data;
-                return _regenerator2.default.wrap(function _callee$(_context) {
-                  while (1) {
-                    switch (_context.prev = _context.next) {
-                      case 0:
-                        if (!existingSeenData[episode]) {
-                          _context.next = 2;
-                          break;
-                        }
+var cacheSeenData = exports.cacheSeenData = function cacheSeenData() {
+  return new _promise2.default(function () {
+    var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(resolve, reject) {
+      var existingSeenData, seenList, gotNewData, episodeData, _iteratorNormalCompletion, _didIteratorError, _iteratorError, _iterator, _step, episode, data, newSeenData;
 
-                        return _context.abrupt('return', existingSeenData[episode]);
+      return _regenerator2.default.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              // Retrieve cached data to check if we can skip any episode.
+              existingSeenData = (0, _data.getSeenData)();
+              seenList = [];
+              gotNewData = false;
+              episodeData = void 0;
+              _iteratorNormalCompletion = true;
+              _didIteratorError = false;
+              _iteratorError = undefined;
+              _context.prev = 7;
+              _iterator = (0, _getIterator3.default)(_data.episodeList);
 
-                      case 2:
-                        _context.next = 4;
-                        return (0, _request.wait)(n * 1000);
+            case 9:
+              if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
+                _context.next = 40;
+                break;
+              }
 
-                      case 4:
-                        _context.next = 6;
-                        return (0, _scrape.getPokemonFromEpisode)(episode);
+              episode = _step.value;
 
-                      case 6:
-                        data = _context.sent;
+              episodeData = existingSeenData[episode];
 
-                        gotNewData = true;
-                        console.log('Retrieved information from episode ' + episode);
-                        return _context.abrupt('return', data);
+              // If cached data exists and has aired (thus is finalized), use that.
 
-                      case 10:
-                      case 'end':
-                        return _context.stop();
-                    }
-                  }
-                }, _callee, undefined);
-              }));
+              if (!(episodeData && episodeData.hasAired)) {
+                _context.next = 15;
+                break;
+              }
 
-              return function (_x, _x2) {
-                return _ref2.apply(this, arguments);
-              };
-            }()));
+              seenList.push(episodeData);
+              return _context.abrupt('continue', 37);
 
-          case 4:
-            seenList = _context2.sent;
-            newSeenData = seenList.reduce(function (episodes, ep) {
-              return (0, _extends4.default)({}, episodes, (0, _defineProperty3.default)({}, ep.episode, ep));
-            }, {});
-            _context2.next = 8;
-            return (0, _data.saveSeenData)(newSeenData, gotNewData);
+            case 15:
+              _context.prev = 15;
+              _context.next = 18;
+              return (0, _request.wait)(1000);
 
-          case 8:
-            return _context2.abrupt('return', newSeenData);
+            case 18:
+              if (!episodeData.hasAired) {
+                console.log('Episode ' + episode + ' hasn\'t aired yet. Checking if it has since last time.');
+              }
+              _context.next = 21;
+              return (0, _scrape.getPokemonFromEpisode)(episode);
 
-          case 9:
-          case 'end':
-            return _context2.stop();
+            case 21:
+              data = _context.sent;
+
+              seenList.push(data);
+              gotNewData = true;
+              console.log('Retrieved information from episode ' + episode);
+
+              if (!(data.hasAired === false)) {
+                _context.next = 28;
+                break;
+              }
+
+              console.log('Stopping: episode ' + episode + ' has not been aired yet');
+              return _context.abrupt('break', 40);
+
+            case 28:
+              _context.next = 37;
+              break;
+
+            case 30:
+              _context.prev = 30;
+              _context.t0 = _context['catch'](15);
+
+              if (!(_context.t0.statusCode === 404)) {
+                _context.next = 35;
+                break;
+              }
+
+              console.log('Stopping: episode ' + episode + ' is 404');
+              return _context.abrupt('break', 40);
+
+            case 35:
+              console.log('Error: received unexpected status code ' + _context.t0.statusCode + ' (URL: ' + _context.t0.options.url + ')');
+              return _context.abrupt('break', 40);
+
+            case 37:
+              _iteratorNormalCompletion = true;
+              _context.next = 9;
+              break;
+
+            case 40:
+              _context.next = 46;
+              break;
+
+            case 42:
+              _context.prev = 42;
+              _context.t1 = _context['catch'](7);
+              _didIteratorError = true;
+              _iteratorError = _context.t1;
+
+            case 46:
+              _context.prev = 46;
+              _context.prev = 47;
+
+              if (!_iteratorNormalCompletion && _iterator.return) {
+                _iterator.return();
+              }
+
+            case 49:
+              _context.prev = 49;
+
+              if (!_didIteratorError) {
+                _context.next = 52;
+                break;
+              }
+
+              throw _iteratorError;
+
+            case 52:
+              return _context.finish(49);
+
+            case 53:
+              return _context.finish(46);
+
+            case 54:
+              newSeenData = seenList.reduce(function (episodes, ep) {
+                return (0, _extends4.default)({}, episodes, (0, _defineProperty3.default)({}, ep.episode, ep));
+              }, {});
+              _context.next = 57;
+              return (0, _data.saveSeenData)(newSeenData, gotNewData);
+
+            case 57:
+              return _context.abrupt('return', resolve(newSeenData));
+
+            case 58:
+            case 'end':
+              return _context.stop();
+          }
         }
-      }
-    }, _callee2, undefined);
-  }));
+      }, _callee, undefined, [[7, 42, 46, 54], [15, 30], [47,, 49, 53]]);
+    }));
 
-  return function cacheSeenData() {
-    return _ref.apply(this, arguments);
-  };
-}();
+    return function (_x, _x2) {
+      return _ref.apply(this, arguments);
+    };
+  }());
+};
 
 /**
  * Checks the data for correctness.
@@ -133,17 +210,17 @@ var cacheSeenData = exports.cacheSeenData = function () {
  */
 
 var checkData = exports.checkData = function () {
-  var _ref3 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee3() {
+  var _ref2 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee2() {
     var seenData;
-    return _regenerator2.default.wrap(function _callee3$(_context3) {
+    return _regenerator2.default.wrap(function _callee2$(_context2) {
       while (1) {
-        switch (_context3.prev = _context3.next) {
+        switch (_context2.prev = _context2.next) {
           case 0:
-            _context3.next = 2;
+            _context2.next = 2;
             return cacheSeenData();
 
           case 2:
-            seenData = _context3.sent;
+            seenData = _context2.sent;
 
             (0, _keys2.default)(seenData).forEach(function (epNr) {
               var ep = seenData[epNr];
@@ -153,14 +230,14 @@ var checkData = exports.checkData = function () {
 
           case 4:
           case 'end':
-            return _context3.stop();
+            return _context2.stop();
         }
       }
-    }, _callee3, undefined);
+    }, _callee2, undefined);
   }));
 
   return function checkData() {
-    return _ref3.apply(this, arguments);
+    return _ref2.apply(this, arguments);
   };
 }();
 
@@ -168,31 +245,34 @@ var checkData = exports.checkData = function () {
  * Generates an HTML page with the results from cacheSeenData().
  */
 var generatePage = exports.generatePage = function () {
-  var _ref4 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee4() {
+  var _ref3 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee3() {
     var seenData, _sortPokemonByAppeara, appearancesRanking, lastSeenRanking, airedEpisodesList;
 
-    return _regenerator2.default.wrap(function _callee4$(_context4) {
+    return _regenerator2.default.wrap(function _callee3$(_context3) {
       while (1) {
-        switch (_context4.prev = _context4.next) {
+        switch (_context3.prev = _context3.next) {
           case 0:
-            _context4.next = 2;
+            _context3.next = 2;
             return cacheSeenData();
 
           case 2:
-            seenData = _context4.sent;
+            seenData = _context3.sent;
             _sortPokemonByAppeara = (0, _process.sortPokemonByAppearances)(seenData), appearancesRanking = _sortPokemonByAppeara.appearancesRanking, lastSeenRanking = _sortPokemonByAppeara.lastSeenRanking, airedEpisodesList = _sortPokemonByAppeara.airedEpisodesList;
-            _context4.next = 6;
+            _context3.next = 6;
             return (0, _template.createSeenPage)(appearancesRanking, lastSeenRanking, airedEpisodesList);
 
           case 6:
+            process.exit(0);
+
+          case 7:
           case 'end':
-            return _context4.stop();
+            return _context3.stop();
         }
       }
-    }, _callee4, undefined);
+    }, _callee3, undefined);
   }));
 
   return function generatePage() {
-    return _ref4.apply(this, arguments);
+    return _ref3.apply(this, arguments);
   };
 }();

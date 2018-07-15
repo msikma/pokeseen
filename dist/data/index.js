@@ -69,7 +69,7 @@ var seasons = [[274, 'EP'], // Original series and Johto
 [191, 'DP'], // Diamond and Pearl
 [142, 'BW'], // Best Wishes
 [140, 'XY'], // XY
-[85, 'SM'] // Sun and Moon (ongoing)
+[85, 'SM', true] // Sun and Moon (ongoing)
 ];
 
 // Location where we'll store cache data.
@@ -123,7 +123,13 @@ exports.pokedex = _pokedex2.default;
 // Complete list of episodes, e.g. ['EP001', 'EP002', ... 'AG123', ...] etc.
 
 var episodeList = exports.episodeList = seasons.reduce(function (list, season) {
-  var episodes = new Array(season[0]).fill().map(function (_, n) {
+  // If a series is ongoing, we'll check an infinite number of episodes
+  // until we find that they don't exist anymore (404 on Bulbapedia).
+  // This allows us to not have to update the number of episodes for ongoing series.
+  // (As a result, there will be a ridiculous number of episodes for whichever
+  // series is going on right now...)
+  var episodeCount = season[2] ? 999 : season[0];
+  var episodes = new Array(episodeCount).fill().map(function (_, n) {
     return '' + season[1] + (0, _sprintfJs.sprintf)('%03d', n + 1);
   });
   return [].concat((0, _toConsumableArray3.default)(list), (0, _toConsumableArray3.default)(episodes));
