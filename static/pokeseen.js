@@ -47,6 +47,12 @@ const PokeSeen = {
       for (let n = 0; n < trsSorted.length; ++n) {
         tbody.appendChild(trsSorted[n])
       }
+
+      // Rewrite the ID columns.
+      const idColumns = document.querySelectorAll('.main-info td.id')
+      for (let n = 0; n < idColumns.length; ++n) {
+        idColumns[n].innerHTML = n + 1
+      }
     }
 
     const callback = function(prop) {

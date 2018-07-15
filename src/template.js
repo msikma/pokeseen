@@ -130,7 +130,7 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
               data-last-seen-n={ orderLastSeen }
               data-appearances-n={ orderAppearances }
             >
-              <td className="minimal">{ n + 1 }</td>
+              <td className="minimal id">{ n + 1 }</td>
               <td className="minimal">{ id }</td>
               <td className="minimal"><span id={ `icon_${id}` } className={ `pkspr pkmn-${pkmnInfo.slug.eng}` }></span></td>
               <td>{ pkmnInfo.name.eng }</td>

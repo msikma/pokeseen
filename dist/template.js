@@ -301,7 +301,7 @@ var SeenPage = function SeenPage(_ref2) {
             },
             _react2.default.createElement(
               'td',
-              { className: 'minimal' },
+              { className: 'minimal id' },
               n + 1
             ),
             _react2.default.createElement(
