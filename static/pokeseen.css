@@ -45,6 +45,12 @@
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+.table.pkspr-overview .main-info.showing-episodes td {
+  background-color: #ebf3fd;
+}
+.table.pkspr-overview .main-info.showing-episodes .name {
+  font-weight: bold;
+}
 .table.pkspr-overview .episode-info .ep-cols-container {
   background: #f5f4f4;
   font-size: 13px;
