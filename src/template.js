@@ -187,6 +187,11 @@ Generated on ${generationTime}.
   <link type="text/css" href="pokesprite.min.css" rel="stylesheet" media="screen" />
   <link type="text/css" href="overview.min.css" rel="stylesheet" media="screen" />
   <link type="text/css" href="pokeseen.css" rel="stylesheet" media="screen" />
+
+  <meta property="og:title" content="PokéSeen" />
+  <meta property="og:url" content="https://msikma.github.io/pokeseen/" />
+  <meta property="og:description" content="Statistics about how often each Pokémon appears in the TV show and when we last saw them" />
+
   <script charset="utf-8" src="pokesprite.min.js" ></script>
   <script charset="utf-8" src="pokeseen.js" ></script>
 </head>
