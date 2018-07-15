@@ -78,7 +78,7 @@ var never = 'Never seen';
  */
 var createSeenPage = exports.createSeenPage = function () {
   var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(appearancesRanking, lastSeenRanking, airedEpisodesList) {
-    var repoInfo, data, appearancesRankingByID, pageMarkup;
+    var repoInfo, data, lastSeenRankingByID, pageMarkup;
     return _regenerator2.default.wrap(function _callee$(_context) {
       while (1) {
         switch (_context.prev = _context.next) {
@@ -96,12 +96,12 @@ var createSeenPage = exports.createSeenPage = function () {
               generationTime: (0, _moment2.default)().format('YYYY-MM-DD HH:mm:ss ZZ')
               // Render our React component to HTML and save it using the wrapper string.
             };
-            appearancesRankingByID = appearancesRanking.map(function (item, n) {
+            lastSeenRankingByID = lastSeenRanking.map(function (item, n) {
               return (0, _extends4.default)({}, item, { n: n });
             }).reduce(function (acc, item) {
               return (0, _extends4.default)({}, acc, (0, _defineProperty3.default)({}, item.id, item));
             }, {});
-            pageMarkup = _server2.default.renderToStaticMarkup(_react2.default.createElement(SeenPage, (0, _extends4.default)({ appearancesRankingByID: appearancesRankingByID, lastSeenRanking: lastSeenRanking, airedEpisodesList: airedEpisodesList }, data)));
+            pageMarkup = _server2.default.renderToStaticMarkup(_react2.default.createElement(SeenPage, (0, _extends4.default)({ lastSeenRankingByID: lastSeenRankingByID, appearancesRanking: appearancesRanking, airedEpisodesList: airedEpisodesList }, data)));
             _context.next = 8;
             return (0, _saveFile.saveFile)(docsPath + '/index.html', wrapPage(pageMarkup, data));
 
@@ -165,8 +165,8 @@ var copyFile = function copyFile(src, destDir) {
  *     lastSeen: { ja: '2018-05-10', us: '2018-04-07' } }, ... ]
  */
 var SeenPage = function SeenPage(_ref2) {
-  var appearancesRankingByID = _ref2.appearancesRankingByID,
-      lastSeenRanking = _ref2.lastSeenRanking,
+  var lastSeenRankingByID = _ref2.lastSeenRankingByID,
+      appearancesRanking = _ref2.appearancesRanking,
       airedEpisodesList = _ref2.airedEpisodesList,
       version = _ref2.version,
       commits = _ref2.commits,
@@ -195,7 +195,7 @@ var SeenPage = function SeenPage(_ref2) {
         _react2.default.createElement(
           'p',
           null,
-          '\u3053\u306E\u30DA\u30FC\u30B8\u306F\u30DD\u30B1\u30E2\u30F3\u306E\u767B\u5834\u6570\u3001\u305D\u3057\u3066\u3044\u3064\u6700\u5F8C\u306E\u51FA\u73FE\u3068\u76EE\u9332\u3057\u307E\u3059\u3002'
+          '\u3053\u306E\u30DA\u30FC\u30B8\u306F\u3001\u30DD\u30B1\u30E2\u30F3\u304C\u30A2\u30CB\u30E1\u306B\u4F55\u5EA6\u767B\u5834\u3057\u305F\u304B\u3001\u3044\u3064\u6700\u5F8C\u306B\u767B\u5834\u3057\u305F\u304B\u3092\u78BA\u8A8D\u3067\u304D\u307E\u3059\u3002'
         )
       ),
       _react2.default.createElement(
@@ -204,9 +204,9 @@ var SeenPage = function SeenPage(_ref2) {
         _react2.default.createElement(
           'p',
           null,
-          '\u30DD\u30B1\u30E2\u30F3\u306F\u4F55\u56DE\u51FA\u305F\u304C\u300C\u767B\u5834\u6570\u300D\u3067\u66F8\u3044\u3066\u3042\u308A\u307E\u3059\u3002\u300C\u6700\u5F8C\u306E\u51FA\u73FE\u300D\u306F\u65E5\u672C\u306E\u653E\u9001\u65E5\u7A0B\u3067\u6C7A\u3081\u3066\u3044\u307E\u3059\u3002 \u30C6\u30FC\u30D6\u30EB\u306E\u884C\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u3001\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30EA\u30B9\u30C8\u304C\u8868\u793A\u3055\u308C\u307E\u3059\u3002\u3053\u306E\u30E9\u30F3\u30AD\u30F3\u30B0\u306F\u73FE\u5728',
+          '\u300C\u767B\u5834\u6570\u300D\u306F\u30DD\u30B1\u30E2\u30F3\u304C\u30A2\u30CB\u30E1\u306B\u4F55\u5EA6\u767B\u5834\u3057\u305F\u304B\u793A\u3057\u3066\u3042\u308A\u307E\u3059\u3002\u307E\u305F\u3001\u300C\u6700\u5F8C\u306E\u767B\u5834\u300D\u306F\u30DD\u30B1\u30E2\u30F3\u304C\u6700\u5F8C\u306B\u767B\u5834\u3057\u305F\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u65E5\u7A0B\u3092\u793A\u3057\u3066\u3042\u308A\u307E\u3059\u3002 \u30C6\u30FC\u30D6\u30EB\u306E\u884C\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u305D\u306E\u30DD\u30B1\u30E2\u30F3\u304C\u767B\u5834\u3057\u305F\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30EA\u30B9\u30C8\u3092\u898B\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002 \u3053\u306E\u30E9\u30F3\u30AD\u30F3\u30B0\u306F\u73FE\u5728',
           airedEpisodesList.length,
-          '\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30C7\u30FC\u30BF\u3067\u4F5C\u308C\u3066\u3044\u307E\u3059\u3002'
+          '\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30C7\u30FC\u30BF\u3092\u57FA\u306B\u3057\u3066\u307E\u3059'
         ),
         _react2.default.createElement(
           'p',
@@ -301,7 +301,7 @@ var SeenPage = function SeenPage(_ref2) {
             null,
             _react2.default.createElement(
               'a',
-              { href: '#', className: 'sort-link', id: 'appearance_sort' },
+              { href: '#', className: 'sort-link active', id: 'appearance_sort' },
               'Appearances/\u767B\u5834\u6570'
             )
           ),
@@ -310,13 +310,13 @@ var SeenPage = function SeenPage(_ref2) {
             { colSpan: 2 },
             _react2.default.createElement(
               'a',
-              { href: '#', className: 'sort-link active', id: 'last_seen_sort' },
-              'Last appearance/\u6700\u5F8C\u306E\u51FA\u73FE'
+              { href: '#', className: 'sort-link', id: 'last_seen_sort' },
+              'Last appearance/\u6700\u5F8C\u306E\u767B\u5834'
             )
           )
         ),
         _react2.default.createElement('script', { dangerouslySetInnerHTML: { __html: 'PokeSeen.decorateSorters(\'appearance_sort\', \'last_seen_sort\')' } }),
-        lastSeenRanking.map(function (pokemon, n) {
+        appearancesRanking.map(function (pokemon, n) {
           // Construct two rows: one with the sorted data, and one with the episode IDs.
           var id = pokemon.id,
               amount = pokemon.amount,
@@ -339,14 +339,17 @@ var SeenPage = function SeenPage(_ref2) {
           var pkmnInfo = _data.pokedex[id];
 
           var cols = 8;
-          var isLast = n === lastSeenRanking.length - 1;
+          var isLast = n === appearancesRanking.length - 1;
 
           // If listing fewer than this amount of episodes, switch to a different layout.
           var fewEpisodes = 12;
 
           // Sort order. All * 2, since we've actually got two rows per item.
-          var orderLastSeen = n * 2;
-          var orderAppearances = appearancesRankingByID[id].n * 2;
+          var orderAppearances = n * 2;
+          var orderLastSeen = lastSeenRankingByID[id].n * 2;
+
+          // Whether to use 'appears in all episodes *except*' type lists if they are shorter.
+          var useExceptLists = false;
 
           return [_react2.default.createElement(
             'tr',
@@ -416,7 +419,7 @@ var SeenPage = function SeenPage(_ref2) {
               'td',
               { colSpan: cols, className: 'ep-cols-container' },
               'No appearances in the TV series.'
-            ) : episodesInverse.length > episodes.length ? _react2.default.createElement(
+            ) : episodesInverse.length > episodes.length || !useExceptLists ? _react2.default.createElement(
               'td',
               { colSpan: cols, className: 'ep-cols-container' },
               _react2.default.createElement(
