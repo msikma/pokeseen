@@ -77,12 +77,13 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
       <div className="header">
         <h1>Pokémon TV appearance statistics</h1>
         <p>This page ranks Pokémon based on how many times they've appeared in the TV show and lists when we last saw them.</p>
-        <p>このページはポケモンの登場数、そしていつ最後の出現と目録します。</p>
+        <p>このページは、ポケモンがアニメに何度登場したか、いつ最後に登場したかを確認できます。</p>
       </div>
       <div className="docs-container">
         <p>
-          ポケモンは何回出たが「登場数」で書いてあります。「最後の出現」は日本の放送日程で決めています。
-          テーブルの行をクリックすると、エピソードのリストが表示されます。このランキングは現在{ airedEpisodesList.length }エピソードのデータで作れています。
+          「登場数」はポケモンがアニメに何度登場したか示してあります。また、「最後の登場」はポケモンが最後に登場したエピソードの日程を示してあります。
+          テーブルの行をクリックするとそのポケモンが登場したエピソードのリストを見ることができます。
+          このランキングは現在{ airedEpisodesList.length }エピソードのデータを基にしてます
         </p>
         <p>質問やコメントがあれば、ツイッターで連絡してください：<a href="https://twitter.com/dada78641">@dada78641</a>.</p>
         <p>
@@ -104,7 +105,7 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
           <th>Icon</th>
           <th colSpan={ 2 }>Name/名前</th>
           <th><a href="#" className="sort-link active" id="appearance_sort">Appearances/登場数</a></th>
-          <th colSpan={ 2 }><a href="#" className="sort-link" id="last_seen_sort">Last appearance/最後の出現</a></th>
+          <th colSpan={ 2 }><a href="#" className="sort-link" id="last_seen_sort">Last appearance/最後の登場</a></th>
         </tr>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.decorateSorters('appearance_sort', 'last_seen_sort')` }}></script>
         { appearancesRanking.map((pokemon, n) => {
