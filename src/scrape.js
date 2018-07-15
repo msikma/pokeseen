@@ -42,7 +42,7 @@ const getEpisodeMetaData = (html) => {
     const $div = $td.find('> div')
     const $table = $td.find('> table')
 
-    if ($div.length === 0 || $table.length === 0) return acc;
+    if ($div.length === 0 || $table.length === 0) return acc
 
     if ($div.text().trim() === 'First broadcast') {
       // Found the first broadcast data. Now unpack its <table>.
@@ -93,7 +93,7 @@ const getEpisodeMetaData = (html) => {
     const $jaSpan = $td.find('span[lang="ja"]')
     const $i = $td.find('i')
 
-    if ($jaSpan.length === 0 || $i.length === 0) return acc;
+    if ($jaSpan.length === 0 || $i.length === 0) return acc
 
     const jpnTitle = $jaSpan.text().trim()
     const engTitle = $i.text().trim()

@@ -20,7 +20,7 @@ const seasons = [
   [191, 'DP'], // Diamond and Pearl
   [142, 'BW'], // Best Wishes
   [140, 'XY'], // XY
-  [85, 'SM']   // Sun and Moon (ongoing)
+  [85, 'SM', true]   // Sun and Moon (ongoing)
 ]
 
 // Location where we'll store cache data.
@@ -52,7 +52,13 @@ export { pokedex }
 
 // Complete list of episodes, e.g. ['EP001', 'EP002', ... 'AG123', ...] etc.
 export const episodeList = seasons.reduce((list, season) => {
-  const episodes = new Array(season[0]).fill().map((_, n) => `${season[1]}${sprintf('%03d', n + 1)}`)
+  // If a series is ongoing, we'll check an infinite number of episodes
+  // until we find that they don't exist anymore (404 on Bulbapedia).
+  // This allows us to not have to update the number of episodes for ongoing series.
+  // (As a result, there will be a ridiculous number of episodes for whichever
+  // series is going on right now...)
+  const episodeCount = season[2] ? 999 : season[0]
+  const episodes = new Array(episodeCount).fill().map((_, n) => `${season[1]}${sprintf('%03d', n + 1)}`)
   return [...list, ...episodes]
 }, [])
 
