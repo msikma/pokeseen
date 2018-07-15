@@ -36,10 +36,10 @@ export const createSeenPage = async (appearancesRanking, lastSeenRanking, airedE
     generationTime: moment().format('YYYY-MM-DD HH:mm:ss ZZ')
   }
   // Render our React component to HTML and save it using the wrapper string.
-  const appearancesRankingByID = appearancesRanking
+  const lastSeenRankingByID = lastSeenRanking
     .map((item, n) => ({ ...item, n }))
     .reduce((acc, item) => ({ ...acc, [item.id]: item }), {})
-  const pageMarkup = ReactDOMServer.renderToStaticMarkup(<SeenPage { ...{ appearancesRankingByID, lastSeenRanking, airedEpisodesList, ...data } } />)
+  const pageMarkup = ReactDOMServer.renderToStaticMarkup(<SeenPage { ...{ lastSeenRankingByID, appearancesRanking, airedEpisodesList, ...data } } />)
   await saveFile(`${docsPath}/index.html`, wrapPage(pageMarkup, data))
 
   // Copy over some necessary files.
@@ -71,7 +71,7 @@ const copyFile = (src, destDir) => new Promise((resolve, reject) => {
  *     amount: 9,
  *     lastSeen: { ja: '2018-05-10', us: '2018-04-07' } }, ... ]
  */
-const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, version, commits, hash, homepage, generationTime }) => (
+const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, version, commits, hash, homepage, generationTime }) => (
   <div id="top">
     <div className="description">
       <div className="header">
@@ -103,11 +103,11 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
           <th>ID</th>
           <th>Icon</th>
           <th colSpan={ 2 }>Name/名前</th>
-          <th><a href="#" className="sort-link" id="appearance_sort">Appearances/登場数</a></th>
-          <th colSpan={ 2 }><a href="#" className="sort-link active" id="last_seen_sort">Last appearance/最後の出現</a></th>
+          <th><a href="#" className="sort-link active" id="appearance_sort">Appearances/登場数</a></th>
+          <th colSpan={ 2 }><a href="#" className="sort-link" id="last_seen_sort">Last appearance/最後の出現</a></th>
         </tr>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.decorateSorters('appearance_sort', 'last_seen_sort')` }}></script>
-        { lastSeenRanking.map((pokemon, n) => {
+        { appearancesRanking.map((pokemon, n) => {
           // Construct two rows: one with the sorted data, and one with the episode IDs.
           const { id, amount, lastSeen, episodes } = pokemon
 
@@ -126,14 +126,14 @@ const SeenPage = ({ appearancesRankingByID, lastSeenRanking, airedEpisodesList, 
           const pkmnInfo = pokedex[id]
 
           const cols = 8
-          const isLast = n === lastSeenRanking.length - 1
+          const isLast = n === appearancesRanking.length - 1
 
           // If listing fewer than this amount of episodes, switch to a different layout.
           const fewEpisodes = 12
 
           // Sort order. All * 2, since we've actually got two rows per item.
-          const orderLastSeen = n * 2
-          const orderAppearances = appearancesRankingByID[id].n * 2
+          const orderAppearances = n * 2
+          const orderLastSeen = lastSeenRankingByID[id].n * 2
 
           return [
             <tr
