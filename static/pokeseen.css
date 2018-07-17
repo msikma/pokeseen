@@ -37,6 +37,12 @@ a:hover {
 .episode-info td {
   padding: 8px !important;
 }
+.table.pkspr-overview .main-info td.last-episode,
+.table.pkspr-overview .main-info td.last-ja,
+.table.pkspr-overview .main-info td.time-ago {
+  white-space: nowrap;
+  width: 1%;
+}
 .table.pkspr-overview .main-info.last td:first-child {
   border-bottom-left-radius: 3px;
 }
@@ -53,6 +59,39 @@ a:hover {
 }
 .table.pkspr-overview .main-info.showing-episodes .name {
   font-weight: bold;
+}
+.table.pkspr-overview .main-info .series > span {
+  border-radius: 3px;
+  padding: 2px 8px;
+  font-size: 13px;
+  width: 58px;
+  text-align: center;
+  display: inline-block;
+  line-height: 19px;
+}
+.table.pkspr-overview .main-info .series-ag > span {
+  color: #c12950;
+  background-color: #f8f2f4;
+}
+.table.pkspr-overview .main-info .series-dp > span {
+  color: #e0800e;
+  background-color: #f9f5f2;
+}
+.table.pkspr-overview .main-info .series-bw > span {
+  color: #6ec129;
+  background-color: #f5f9f2;
+}
+.table.pkspr-overview .main-info .series-xy > span {
+  color: #29c195;
+  background-color: #f1f8f5;
+}
+.table.pkspr-overview .main-info .series-sm > span {
+  color: #2996c1;
+  background-color: #f2f7f9;
+}
+.table.pkspr-overview .main-info .series-ep > span {
+  color: #a429c1;
+  background-color: #f7f2f9;
 }
 .table.pkspr-overview .episode-info .ep-cols-container {
   background: #f5f4f4;

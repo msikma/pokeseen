@@ -49,6 +49,8 @@ export const createSeenPage = async (appearancesRanking, lastSeenRanking, airedE
   await copyFile(`${modulesPath}/pokesprite/pokesprite.min.js`, docsPath)
   await copyFile(`${staticPath}/pokeseen.css`, docsPath)
   await copyFile(`${staticPath}/pokeseen.js`, docsPath)
+
+  console.log(`Saved PokéSeen page to ${docsPath}/index.html and copied over static resources`)
 }
 
 /**
@@ -105,7 +107,7 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
           <th>Icon</th>
           <th colSpan={ 2 }>Name/名前</th>
           <th><a href="#" className="sort-link active" id="appearance_sort">Appearances/登場数</a></th>
-          <th colSpan={ 2 }><a href="#" className="sort-link" id="last_seen_sort">Last appearance/最後の登場</a></th>
+          <th colSpan={ 3 } className="last-episode-col"><a href="#" className="sort-link" id="last_seen_sort">Last appearance/最後の登場</a></th>
         </tr>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.decorateSorters('appearance_sort', 'last_seen_sort')` }}></script>
         { appearancesRanking.map((pokemon, n) => {
@@ -126,7 +128,7 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
 
           const pkmnInfo = pokedex[id]
 
-          const cols = 8
+          const cols = 9
           const isLast = n === appearancesRanking.length - 1
 
           // If listing fewer than this amount of episodes, switch to a different layout.
@@ -138,6 +140,10 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
 
           // Whether to use 'appears in all episodes *except*' type lists if they are shorter.
           const useExceptLists = false
+
+          // The last episode it appeared in.
+          const lastEpisode = episodes[episodes.length - 1]
+          const lastSeries = lastEpisode ? lastEpisode.slice(0, 2).toLowerCase() : ''
 
           return [
             <tr
@@ -154,7 +160,8 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
               <td className="name name-en">{ pkmnInfo.name.eng }</td>
               <td className="name name-jp"><span title={ pkmnInfo.name.jpn_ro }>{ pkmnInfo.name.jpn }</span></td>
               <td>{ amount }</td>
-              <td className={ neverSeenJa ? 'never' : '' } { ...(neverSeenJa ? { colSpan: 2 } : {}) }>{ neverSeenJa ? never : lastJa }</td>
+              <td className={ neverSeenJa ? 'never' : `last-episode series series-${lastSeries}` } { ...(neverSeenJa ? { colSpan: 3 } : {}) }><span>{ neverSeenJa ? never : lastEpisode }</span></td>
+              { !neverSeenJa ? <td className="last-ja">{ lastJa }</td> : null }
               { !neverSeenJa ? <td className="time-ago" data-time-ago-ms={ isNaN(lastJaInt) ? -1 : lastJaInt }></td> : null }
             </tr>,
             <tr
