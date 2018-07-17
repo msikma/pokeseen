@@ -106,8 +106,8 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
           <th>ID</th>
           <th>Icon</th>
           <th colSpan={ 2 }>Name/名前</th>
-          <th><a href="#" className="sort-link active" id="appearance_sort">Appearances/登場数</a></th>
-          <th colSpan={ 3 } className="last-episode-col"><a href="#" className="sort-link" id="last_seen_sort">Last appearance/最後の登場</a></th>
+          <th><a href="#" className="sort-link active" id="appearance_sort"><span className="regular-label">Appearances/登場数</span><span className="small-label">Eps</span></a></th>
+          <th colSpan={ 3 } className="last-episode-col"><a href="#" className="sort-link" id="last_seen_sort"><span className="regular-label">Last appearance/最後の登場</span><span className="small-label">Last seen/最後の登場</span></a></th>
         </tr>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.decorateSorters('appearance_sort', 'last_seen_sort')` }}></script>
         { appearancesRanking.map((pokemon, n) => {
@@ -222,12 +222,13 @@ Generated on ${generationTime}.
 -->
 <head>
   <meta charset="utf-8" />
-  <title>PokéSeen - Pokémon appearance statistics</title>
+  <title>Pokémon appearance statistics</title>
+  <meta name="viewport" content="width=586,initial-scale=1" />
   <link type="text/css" href="pokesprite.min.css" rel="stylesheet" media="screen" />
   <link type="text/css" href="overview.min.css" rel="stylesheet" media="screen" />
   <link type="text/css" href="pokeseen.css" rel="stylesheet" media="screen" />
 
-  <meta property="og:title" content="PokéSeen" />
+  <meta property="og:title" content="Pokémon appearance statistics" />
   <meta property="og:url" content="https://msikma.github.io/pokeseen/" />
   <meta property="og:description" content="Statistics about how often each Pokémon appears in the TV show and when we last saw them" />
 

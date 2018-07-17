@@ -54,6 +54,12 @@ a:hover {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
+.table.pkspr-overview td {
+  white-space: nowrap;
+}
+.table.pkspr-overview td.ep-cols-container {
+  white-space: normal;
+}
 .table.pkspr-overview .main-info.showing-episodes td {
   background-color: #ebf3fd;
 }
@@ -140,4 +146,32 @@ a:hover {
 #generation_time {
   color: #686868;
   font-size: 12px;
+}
+#top .small-label {
+  display: none;
+}
+@media screen and (max-width: 872px) {
+  #top .table.pkspr-overview td.time-ago {
+    display: none;
+  }
+  #top .table.pkspr-overview td.last-ja {
+    border-right: 1px solid #dedcdc;
+  }
+}
+
+@media screen and (max-width: 748px) {
+  #top .regular-label {
+    display: none;
+  }
+  #top .small-label {
+    display: inline;
+  }
+}
+@media screen and (max-width: 587px) {
+}
+@media screen and (max-width: 700px) {
+  #top .description .header p {
+    width: 90%;
+    margin: auto;
+  }
 }
