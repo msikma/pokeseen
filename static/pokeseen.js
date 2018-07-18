@@ -103,8 +103,8 @@ const timeUnitsJp = {
 
 function humanize(nd, s) {
   const en = humanizeStr(nd, s, true, timeUnitsEn)
-  const jp = numberConvert(humanizeStr(nd, s, false, timeUnitsJp))
-  return [en, '/', jp].join('')
+  const jp = splitByNumbers(humanizeStr(nd, s, false, timeUnitsJp))
+  return ['<span>', en, '</span>/', jp[0], '<span>', jp[1], '</span>'].join('')
 }
 
 // Converts plain numbers to fullwidth numbers.
@@ -112,6 +112,12 @@ function numberConvert(numbers) {
   return numbers.replace(/[\u0030-\u0039]/g, function(m) {
     return String.fromCharCode(m.charCodeAt(0) + 0xfee0)
   })
+}
+
+// Returns an array: the numbers and the rest of the string.
+function splitByNumbers(numbers) {
+  const result = numbers.split(/([\u0030-\u0039]+)/)
+  return result.slice(1)
 }
 
 /**

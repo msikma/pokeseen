@@ -99,6 +99,9 @@ a:hover {
   color: #a429c1;
   background-color: #f7f2f9;
 }
+.table.pkspr-overview .main-info .time-ago > span + span {
+  font-size: 91%;
+}
 .table.pkspr-overview .episode-info .ep-cols-container {
   background: #f5f4f4;
   font-size: 13px;
