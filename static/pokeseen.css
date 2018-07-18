@@ -143,8 +143,6 @@ a:hover {
   margin-top: 30px !important;
   margin-bottom: 40px !important;
 }
-#top .description p.bottom-line {
-}
 #top .description p.bottom-line + p {
   padding-top: 12px;
 }
