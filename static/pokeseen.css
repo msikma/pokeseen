@@ -144,8 +144,6 @@ a:hover {
   margin-bottom: 40px !important;
 }
 #top .description p.bottom-line {
-  padding-bottom: 14px;
-  border-bottom: 2px solid #dedcdc;
 }
 #top .description p.bottom-line + p {
   padding-top: 12px;
