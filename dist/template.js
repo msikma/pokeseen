@@ -130,6 +130,10 @@ var createSeenPage = exports.createSeenPage = function () {
             return copyFile(staticPath + '/pokeseen.js', docsPath);
 
           case 20:
+
+            console.log('Saved Pok\xE9Seen page to ' + docsPath + '/index.html and copied over static resources');
+
+          case 21:
           case 'end':
             return _context.stop();
         }
@@ -204,24 +208,6 @@ var SeenPage = function SeenPage(_ref2) {
         _react2.default.createElement(
           'p',
           null,
-          '\u300C\u767B\u5834\u6570\u300D\u306F\u30DD\u30B1\u30E2\u30F3\u304C\u30A2\u30CB\u30E1\u306B\u4F55\u5EA6\u767B\u5834\u3057\u305F\u304B\u793A\u3057\u3066\u3042\u308A\u307E\u3059\u3002\u307E\u305F\u3001\u300C\u6700\u5F8C\u306E\u767B\u5834\u300D\u306F\u30DD\u30B1\u30E2\u30F3\u304C\u6700\u5F8C\u306B\u767B\u5834\u3057\u305F\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u65E5\u7A0B\u3092\u793A\u3057\u3066\u3042\u308A\u307E\u3059\u3002 \u30C6\u30FC\u30D6\u30EB\u306E\u884C\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u305D\u306E\u30DD\u30B1\u30E2\u30F3\u304C\u767B\u5834\u3057\u305F\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30EA\u30B9\u30C8\u3092\u898B\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002 \u3053\u306E\u30E9\u30F3\u30AD\u30F3\u30B0\u306F\u73FE\u5728',
-          airedEpisodesList.length,
-          '\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30C7\u30FC\u30BF\u3092\u57FA\u306B\u3057\u3066\u307E\u3059'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          '\u8CEA\u554F\u3084\u30B3\u30E1\u30F3\u30C8\u304C\u3042\u308C\u3070\u3001\u30C4\u30A4\u30C3\u30BF\u30FC\u3067\u9023\u7D61\u3057\u3066\u304F\u3060\u3055\u3044\uFF1A',
-          _react2.default.createElement(
-            'a',
-            { href: 'https://twitter.com/dada78641' },
-            '@dada78641'
-          ),
-          '.'
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
           _react2.default.createElement(
             'em',
             null,
@@ -239,14 +225,30 @@ var SeenPage = function SeenPage(_ref2) {
         ),
         _react2.default.createElement(
           'p',
-          null,
-          'For questions or comments you can contact me on Twitter: ',
+          { className: 'bottom-line' },
+          'For questions or comments you can ',
           _react2.default.createElement(
             'a',
-            { href: 'https://twitter.com/dada78641' },
-            '@dada78641'
-          ),
-          '.'
+            { href: 'https://twitter.com/dada78641', title: '@dada78641' },
+            'contact me on Twitter.'
+          )
+        ),
+        _react2.default.createElement(
+          'p',
+          null,
+          '\u300C\u767B\u5834\u6570\u300D\u306F\u30DD\u30B1\u30E2\u30F3\u304C\u30A2\u30CB\u30E1\u306B\u4F55\u5EA6\u767B\u5834\u3057\u305F\u304B\u793A\u3057\u3066\u3042\u308A\u307E\u3059\u3002\u307E\u305F\u3001\u300C\u6700\u5F8C\u306E\u767B\u5834\u300D\u306F\u30DD\u30B1\u30E2\u30F3\u304C\u6700\u5F8C\u306B\u767B\u5834\u3057\u305F\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u65E5\u7A0B\u3092\u793A\u3057\u3066\u3042\u308A\u307E\u3059\u3002 \u30C6\u30FC\u30D6\u30EB\u306E\u884C\u3092\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u305D\u306E\u30DD\u30B1\u30E2\u30F3\u304C\u767B\u5834\u3057\u305F\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30EA\u30B9\u30C8\u3092\u898B\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002 \u3053\u306E\u30E9\u30F3\u30AD\u30F3\u30B0\u306F\u73FE\u5728',
+          airedEpisodesList.length,
+          '\u30A8\u30D4\u30BD\u30FC\u30C9\u306E\u30C7\u30FC\u30BF\u3092\u57FA\u306B\u3057\u3066\u307E\u3059'
+        ),
+        _react2.default.createElement(
+          'p',
+          { className: 'bottom-line' },
+          '\u8CEA\u554F\u3084\u30B3\u30E1\u30F3\u30C8\u304C\u3042\u308C\u3070\u3001',
+          _react2.default.createElement(
+            'a',
+            { href: 'https://twitter.com/dada78641', title: '@dada78641' },
+            '\u30C4\u30A4\u30C3\u30BF\u30FC\u3067\u9023\u7D61\u3057\u3066\u304F\u3060\u3055\u3044\u3002'
+          )
         ),
         _react2.default.createElement(
           'p',
@@ -302,16 +304,34 @@ var SeenPage = function SeenPage(_ref2) {
             _react2.default.createElement(
               'a',
               { href: '#', className: 'sort-link active', id: 'appearance_sort' },
-              'Appearances/\u767B\u5834\u6570'
+              _react2.default.createElement(
+                'span',
+                { className: 'regular-label' },
+                'Appearances/\u767B\u5834\u6570'
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'small-label' },
+                'Eps'
+              )
             )
           ),
           _react2.default.createElement(
             'th',
-            { colSpan: 2 },
+            { colSpan: 3, className: 'last-episode-col' },
             _react2.default.createElement(
               'a',
               { href: '#', className: 'sort-link', id: 'last_seen_sort' },
-              'Last appearance/\u6700\u5F8C\u306E\u767B\u5834'
+              _react2.default.createElement(
+                'span',
+                { className: 'regular-label' },
+                'Last appearance/\u6700\u5F8C\u306E\u767B\u5834'
+              ),
+              _react2.default.createElement(
+                'span',
+                { className: 'small-label' },
+                'Last seen/\u6700\u5F8C\u306E\u767B\u5834'
+              )
             )
           )
         ),
@@ -338,7 +358,7 @@ var SeenPage = function SeenPage(_ref2) {
 
           var pkmnInfo = _data.pokedex[id];
 
-          var cols = 8;
+          var cols = 9;
           var isLast = n === appearancesRanking.length - 1;
 
           // If listing fewer than this amount of episodes, switch to a different layout.
@@ -350,6 +370,10 @@ var SeenPage = function SeenPage(_ref2) {
 
           // Whether to use 'appears in all episodes *except*' type lists if they are shorter.
           var useExceptLists = false;
+
+          // The last episode it appeared in.
+          var lastEpisode = episodes[episodes.length - 1];
+          var lastSeries = lastEpisode ? lastEpisode.slice(0, 2).toLowerCase() : '';
 
           return [_react2.default.createElement(
             'tr',
@@ -397,9 +421,18 @@ var SeenPage = function SeenPage(_ref2) {
             ),
             _react2.default.createElement(
               'td',
-              (0, _extends4.default)({ className: neverSeenJa ? 'never' : '' }, neverSeenJa ? { colSpan: 2 } : {}),
-              neverSeenJa ? never : lastJa
+              (0, _extends4.default)({ className: neverSeenJa ? 'never' : 'last-episode series series-' + lastSeries }, neverSeenJa ? { colSpan: 3 } : {}),
+              _react2.default.createElement(
+                'span',
+                null,
+                neverSeenJa ? never : lastEpisode
+              )
             ),
+            !neverSeenJa ? _react2.default.createElement(
+              'td',
+              { className: 'last-ja' },
+              lastJa
+            ) : null,
             !neverSeenJa ? _react2.default.createElement('td', { className: 'time-ago', 'data-time-ago-ms': isNaN(lastJaInt) ? -1 : lastJaInt }) : null
           ), _react2.default.createElement(
             'tr',
@@ -530,5 +563,5 @@ var wrapPage = function wrapPage(str, _ref3) {
       hash = _ref3.hash,
       homepage = _ref3.homepage,
       generationTime = _ref3.generationTime;
-  return '<!doctype html>\n<html lang="en">\n<!--\n\nPok\xE9Seen v' + version + ' (r' + commits + ', [' + hash + ']) <' + homepage + '>\nGenerated on ' + generationTime + '.\n\n-->\n<head>\n  <meta charset="utf-8" />\n  <title>Pok\xE9Seen - Pok\xE9mon appearance statistics</title>\n  <link type="text/css" href="pokesprite.min.css" rel="stylesheet" media="screen" />\n  <link type="text/css" href="overview.min.css" rel="stylesheet" media="screen" />\n  <link type="text/css" href="pokeseen.css" rel="stylesheet" media="screen" />\n\n  <meta property="og:title" content="Pok\xE9Seen" />\n  <meta property="og:url" content="https://msikma.github.io/pokeseen/" />\n  <meta property="og:description" content="Statistics about how often each Pok\xE9mon appears in the TV show and when we last saw them" />\n\n  <script charset="utf-8" src="pokesprite.min.js" ></script>\n  <script charset="utf-8" src="pokeseen.js" ></script>\n</head>\n<body>\n' + str + '\n</body>\n</html>';
+  return '<!doctype html>\n<html lang="en">\n<!--\n\nPok\xE9Seen v' + version + ' (r' + commits + ', [' + hash + ']) <' + homepage + '>\nGenerated on ' + generationTime + '.\n\n-->\n<head>\n  <meta charset="utf-8" />\n  <title>Pok\xE9mon appearance statistics</title>\n  <meta name="viewport" content="width=586,initial-scale=1" />\n  <link type="text/css" href="pokesprite.min.css" rel="stylesheet" media="screen" />\n  <link type="text/css" href="overview.min.css" rel="stylesheet" media="screen" />\n  <link type="text/css" href="pokeseen.css" rel="stylesheet" media="screen" />\n\n  <meta property="og:title" content="Pok\xE9mon appearance statistics" />\n  <meta property="og:url" content="https://msikma.github.io/pokeseen/" />\n  <meta property="og:description" content="Statistics about how often each Pok\xE9mon appears in the TV show and when we last saw them" />\n\n  <script charset="utf-8" src="pokesprite.min.js" ></script>\n  <script charset="utf-8" src="pokeseen.js" ></script>\n</head>\n<body>\n' + str + '\n</body>\n</html>';
 };
