@@ -83,18 +83,18 @@ const SeenPage = ({ lastSeenRankingByID, appearancesRanking, airedEpisodesList, 
       </div>
       <div className="docs-container">
         <p>
-          「登場数」はポケモンがアニメに何度登場したか示してあります。また、「最後の登場」はポケモンが最後に登場したエピソードの日程を示してあります。
-          テーブルの行をクリックするとそのポケモンが登場したエピソードのリストを見ることができます。
-          このランキングは現在{ airedEpisodesList.length }エピソードのデータを基にしてます
-        </p>
-        <p>質問やコメントがあれば、ツイッターで連絡してください：<a href="https://twitter.com/dada78641">@dada78641</a>.</p>
-        <p>
           <em>Appearances</em> lists the number of episodes the Pokémon has appeared in.
           Its <em>last appearance</em> is based on the Japanese episode schedule.
           Click on a Pokémon's table row to see the list of episodes it has appeared in.
           The ranking uses statistics from the currently released { airedEpisodesList.length } episodes.
         </p>
-        <p>For questions or comments you can contact me on Twitter: <a href="https://twitter.com/dada78641">@dada78641</a>.</p>
+        <p className="bottom-line">For questions or comments you can <a href="https://twitter.com/dada78641" title="@dada78641">contact me on Twitter.</a></p>
+        <p>
+          「登場数」はポケモンがアニメに何度登場したか示してあります。また、「最後の登場」はポケモンが最後に登場したエピソードの日程を示してあります。
+          テーブルの行をクリックするとそのポケモンが登場したエピソードのリストを見ることができます。
+          このランキングは現在{ airedEpisodesList.length }エピソードのデータを基にしてます
+        </p>
+        <p className="bottom-line">質問やコメントがあれば、<a href="https://twitter.com/dada78641" title="@dada78641">ツイッターで連絡してください。</a></p>
         <p id="generation_time">Generated <span className="time-abs-prefix">on</span><span className="time" data-time={ +new Date(generationTime) } title={ generationTime }>{ generationTime }</span>.</p>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.humanizeGenerationTime()` }}></script>
       </div>
