@@ -72,7 +72,7 @@ var cacheSeenData = exports.cacheSeenData = function cacheSeenData() {
 
             case 9:
               if (_iteratorNormalCompletion = (_step = _iterator.next()).done) {
-                _context.next = 40;
+                _context.next = 43;
                 break;
               }
 
@@ -82,13 +82,13 @@ var cacheSeenData = exports.cacheSeenData = function cacheSeenData() {
 
               // If cached data exists and has aired (thus is finalized), use that.
 
-              if (!(episodeData && episodeData.hasAired)) {
+              if (!(episodeData && episodeData.hasAired && episodeData.broadcastDates.ja)) {
                 _context.next = 15;
                 break;
               }
 
               seenList.push(episodeData);
-              return _context.abrupt('continue', 37);
+              return _context.abrupt('continue', 40);
 
             case 15:
               _context.prev = 15;
@@ -96,8 +96,8 @@ var cacheSeenData = exports.cacheSeenData = function cacheSeenData() {
               return (0, _request.wait)(1000);
 
             case 18:
-              if (!episodeData.hasAired) {
-                console.log('Episode ' + episode + ' hasn\'t aired yet. Checking if it has since last time.');
+              if (episodeData && (!episodeData.hasAired || !episodeData.broadcastDates.ja)) {
+                console.log('Episode ' + episode + ' hasn\'t aired yet or has no broadcast date. Checking to see if we can update.');
               }
               _context.next = 21;
               return (0, _scrape.getPokemonFromEpisode)(episode);
@@ -107,18 +107,18 @@ var cacheSeenData = exports.cacheSeenData = function cacheSeenData() {
 
               seenList.push(data);
               gotNewData = true;
-              console.log('Retrieved information from episode ' + episode);
+              console.log('Retrieved information from episode ' + episode + '.');
 
               if (!(data.hasAired === false)) {
                 _context.next = 28;
                 break;
               }
 
-              console.log('Stopping: episode ' + episode + ' has not been aired yet');
-              return _context.abrupt('break', 40);
+              console.log('Stopping: episode ' + episode + ' has not been aired yet.');
+              return _context.abrupt('break', 43);
 
             case 28:
-              _context.next = 37;
+              _context.next = 40;
               break;
 
             case 30:
@@ -130,68 +130,77 @@ var cacheSeenData = exports.cacheSeenData = function cacheSeenData() {
                 break;
               }
 
-              console.log('Stopping: episode ' + episode + ' is 404');
-              return _context.abrupt('break', 40);
+              console.log('Stopping: episode ' + episode + ' is 404.');
+              return _context.abrupt('break', 43);
 
             case 35:
-              console.log('Error: received unexpected status code ' + _context.t0.statusCode + ' (URL: ' + _context.t0.options.url + ')');
-              return _context.abrupt('break', 40);
+              if (!_context.t0.statusCode) {
+                _context.next = 38;
+                break;
+              }
 
-            case 37:
+              console.log('Error: received unexpected status code ' + _context.t0.statusCode + (_context.t0.options ? ' (URL: ' + _context.t0.options.url + ')' : '') + '.');
+              return _context.abrupt('break', 43);
+
+            case 38:
+              console.log(_context.t0.stack);
+              return _context.abrupt('break', 43);
+
+            case 40:
               _iteratorNormalCompletion = true;
               _context.next = 9;
               break;
 
-            case 40:
-              _context.next = 46;
+            case 43:
+              _context.next = 49;
               break;
 
-            case 42:
-              _context.prev = 42;
+            case 45:
+              _context.prev = 45;
               _context.t1 = _context['catch'](7);
               _didIteratorError = true;
               _iteratorError = _context.t1;
 
-            case 46:
-              _context.prev = 46;
-              _context.prev = 47;
+            case 49:
+              _context.prev = 49;
+              _context.prev = 50;
 
               if (!_iteratorNormalCompletion && _iterator.return) {
                 _iterator.return();
               }
 
-            case 49:
-              _context.prev = 49;
+            case 52:
+              _context.prev = 52;
 
               if (!_didIteratorError) {
-                _context.next = 52;
+                _context.next = 55;
                 break;
               }
 
               throw _iteratorError;
 
-            case 52:
+            case 55:
+              return _context.finish(52);
+
+            case 56:
               return _context.finish(49);
 
-            case 53:
-              return _context.finish(46);
-
-            case 54:
+            case 57:
               newSeenData = seenList.reduce(function (episodes, ep) {
                 return (0, _extends4.default)({}, episodes, (0, _defineProperty3.default)({}, ep.episode, ep));
               }, {});
-              _context.next = 57;
+              _context.next = 60;
               return (0, _data.saveSeenData)(newSeenData, gotNewData);
 
-            case 57:
+            case 60:
               return _context.abrupt('return', resolve(newSeenData));
 
-            case 58:
+            case 61:
             case 'end':
               return _context.stop();
           }
         }
-      }, _callee, undefined, [[7, 42, 46, 54], [15, 30], [47,, 49, 53]]);
+      }, _callee, undefined, [[7, 45, 49, 57], [15, 30], [50,, 52, 56]]);
     }));
 
     return function (_x, _x2) {
@@ -246,7 +255,7 @@ var checkData = exports.checkData = function () {
  */
 var generatePage = exports.generatePage = function () {
   var _ref3 = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee3() {
-    var seenData, _sortPokemonByAppeara, appearancesRanking, lastSeenRanking, airedEpisodesList;
+    var seenData, _sortPokemonByAppeara, appearancesRanking, appearanceDataSpecials, lastSeenRanking, airedEpisodesList, specialEpisodesList;
 
     return _regenerator2.default.wrap(function _callee3$(_context3) {
       while (1) {
@@ -257,9 +266,9 @@ var generatePage = exports.generatePage = function () {
 
           case 2:
             seenData = _context3.sent;
-            _sortPokemonByAppeara = (0, _process.sortPokemonByAppearances)(seenData), appearancesRanking = _sortPokemonByAppeara.appearancesRanking, lastSeenRanking = _sortPokemonByAppeara.lastSeenRanking, airedEpisodesList = _sortPokemonByAppeara.airedEpisodesList;
+            _sortPokemonByAppeara = (0, _process.sortPokemonByAppearances)(seenData), appearancesRanking = _sortPokemonByAppeara.appearancesRanking, appearanceDataSpecials = _sortPokemonByAppeara.appearanceDataSpecials, lastSeenRanking = _sortPokemonByAppeara.lastSeenRanking, airedEpisodesList = _sortPokemonByAppeara.airedEpisodesList, specialEpisodesList = _sortPokemonByAppeara.specialEpisodesList;
             _context3.next = 6;
-            return (0, _template.createSeenPage)(appearancesRanking, lastSeenRanking, airedEpisodesList);
+            return (0, _template.createSeenPage)(appearancesRanking, appearanceDataSpecials, lastSeenRanking, airedEpisodesList, specialEpisodesList);
 
           case 6:
             process.exit(0);

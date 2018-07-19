@@ -33,6 +33,8 @@ var _moment = require('moment');
 
 var _moment2 = _interopRequireDefault(_moment);
 
+var _lodash = require('lodash');
+
 var _data = require('./data');
 
 var _request = require('./util/request');
@@ -40,17 +42,17 @@ var _request = require('./util/request');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // Hide deprecation warning.
-/**
- * pokeseen - <https://github.com/msikma/pokeseen>
- * Copyright © 2018, Michiel Sikma
- */
-
 _moment2.default.suppressDeprecationWarnings = true;
 
 /**
  * Fetches an episode's Bulbapedia page and examines the content to find
  * which Pokémon appear in it.
  */
+/**
+ * pokeseen - <https://github.com/msikma/pokeseen>
+ * Copyright © 2018, Michiel Sikma
+ */
+
 var getPokemonFromEpisode = exports.getPokemonFromEpisode = function () {
   var _ref = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee(episode) {
     var url, html;
@@ -119,8 +121,7 @@ var getEpisodeMetaData = function getEpisodeMetaData(html) {
 
         var time = void 0;
         var $td = $('td', n);
-        if (hasExplainSpan) {
-          time = 'asdf';
+        if (hasExplainSpan.length) {
           $td.find('span').replaceWith('\n');
           $td.find('br').replaceWith('\n');
           var dates = $td.text().trim().split('\n').filter(function (s) {
@@ -134,7 +135,7 @@ var getEpisodeMetaData = function getEpisodeMetaData(html) {
         var today = (0, _moment2.default)().format('YYYY-MM-DD');
         var isValidDate = timeFormatted !== 'Invalid date';
         var isAired = time !== 'Unaired';
-        var useTime = time && isValidDate && isAired && today > timeFormatted;
+        var useTime = Boolean(time && isValidDate && isAired && today >= timeFormatted);
         return (0, _extends4.default)({}, bcd, (0, _defineProperty3.default)({}, country, useTime ? timeFormatted : null));
       }, {});
       return (0, _extends4.default)({}, acc, { data: data });
@@ -168,6 +169,13 @@ var getSeenForEpisode = function getSeenForEpisode(html) {
   var $items = $('> *', $content);
   var allElements = getContentElements($, $items);
 
+  // SS019, SS020 and SS021 have a slightly different structure for the Pokémon data.
+  // These are all Pokémon Mystery Dungeon episodes. Check for the tag.
+  var cats = $('#mw-normal-catlinks a').get().map(function (a) {
+    return $(a).text().trim();
+  });
+  var isMysteryDungeonEpisode = cats.indexOf('Pokémon Mystery Dungeon') > -1;
+
   // Now collect the <h3>Pokémon</h3> and all <ul> tags until the next header tag.
   // There's probably a nicer way to do this, but it works.
   var pokemonData = allElements.reduce(function (acc, item) {
@@ -186,8 +194,32 @@ var getSeenForEpisode = function getSeenForEpisode(html) {
     return acc;
   }, { state: 0 });
 
+  // List of Pokémon we will filter for Pokémon appearances.
+  var pokemonAppearances = (0, _lodash.get)(pokemonData, 'items', []);
+
+  // If this is a Mystery Dungeon episode, collect its Pokémon information.
+  if (isMysteryDungeonEpisode) {
+    var pokemonMysteryDungeonData = allElements.reduce(function (acc, item) {
+      // State 0: searching for the right <h3>.
+      if (acc.state === 0 && item[0] === 'h2' && item[1].toLowerCase() === 'characters') {
+        return { state: 1, items: [] };
+      }
+      // State 1: collecting <ul> tags.
+      else if (acc.state === 1 && item[0] === 'ul') {
+          return { state: 2, items: [].concat((0, _toConsumableArray3.default)(acc.items), [item[1]]) };
+        }
+        // State 2: waiting for the next header tag to finish.
+        else if (acc.state === 2 && item[0].startsWith('h')) {
+            return { state: 3, items: acc.items };
+          }
+      return acc;
+    }, { state: 0 });
+
+    pokemonAppearances = [].concat((0, _toConsumableArray3.default)(pokemonAppearances), (0, _toConsumableArray3.default)((0, _lodash.get)(pokemonMysteryDungeonData, 'items', [])));
+  }
+
   // Extract Pokémon names from all text nodes we saved.
-  var pokemonSeenData = getSeenForText(pokemonData.items.join('\n'));
+  var pokemonSeenData = getSeenForText(pokemonAppearances.join('\n'));
   return pokemonSeenData;
 };
 

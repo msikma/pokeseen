@@ -64,7 +64,8 @@ exports.pkgData = _package2.default;
 
 // Used to determine the exact episode names, which change prefix per season.
 
-var seasons = [[274, 'EP'], // Original series and Johto
+var seasons = [[37, 'SS'], // Special episodes
+[274, 'EP'], // Original series and Johto
 [192, 'AG'], // Advanced Generation
 [191, 'DP'], // Diamond and Pearl
 [142, 'BW'], // Best Wishes

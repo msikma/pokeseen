@@ -24,49 +24,79 @@ var _data = require('./data');
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
- * Returns an object containing every Pokémon and how often it appeared in the show,
- * when its last appearance was an how many days it has been since it was seen.
+ * Pushes data about the Pokémon from an episode to the appearance object.
  */
 /**
  * pokeseen - <https://github.com/msikma/pokeseen>
  * Copyright © 2018, Michiel Sikma
  */
 
+var pushSeenToData = function pushSeenToData(targetData, ep, epNr) {
+  var special = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+  if (special) {
+    ep.seen.forEach(function (pkmn) {
+      return targetData[pkmn[0]].amountIncSpecials += 1;
+    });
+    return;
+  }
+  ep.seen.forEach(function (pkmn) {
+    return targetData[pkmn[0]].episodes.push(epNr);
+  });
+  ep.seen.forEach(function (pkmn) {
+    return targetData[pkmn[0]].amount += 1;
+  });
+  ep.seen.forEach(function (pkmn) {
+    return targetData[pkmn[0]].amountIncSpecials += 1;
+  });
+  ep.seen.forEach(function (pkmn) {
+    var curr = targetData[pkmn[0]].lastSeen;
+    targetData[pkmn[0]].lastSeen = {
+      ja: !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja,
+      us: !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us
+    };
+  });
+};
+
+/**
+ * Returns an object containing every Pokémon and how often it appeared in the show,
+ * when its last appearance was an how many days it has been since it was seen.
+ */
 var sortPokemonByAppearances = exports.sortPokemonByAppearances = function sortPokemonByAppearances(seenData) {
   var appearanceData = {};
+  var appearanceDataSpecials = {};
   var airedEpisodesList = [];
+  var specialEpisodesList = [];
 
   // Set all Pokémon's values to zero initially.
   (0, _keys2.default)(_data.pokedex).forEach(function (id) {
-    return appearanceData[id] = { id: id, amount: 0, lastSeen: null, episodes: [] };
+    return appearanceData[id] = { id: id, amount: 0, amountIncSpecials: 0, lastSeen: null, episodes: [] };
+  });
+  (0, _keys2.default)(_data.pokedex).forEach(function (id) {
+    return appearanceDataSpecials[id] = { id: id, amount: 0, amountIncSpecials: 0, lastSeen: null, episodes: [] };
   });
 
   // Add up all appearances and last seen dates in the episodes.
   (0, _keys2.default)(seenData).forEach(function (epNr) {
     var ep = seenData[epNr];
     if (!ep.hasAired) return;
-    airedEpisodesList.push(epNr);
-    ep.seen.forEach(function (pkmn) {
-      return appearanceData[pkmn[0]].episodes.push(epNr);
-    });
-    ep.seen.forEach(function (pkmn) {
-      return appearanceData[pkmn[0]].amount += 1;
-    });
-    ep.seen.forEach(function (pkmn) {
-      var curr = appearanceData[pkmn[0]].lastSeen;
-      appearanceData[pkmn[0]].lastSeen = {
-        ja: !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja,
-        us: !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us
-      };
-    });
+    var series = ep.episode.slice(0, 2).toLowerCase();
+    if (series === 'ss') {
+      specialEpisodesList.push(epNr);
+      pushSeenToData(appearanceDataSpecials, ep, epNr);
+      pushSeenToData(appearanceData, ep, epNr, true);
+    } else {
+      airedEpisodesList.push(epNr);
+      pushSeenToData(appearanceData, ep, epNr);
+    }
   });
 
   // Make two rankings: one based primarily on appearances, and one on last seen date.
-  var appearancesRanking = (0, _values2.default)(appearanceData).sort(compareProps('amount', 'lastSeen.ja', 'id')).reverse();
+  var appearancesRanking = (0, _values2.default)(appearanceData).sort(compareProps('amountIncSpecials', 'lastSeen.ja', 'id')).reverse();
 
   var lastSeenRanking = (0, _values2.default)(appearanceData).sort(compareProps('lastSeen.ja', 'amount', 'id')).reverse();
 
-  return { appearancesRanking: appearancesRanking, lastSeenRanking: lastSeenRanking, airedEpisodesList: airedEpisodesList };
+  return { appearancesRanking: appearancesRanking, appearanceDataSpecials: appearanceDataSpecials, lastSeenRanking: lastSeenRanking, airedEpisodesList: airedEpisodesList, specialEpisodesList: specialEpisodesList };
 };
 
 /**
