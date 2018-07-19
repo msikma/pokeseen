@@ -33,7 +33,7 @@ export const cacheSeenData = () => new Promise(async (resolve, reject) => {
     // If not, or if the episode was unaired, fetch its data.
     try {
       await wait(1000)
-      if (!episodeData.hasAired) {
+      if (episodeData && !episodeData.hasAired) {
         console.log(`Episode ${episode} hasn't aired yet. Checking if it has since last time.`)
       }
       const data = await getPokemonFromEpisode(episode)
@@ -50,7 +50,11 @@ export const cacheSeenData = () => new Promise(async (resolve, reject) => {
         console.log(`Stopping: episode ${episode} is 404`)
         break
       }
-      console.log(`Error: received unexpected status code ${err.statusCode} (URL: ${err.options.url})`)
+      if (err.statusCode) {
+        console.log(`Error: received unexpected status code ${err.statusCode}${err.options ? ` (URL: ${err.options.url})` : ''}`)
+        break
+      }
+      console.log(err.stack)
       break
     }
   }

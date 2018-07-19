@@ -5,6 +5,7 @@
 
 import cheerio from 'cheerio'
 import moment from 'moment'
+import { get } from 'lodash'
 
 import { engToID, engList, epURL } from './data'
 import { requestURL } from './util/request'
@@ -111,6 +112,11 @@ const getSeenForEpisode = (html) => {
   const $items = $('> *', $content)
   const allElements = getContentElements($, $items)
 
+  // SS019, SS020 and SS021 have a slightly different structure for the Pokémon data.
+  // These are all Pokémon Mystery Dungeon episodes. Check for the tag.
+  const cats = $('#mw-normal-catlinks a').get().map(a => $(a).text().trim())
+  const isMysteryDungeonEpisode = cats.indexOf('Pokémon Mystery Dungeon') > -1
+
   // Now collect the <h3>Pokémon</h3> and all <ul> tags until the next header tag.
   // There's probably a nicer way to do this, but it works.
   const pokemonData = allElements.reduce((acc, item) => {
@@ -129,8 +135,32 @@ const getSeenForEpisode = (html) => {
     return acc
   }, { state: 0 })
 
+  // List of Pokémon we will filter for Pokémon appearances.
+  let pokemonAppearances = get(pokemonData, 'items', [])
+
+  // If this is a Mystery Dungeon episode, collect its Pokémon information.
+  if (isMysteryDungeonEpisode) {
+    const pokemonMysteryDungeonData = allElements.reduce((acc, item) => {
+      // State 0: searching for the right <h3>.
+      if (acc.state === 0 && item[0] === 'h2' && item[1].toLowerCase() === 'characters') {
+        return { state: 1, items: [] }
+      }
+      // State 1: collecting <ul> tags.
+      else if (acc.state === 1 && item[0] === 'ul') {
+        return { state: 2, items: [ ...acc.items, item[1]] }
+      }
+      // State 2: waiting for the next header tag to finish.
+      else if (acc.state === 2 && item[0].startsWith('h')) {
+        return { state: 3, items: acc.items }
+      }
+      return acc
+    }, { state: 0 })
+
+    pokemonAppearances = [...pokemonAppearances, ...get(pokemonMysteryDungeonData, 'items', [])]
+  }
+
   // Extract Pokémon names from all text nodes we saved.
-  const pokemonSeenData = getSeenForText(pokemonData.items.join('\n'))
+  const pokemonSeenData = getSeenForText(pokemonAppearances.join('\n'))
   return pokemonSeenData
 }
 
