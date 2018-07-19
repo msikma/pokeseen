@@ -1,4 +1,2647 @@
 {
+  "SS001": {
+    "episode": "SS001",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS001",
+    "broadcastDates": {
+      "ja": "2002-12-03",
+      "us": "2006-06-24"
+    },
+    "episodeName": {
+      "jpn": "タケシ！ニビジムをすくえ！",
+      "eng": "Takeshi!  Save Nibi Gym!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "134",
+        "Vaporeon"
+      ],
+      [
+        "169",
+        "Crobat"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "205",
+        "Forretress"
+      ],
+      [
+        "226",
+        "Mantine"
+      ],
+      [
+        "009",
+        "Blastoise"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "073",
+        "Tentacruel"
+      ],
+      [
+        "074",
+        "Geodude"
+      ],
+      [
+        "076",
+        "Golem"
+      ],
+      [
+        "079",
+        "Slowpoke"
+      ],
+      [
+        "095",
+        "Onix"
+      ]
+    ]
+  },
+  "SS002": {
+    "episode": "SS002",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS002",
+    "broadcastDates": {
+      "ja": "2002-12-10",
+      "us": "2006-06-24"
+    },
+    "episodeName": {
+      "jpn": "ハナダジムのリベンジマッチ",
+      "eng": "Revenge Match at Hanada Gym"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "107",
+        "Hitmonchan"
+      ],
+      [
+        "116",
+        "Horsea"
+      ],
+      [
+        "118",
+        "Goldeen"
+      ],
+      [
+        "119",
+        "Seaking"
+      ],
+      [
+        "120",
+        "Staryu"
+      ],
+      [
+        "121",
+        "Starmie"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "175",
+        "Togepi"
+      ],
+      [
+        "186",
+        "Politoed"
+      ],
+      [
+        "222",
+        "Corsola"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "073",
+        "Tentacruel"
+      ],
+      [
+        "087",
+        "Dewgong"
+      ],
+      [
+        "090",
+        "Shellder"
+      ]
+    ]
+  },
+  "SS003": {
+    "episode": "SS003",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS003",
+    "broadcastDates": {
+      "ja": "2002-12-17",
+      "us": "2006-07-01"
+    },
+    "episodeName": {
+      "jpn": "がんばれ！前向きロケット団",
+      "eng": "Persevere! Look Forward, Rocket-dan"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "110",
+        "Weezing"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "276",
+        "Taillow"
+      ],
+      [
+        "024",
+        "Arbok"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "067",
+        "Machoke"
+      ]
+    ]
+  },
+  "SS004": {
+    "episode": "SS004",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS004",
+    "broadcastDates": {
+      "ja": "2003-01-14",
+      "us": "2006-07-08"
+    },
+    "episodeName": {
+      "jpn": "オーキド邸だいけっせん！！",
+      "eng": "Huge Battle at Okido Residence!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "122",
+        "Mr. Mime"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "128",
+        "Tauros"
+      ],
+      [
+        "129",
+        "Magikarp"
+      ],
+      [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "153",
+        "Bayleef"
+      ],
+      [
+        "155",
+        "Cyndaquil"
+      ],
+      [
+        "158",
+        "Totodile"
+      ],
+      [
+        "164",
+        "Noctowl"
+      ],
+      [
+        "167",
+        "Spinarak"
+      ],
+      [
+        "182",
+        "Bellossom"
+      ],
+      [
+        "188",
+        "Skiploom"
+      ],
+      [
+        "189",
+        "Jumpluff"
+      ],
+      [
+        "214",
+        "Heracross"
+      ],
+      [
+        "228",
+        "Houndour"
+      ],
+      [
+        "237",
+        "Hitmontop"
+      ],
+      [
+        "001",
+        "Bulbasaur"
+      ],
+      [
+        "027",
+        "Sandshrew"
+      ],
+      [
+        "029",
+        "Nidoran♀"
+      ],
+      [
+        "031",
+        "Nidoqueen"
+      ],
+      [
+        "032",
+        "Nidoran♂"
+      ],
+      [
+        "034",
+        "Nidoking"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "046",
+        "Paras"
+      ],
+      [
+        "047",
+        "Parasect"
+      ],
+      [
+        "076",
+        "Golem"
+      ],
+      [
+        "089",
+        "Muk"
+      ],
+      [
+        "099",
+        "Kingler"
+      ]
+    ]
+  },
+  "SS005": {
+    "episode": "SS005",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS005",
+    "broadcastDates": {
+      "ja": "2003-02-25",
+      "us": "2006-07-22"
+    },
+    "episodeName": {
+      "jpn": "カスミ！ブルーバッジをゲットせよ!!",
+      "eng": "Kasumi! Get the Blue Badge!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "116",
+        "Horsea"
+      ],
+      [
+        "160",
+        "Feraligatr"
+      ],
+      [
+        "175",
+        "Togepi"
+      ],
+      [
+        "196",
+        "Espeon"
+      ],
+      [
+        "222",
+        "Corsola"
+      ],
+      [
+        "261",
+        "Poochyena"
+      ],
+      [
+        "263",
+        "Zigzagoon"
+      ],
+      [
+        "267",
+        "Beautifly"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "086",
+        "Seel"
+      ]
+    ]
+  },
+  "SS006": {
+    "episode": "SS006",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS006",
+    "broadcastDates": {
+      "ja": "2003-03-04",
+      "us": "2006-10-07"
+    },
+    "episodeName": {
+      "jpn": "出会いのミレニアムタウン",
+      "eng": "The Millennium Town Meetup"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "228",
+        "Houndour"
+      ],
+      [
+        "238",
+        "Smoochum"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "007",
+        "Squirtle"
+      ],
+      [
+        "052",
+        "Meowth"
+      ]
+    ]
+  },
+  "SS007": {
+    "episode": "SS007",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS007",
+    "broadcastDates": {
+      "ja": "2003-03-04",
+      "us": "2006-10-07"
+    },
+    "episodeName": {
+      "jpn": "アルバイトはたいへんニャース！？",
+      "eng": "Nyarth with a Part-Time Job!?"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "228",
+        "Houndour"
+      ],
+      [
+        "238",
+        "Smoochum"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
+        "007",
+        "Squirtle"
+      ],
+      [
+        "052",
+        "Meowth"
+      ]
+    ]
+  },
+  "SS008": {
+    "episode": "SS008",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS008",
+    "broadcastDates": {
+      "ja": "2003-04-08",
+      "us": "2006-07-29"
+    },
+    "episodeName": {
+      "jpn": "ポケモン捜査網！オーキド博士をさがせ！！",
+      "eng": "A Pokémon Dragnet! Search for Dr. Okido!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "262",
+        "Mightyena"
+      ],
+      [
+        "276",
+        "Taillow"
+      ],
+      [
+        "302",
+        "Sableye"
+      ],
+      [
+        "005",
+        "Charmeleon"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ]
+    ]
+  },
+  "SS009": {
+    "episode": "SS009",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS009",
+    "broadcastDates": {
+      "ja": "2003-06-17",
+      "us": "2006-10-21"
+    },
+    "episodeName": {
+      "jpn": "迷探偵ニャース参上！",
+      "eng": "Calling on Mysterious Detective Nyarth!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "235",
+        "Smeargle"
+      ],
+      [
+        "238",
+        "Smoochum"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
+        "298",
+        "Azurill"
+      ],
+      [
+        "352",
+        "Kecleon"
+      ],
+      [
+        "052",
+        "Meowth"
+      ]
+    ]
+  },
+  "SS010": {
+    "episode": "SS010",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS010",
+    "broadcastDates": {
+      "ja": "2003-06-17",
+      "us": "2006-10-21"
+    },
+    "episodeName": {
+      "jpn": "メイッコルリリは大迷惑？",
+      "eng": "Ruriri the Niece is a Great Nuisance?"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "160",
+        "Feraligatr"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "238",
+        "Smoochum"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
+        "298",
+        "Azurill"
+      ],
+      [
+        "300",
+        "Skitty"
+      ],
+      [
+        "052",
+        "Meowth"
+      ]
+    ]
+  },
+  "SS011": {
+    "episode": "SS011",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS011",
+    "broadcastDates": {
+      "ja": "2003-09-02",
+      "us": "2006-08-05"
+    },
+    "episodeName": {
+      "jpn": "カスミ真剣勝負！命かけます！？",
+      "eng": "Kasumi's Earnest Struggle! Life or Death!?"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "116",
+        "Horsea"
+      ],
+      [
+        "121",
+        "Starmie"
+      ],
+      [
+        "154",
+        "Meganium"
+      ],
+      [
+        "175",
+        "Togepi"
+      ],
+      [
+        "222",
+        "Corsola"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "262",
+        "Mightyena"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "279",
+        "Pelipper"
+      ],
+      [
+        "301",
+        "Delcatty"
+      ],
+      [
+        "302",
+        "Sableye"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ]
+    ]
+  },
+  "SS012": {
+    "episode": "SS012",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS012",
+    "broadcastDates": {
+      "ja": "2003-09-30",
+      "us": "2006-08-19"
+    },
+    "episodeName": {
+      "jpn": "ロケット団　愛と青春の原点",
+      "eng": "Rocket-dan: The Origin of Love and Youth"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "144",
+        "Articuno"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "020",
+        "Raticate"
+      ],
+      [
+        "048",
+        "Venonat"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "053",
+        "Persian"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "059",
+        "Arcanine"
+      ],
+      [
+        "074",
+        "Geodude"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ],
+      [
+        "092",
+        "Gastly"
+      ],
+      [
+        "094",
+        "Gengar"
+      ]
+    ]
+  },
+  "SS013": {
+    "episode": "SS013",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS013",
+    "broadcastDates": {
+      "ja": "2003-10-07",
+      "us": "2006-08-12"
+    },
+    "episodeName": {
+      "jpn": "もうひとつのセレビィ伝説",
+      "eng": "Yet Another Legend of Celebi"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "112",
+        "Rhydon"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "127",
+        "Pinsir"
+      ],
+      [
+        "128",
+        "Tauros"
+      ],
+      [
+        "251",
+        "Celebi"
+      ],
+      [
+        "276",
+        "Taillow"
+      ],
+      [
+        "005",
+        "Charmeleon"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "067",
+        "Machoke"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "077",
+        "Ponyta"
+      ]
+    ]
+  },
+  "SS014": {
+    "episode": "SS014",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS014",
+    "broadcastDates": {
+      "ja": "2003-10-14",
+      "us": "2006-08-26"
+    },
+    "episodeName": {
+      "jpn": "マサラタウン、ポケモントレーナーの旅立ち",
+      "eng": "Masara Town, Pokémon Trainer's Journey Begins"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "122",
+        "Mr. Mime"
+      ],
+      [
+        "128",
+        "Tauros"
+      ],
+      [
+        "129",
+        "Magikarp"
+      ],
+      [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "153",
+        "Bayleef"
+      ],
+      [
+        "155",
+        "Cyndaquil"
+      ],
+      [
+        "158",
+        "Totodile"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "188",
+        "Skiploom"
+      ],
+      [
+        "189",
+        "Jumpluff"
+      ],
+      [
+        "214",
+        "Heracross"
+      ],
+      [
+        "231",
+        "Phanpy"
+      ],
+      [
+        "001",
+        "Bulbasaur"
+      ],
+      [
+        "004",
+        "Charmander"
+      ],
+      [
+        "007",
+        "Squirtle"
+      ],
+      [
+        "057",
+        "Primeape"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "062",
+        "Poliwrath"
+      ],
+      [
+        "089",
+        "Muk"
+      ],
+      [
+        "099",
+        "Kingler"
+      ]
+    ]
+  },
+  "SS015": {
+    "episode": "SS015",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS015",
+    "broadcastDates": {
+      "ja": "2004-03-16",
+      "us": "2006-09-02"
+    },
+    "episodeName": {
+      "jpn": "ポケモン研究者シゲルと復活のプテラ",
+      "eng": "Pokémon Researcher Shigeru and Revival of Ptera"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "119",
+        "Seaking"
+      ],
+      [
+        "131",
+        "Lapras"
+      ],
+      [
+        "142",
+        "Aerodactyl"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "228",
+        "Houndour"
+      ],
+      [
+        "237",
+        "Hitmontop"
+      ],
+      [
+        "002",
+        "Ivysaur"
+      ],
+      [
+        "083",
+        "Farfetch'd"
+      ],
+      [
+        "085",
+        "Dodrio"
+      ]
+    ]
+  },
+  "SS016": {
+    "episode": "SS016",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS016",
+    "broadcastDates": {
+      "ja": "2004-09-14",
+      "us": "2006-09-23"
+    },
+    "episodeName": {
+      "jpn": "カスミとラブカス！ラブバトル",
+      "eng": "Kasumi and Lovecus! Love Battle!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "262",
+        "Mightyena"
+      ],
+      [
+        "302",
+        "Sableye"
+      ],
+      [
+        "370",
+        "Luvdisc"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ]
+    ]
+  },
+  "SS017": {
+    "episode": "SS017",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS017",
+    "broadcastDates": {
+      "ja": "2004-09-21",
+      "us": "2006-09-23"
+    },
+    "episodeName": {
+      "jpn": "ナナコとリザードン！炎の猛特訓！",
+      "eng": "Nanako and Lizardon! Super Hard Training of Flame!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "154",
+        "Meganium"
+      ],
+      [
+        "181",
+        "Ampharos"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "015",
+        "Beedrill"
+      ]
+    ]
+  },
+  "SS018": {
+    "episode": "SS018",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS018",
+    "broadcastDates": {
+      "ja": "2004-09-28",
+      "us": "2006-09-30"
+    },
+    "episodeName": {
+      "jpn": "天駆ける伝説　ヒロシとファイヤー！",
+      "eng": "The Heavenly Legend, Hiroshi and Fire!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "146",
+        "Moltres"
+      ],
+      [
+        "152",
+        "Chikorita"
+      ],
+      [
+        "373",
+        "Salamence"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "073",
+        "Tentacruel"
+      ],
+      [
+        "091",
+        "Cloyster"
+      ]
+    ]
+  },
+  "SS019": {
+    "episode": "SS019",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS019",
+    "broadcastDates": {
+      "ja": "2007-03-23",
+      "us": "2006-09-08"
+    },
+    "episodeName": {
+      "jpn": "ポケモン不思議のダンジョン　出動ポケモン救助隊ガンバルズ！",
+      "eng": "Pokémon Mystery Dungeon: Setting Out: Pokémon Rescue Team Ganbarus!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "115",
+        "Kangaskhan"
+      ],
+      [
+        "152",
+        "Chikorita"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "209",
+        "Snubbull"
+      ],
+      [
+        "227",
+        "Skarmory"
+      ],
+      [
+        "248",
+        "Tyranitar"
+      ],
+      [
+        "271",
+        "Lombre"
+      ],
+      [
+        "279",
+        "Pelipper"
+      ],
+      [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "308",
+        "Medicham"
+      ],
+      [
+        "311",
+        "Plusle"
+      ],
+      [
+        "312",
+        "Minun"
+      ],
+      [
+        "340",
+        "Whiscash"
+      ],
+      [
+        "352",
+        "Kecleon"
+      ],
+      [
+        "004",
+        "Charmander"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "007",
+        "Squirtle"
+      ],
+      [
+        "023",
+        "Ekans"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "042",
+        "Golbat"
+      ],
+      [
+        "065",
+        "Alakazam"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
+        "094",
+        "Gengar"
+      ]
+    ]
+  },
+  "SS020": {
+    "episode": "SS020",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS020",
+    "broadcastDates": {
+      "ja": "2007-09-09",
+      "us": "2008-09-01"
+    },
+    "episodeName": {
+      "jpn": "ポケモン不思議のダンジョン　時の探検隊・闇の探検隊",
+      "eng": "Pokémon Mystery Dungeon Time Expedition & Darkness Expedition"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "131",
+        "Lapras"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
+        "253",
+        "Grovyle"
+      ],
+      [
+        "279",
+        "Pelipper"
+      ],
+      [
+        "294",
+        "Loudred"
+      ],
+      [
+        "319",
+        "Sharpedo"
+      ],
+      [
+        "335",
+        "Zangoose"
+      ],
+      [
+        "341",
+        "Corphish"
+      ],
+      [
+        "352",
+        "Kecleon"
+      ],
+      [
+        "355",
+        "Duskull"
+      ],
+      [
+        "358",
+        "Chimecho"
+      ],
+      [
+        "390",
+        "Chimchar"
+      ],
+      [
+        "393",
+        "Piplup"
+      ],
+      [
+        "399",
+        "Bidoof"
+      ],
+      [
+        "403",
+        "Shinx"
+      ],
+      [
+        "441",
+        "Chatot"
+      ],
+      [
+        "444",
+        "Gabite"
+      ],
+      [
+        "453",
+        "Croagunk"
+      ],
+      [
+        "461",
+        "Weavile"
+      ],
+      [
+        "028",
+        "Sandslash"
+      ],
+      [
+        "040",
+        "Wigglytuff"
+      ],
+      [
+        "042",
+        "Golbat"
+      ],
+      [
+        "050",
+        "Diglett"
+      ],
+      [
+        "051",
+        "Dugtrio"
+      ],
+      [
+        "096",
+        "Drowzee"
+      ],
+      [
+        "098",
+        "Krabby"
+      ]
+    ]
+  },
+  "SS021": {
+    "episode": "SS021",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS021",
+    "broadcastDates": {
+      "ja": "2009-04-12",
+      "us": "2009-10-09"
+    },
+    "episodeName": {
+      "jpn": "ポケモン不思議のダンジョン 空の探検隊 時と闇をめぐる 最後の冒険",
+      "eng": "Pokémon Mystery Dungeon: Explorers of the Sky Expedition"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "131",
+        "Lapras"
+      ],
+      [
+        "142",
+        "Aerodactyl"
+      ],
+      [
+        "160",
+        "Feraligatr"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
+        "201",
+        "Unown"
+      ],
+      [
+        "253",
+        "Grovyle"
+      ],
+      [
+        "279",
+        "Pelipper"
+      ],
+      [
+        "294",
+        "Loudred"
+      ],
+      [
+        "302",
+        "Sableye"
+      ],
+      [
+        "319",
+        "Sharpedo"
+      ],
+      [
+        "335",
+        "Zangoose"
+      ],
+      [
+        "341",
+        "Corphish"
+      ],
+      [
+        "358",
+        "Chimecho"
+      ],
+      [
+        "362",
+        "Glalie"
+      ],
+      [
+        "390",
+        "Chimchar"
+      ],
+      [
+        "393",
+        "Piplup"
+      ],
+      [
+        "399",
+        "Bidoof"
+      ],
+      [
+        "441",
+        "Chatot"
+      ],
+      [
+        "444",
+        "Gabite"
+      ],
+      [
+        "453",
+        "Croagunk"
+      ],
+      [
+        "461",
+        "Weavile"
+      ],
+      [
+        "477",
+        "Dusknoir"
+      ],
+      [
+        "480",
+        "Uxie"
+      ],
+      [
+        "481",
+        "Mesprit"
+      ],
+      [
+        "482",
+        "Azelf"
+      ],
+      [
+        "483",
+        "Dialga"
+      ],
+      [
+        "028",
+        "Sandslash"
+      ],
+      [
+        "040",
+        "Wigglytuff"
+      ],
+      [
+        "050",
+        "Diglett"
+      ],
+      [
+        "051",
+        "Dugtrio"
+      ],
+      [
+        "095",
+        "Onix"
+      ],
+      [
+        "096",
+        "Drowzee"
+      ]
+    ]
+  },
+  "SS022": {
+    "episode": "SS022",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS022",
+    "broadcastDates": {
+      "ja": "2010-02-28",
+      "us": "2010-11-10"
+    },
+    "episodeName": {
+      "jpn": "ポケモンレンジャー　光の軌跡＜前編＞",
+      "eng": "Pokémon Ranger: Traces of Light (Part One)"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "111",
+        "Rhyhorn"
+      ],
+      [
+        "128",
+        "Tauros"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "203",
+        "Girafarig"
+      ],
+      [
+        "381",
+        "Latios"
+      ],
+      [
+        "398",
+        "Staraptor"
+      ]
+    ]
+  },
+  "SS023": {
+    "episode": "SS023",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS023",
+    "broadcastDates": {
+      "ja": "2010-03-07",
+      "us": "2010-11-10"
+    },
+    "episodeName": {
+      "jpn": "ポケモンレンジャー　光の軌跡＜後編＞",
+      "eng": "Pokémon Ranger: Traces of Light (Part Two)"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "243",
+        "Raikou"
+      ],
+      [
+        "256",
+        "Combusken"
+      ],
+      [
+        "398",
+        "Staraptor"
+      ],
+      [
+        "408",
+        "Cranidos"
+      ]
+    ]
+  },
+  "SS024": {
+    "episode": "SS024",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS024",
+    "broadcastDates": {
+      "ja": "2011-02-03",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ヒカリ・新たなる旅立ち！",
+      "eng": "Hikari - Setting Off on a New Journey!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "155",
+        "Cyndaquil"
+      ],
+      [
+        "156",
+        "Quilava"
+      ],
+      [
+        "168",
+        "Ariados"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "213",
+        "Shuckle"
+      ],
+      [
+        "387",
+        "Turtwig"
+      ],
+      [
+        "390",
+        "Chimchar"
+      ],
+      [
+        "393",
+        "Piplup"
+      ],
+      [
+        "396",
+        "Starly"
+      ],
+      [
+        "401",
+        "Kricketot"
+      ],
+      [
+        "403",
+        "Shinx"
+      ],
+      [
+        "406",
+        "Budew"
+      ],
+      [
+        "417",
+        "Pachirisu"
+      ],
+      [
+        "420",
+        "Cherubi"
+      ],
+      [
+        "427",
+        "Buneary"
+      ],
+      [
+        "431",
+        "Glameow"
+      ],
+      [
+        "433",
+        "Chingling"
+      ],
+      [
+        "468",
+        "Togekiss"
+      ],
+      [
+        "473",
+        "Mamoswine"
+      ]
+    ]
+  },
+  "SS025": {
+    "episode": "SS025",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS025",
+    "broadcastDates": {
+      "ja": "2011-02-03",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ニビジム・史上最大の危機！",
+      "eng": "Nibi Gym - The Greatest Crisis Ever!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "113",
+        "Chansey"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "185",
+        "Sudowoodo"
+      ],
+      [
+        "208",
+        "Steelix"
+      ],
+      [
+        "380",
+        "Latias"
+      ],
+      [
+        "393",
+        "Piplup"
+      ],
+      [
+        "453",
+        "Croagunk"
+      ],
+      [
+        "464",
+        "Rhyperior"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ]
+    ]
+  },
+  "SS026": {
+    "episode": "SS026",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS026",
+    "broadcastDates": {
+      "ja": "2013-07-11",
+      "us": "2014-01-11"
+    },
+    "episodeName": {
+      "jpn": "ミュウツー ～覚醒への序章～",
+      "eng": "Mewtwo: The Prologue to its Awakening"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "134",
+        "Vaporeon"
+      ],
+      [
+        "150",
+        "Mewtwo"
+      ],
+      [
+        "151",
+        "Mew"
+      ],
+      [
+        "161",
+        "Sentret"
+      ],
+      [
+        "162",
+        "Furret"
+      ],
+      [
+        "163",
+        "Hoothoot"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "196",
+        "Espeon"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "217",
+        "Ursaring"
+      ],
+      [
+        "248",
+        "Tyranitar"
+      ],
+      [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "286",
+        "Breloom"
+      ],
+      [
+        "396",
+        "Starly"
+      ],
+      [
+        "470",
+        "Leafeon"
+      ],
+      [
+        "471",
+        "Glaceon"
+      ],
+      [
+        "508",
+        "Stoutland"
+      ],
+      [
+        "585",
+        "Deerling"
+      ],
+      [
+        "586",
+        "Sawsbuck"
+      ],
+      [
+        "589",
+        "Escavalier"
+      ],
+      [
+        "599",
+        "Klink"
+      ],
+      [
+        "600",
+        "Klang"
+      ],
+      [
+        "601",
+        "Klinklang"
+      ],
+      [
+        "610",
+        "Axew"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "043",
+        "Oddish"
+      ]
+    ]
+  },
+  "SS027": {
+    "episode": "SS027",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS027",
+    "broadcastDates": {
+      "ja": "2013-10-03",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "デントとタケシ！ギャラドスのげきりん！！",
+      "eng": "Dent and Takeshi! Gyarados's Imperial Rage!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "113",
+        "Chansey"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "163",
+        "Hoothoot"
+      ],
+      [
+        "165",
+        "Ledyba"
+      ],
+      [
+        "179",
+        "Mareep"
+      ],
+      [
+        "181",
+        "Ampharos"
+      ],
+      [
+        "186",
+        "Politoed"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "280",
+        "Ralts"
+      ],
+      [
+        "281",
+        "Kirlia"
+      ],
+      [
+        "303",
+        "Mawile"
+      ],
+      [
+        "304",
+        "Aron"
+      ],
+      [
+        "309",
+        "Electrike"
+      ],
+      [
+        "333",
+        "Swablu"
+      ],
+      [
+        "453",
+        "Croagunk"
+      ],
+      [
+        "508",
+        "Stoutland"
+      ],
+      [
+        "511",
+        "Pansage"
+      ],
+      [
+        "558",
+        "Crustle"
+      ],
+      [
+        "572",
+        "Minccino"
+      ],
+      [
+        "618",
+        "Stunfisk"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "040",
+        "Wigglytuff"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ]
+    ]
+  },
+  "SS028": {
+    "episode": "SS028",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS028",
+    "broadcastDates": {
+      "ja": "2014-03-27",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "アイリスVSイブキ！ドラゴンマスターへの道！！",
+      "eng": "Iris VS Ibuki! The Road to Become a Dragon Master!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "149",
+        "Dragonite"
+      ],
+      [
+        "227",
+        "Skarmory"
+      ],
+      [
+        "384",
+        "Rayquaza"
+      ],
+      [
+        "443",
+        "Gible"
+      ],
+      [
+        "610",
+        "Axew"
+      ],
+      [
+        "621",
+        "Druddigon"
+      ],
+      [
+        "017",
+        "Pidgeotto"
+      ],
+      [
+        "018",
+        "Pidgeot"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "029",
+        "Nidoran♀"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "040",
+        "Wigglytuff"
+      ],
+      [
+        "066",
+        "Machop"
+      ],
+      [
+        "077",
+        "Ponyta"
+      ],
+      [
+        "084",
+        "Doduo"
+      ]
+    ]
+  },
+  "SS029": {
+    "episode": "SS029",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS029",
+    "broadcastDates": {
+      "ja": "2014-04-03",
+      "us": "2014-05-31"
+    },
+    "episodeName": {
+      "jpn": "ポケットモンスターXY特別編 最強メガシンカ ～Act I～",
+      "eng": "Pocket Monsters XY Special Episode: The Strongest Mega Evolution ~Act I~"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "235",
+        "Smeargle"
+      ],
+      [
+        "263",
+        "Zigzagoon"
+      ],
+      [
+        "264",
+        "Linoone"
+      ],
+      [
+        "298",
+        "Azurill"
+      ],
+      [
+        "359",
+        "Absol"
+      ],
+      [
+        "415",
+        "Combee"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "448",
+        "Lucario"
+      ],
+      [
+        "475",
+        "Gallade"
+      ],
+      [
+        "650",
+        "Chespin"
+      ],
+      [
+        "664",
+        "Scatterbug"
+      ],
+      [
+        "669",
+        "Flabébé"
+      ],
+      [
+        "694",
+        "Helioptile"
+      ],
+      [
+        "004",
+        "Charmander"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "009",
+        "Blastoise"
+      ],
+      [
+        "040",
+        "Wigglytuff"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ]
+    ]
+  },
+  "SS030": {
+    "episode": "SS030",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS030",
+    "broadcastDates": {
+      "ja": "2014-07-17",
+      "us": "2014-11-06"
+    },
+    "episodeName": {
+      "jpn": "鉱国のプリンセス ディアンシー",
+      "eng": "Diancie, Princess of the Ore Country"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "168",
+        "Ariados"
+      ],
+      [
+        "674",
+        "Pancham"
+      ],
+      [
+        "675",
+        "Pangoro"
+      ],
+      [
+        "679",
+        "Honedge"
+      ],
+      [
+        "703",
+        "Carbink"
+      ],
+      [
+        "716",
+        "Xerneas"
+      ],
+      [
+        "719",
+        "Diancie"
+      ]
+    ]
+  },
+  "SS031": {
+    "episode": "SS031",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS031",
+    "broadcastDates": {
+      "ja": "2014-11-06",
+      "us": "2015-02-07"
+    },
+    "episodeName": {
+      "jpn": "ポケットモンスターXY特別編 最強メガシンカ ～Act II～",
+      "eng": "Pocket Monsters XY Special Episode: The Strongest Mega Evolution ~Act II~"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "304",
+        "Aron"
+      ],
+      [
+        "376",
+        "Metagross"
+      ],
+      [
+        "382",
+        "Kyogre"
+      ],
+      [
+        "383",
+        "Groudon"
+      ],
+      [
+        "384",
+        "Rayquaza"
+      ],
+      [
+        "560",
+        "Scrafty"
+      ],
+      [
+        "650",
+        "Chespin"
+      ],
+      [
+        "668",
+        "Pyroar"
+      ],
+      [
+        "005",
+        "Charmeleon"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "084",
+        "Doduo"
+      ]
+    ]
+  },
+  "SS032": {
+    "episode": "SS032",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS032",
+    "broadcastDates": {
+      "ja": "2015-03-19",
+      "us": "2015-08-15"
+    },
+    "episodeName": {
+      "jpn": "ポケットモンスターXY特別編 最強メガシンカ ～Act III～",
+      "eng": "Pocket Monsters XY Special Episode: The Strongest Mega Evolution ~Act III~"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "248",
+        "Tyranitar"
+      ],
+      [
+        "252",
+        "Treecko"
+      ],
+      [
+        "255",
+        "Torchic"
+      ],
+      [
+        "258",
+        "Mudkip"
+      ],
+      [
+        "296",
+        "Makuhita"
+      ],
+      [
+        "302",
+        "Sableye"
+      ],
+      [
+        "376",
+        "Metagross"
+      ],
+      [
+        "382",
+        "Kyogre"
+      ],
+      [
+        "383",
+        "Groudon"
+      ],
+      [
+        "384",
+        "Rayquaza"
+      ],
+      [
+        "407",
+        "Roserade"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "650",
+        "Chespin"
+      ],
+      [
+        "668",
+        "Pyroar"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "084",
+        "Doduo"
+      ]
+    ]
+  },
+  "SS033": {
+    "episode": "SS033",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS033",
+    "broadcastDates": {
+      "ja": "2015-06-18",
+      "us": "2015-11-21"
+    },
+    "episodeName": {
+      "jpn": "ピカチュウはスター！？ 映画デビュー！！How to ピカチュウ・ザ・ムービー！よーい！アクション！！迅雷のヒーロー！スーパーピカチュウ！！ピカチュウのドキドキNG大賞",
+      "eng": "Pikachu Becomes a Star!? Its Movie Debut!!How to Pikachu The Movie! OK! Action!!The Lightning-fast Hero! Super Pikachu!!Pikachu's Shocking Bloopers"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "110",
+        "Weezing"
+      ],
+      [
+        "324",
+        "Torkoal"
+      ],
+      [
+        "533",
+        "Gurdurr"
+      ],
+      [
+        "654",
+        "Braixen"
+      ],
+      [
+        "684",
+        "Swirlix"
+      ],
+      [
+        "695",
+        "Heliolisk"
+      ],
+      [
+        "701",
+        "Hawlucha"
+      ],
+      [
+        "702",
+        "Dedenne"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ]
+    ]
+  },
+  "SS034": {
+    "episode": "SS034",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS034",
+    "broadcastDates": {
+      "ja": "2015-06-19",
+      "us": "2015-12-03"
+    },
+    "episodeName": {
+      "jpn": "おでまし小魔神フーパ",
+      "eng": "The Mini Djinn Appears: Hoopa"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "231",
+        "Phanpy"
+      ],
+      [
+        "628",
+        "Braviary"
+      ],
+      [
+        "720",
+        "Hoopa"
+      ],
+      [
+        "075",
+        "Graveler"
+      ]
+    ]
+  },
+  "SS035": {
+    "episode": "SS035",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS035",
+    "broadcastDates": {
+      "ja": "2015-10-29",
+      "us": "2015-12-26"
+    },
+    "episodeName": {
+      "jpn": "ポケットモンスターXY特別編 最強メガシンカ ～Act IV～",
+      "eng": "Pocket Monsters XY Special Episode: The Strongest Mega Evolution ~Act IV~"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "127",
+        "Pinsir"
+      ],
+      [
+        "181",
+        "Ampharos"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "212",
+        "Scizor"
+      ],
+      [
+        "214",
+        "Heracross"
+      ],
+      [
+        "229",
+        "Houndoom"
+      ],
+      [
+        "263",
+        "Zigzagoon"
+      ],
+      [
+        "306",
+        "Aggron"
+      ],
+      [
+        "354",
+        "Banette"
+      ],
+      [
+        "650",
+        "Chespin"
+      ],
+      [
+        "718",
+        "Zygarde"
+      ],
+      [
+        "003",
+        "Venusaur"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "040",
+        "Wigglytuff"
+      ],
+      [
+        "065",
+        "Alakazam"
+      ]
+    ]
+  },
+  "SS036": {
+    "episode": "SS036",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS036",
+    "broadcastDates": {
+      "ja": "2016-11-03",
+      "us": "2017-01-28"
+    },
+    "episodeName": {
+      "jpn": "XYZの伝説！",
+      "eng": "The Legend of XYZ!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "128",
+        "Tauros"
+      ],
+      [
+        "162",
+        "Furret"
+      ],
+      [
+        "177",
+        "Natu"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "248",
+        "Tyranitar"
+      ],
+      [
+        "298",
+        "Azurill"
+      ],
+      [
+        "306",
+        "Aggron"
+      ],
+      [
+        "464",
+        "Rhyperior"
+      ],
+      [
+        "591",
+        "Amoonguss"
+      ],
+      [
+        "650",
+        "Chespin"
+      ],
+      [
+        "653",
+        "Fennekin"
+      ],
+      [
+        "656",
+        "Froakie"
+      ],
+      [
+        "659",
+        "Bunnelby"
+      ],
+      [
+        "661",
+        "Fletchling"
+      ],
+      [
+        "662",
+        "Fletchinder"
+      ],
+      [
+        "663",
+        "Talonflame"
+      ],
+      [
+        "664",
+        "Scatterbug"
+      ],
+      [
+        "667",
+        "Litleo"
+      ],
+      [
+        "670",
+        "Floette"
+      ],
+      [
+        "672",
+        "Skiddo"
+      ],
+      [
+        "673",
+        "Gogoat"
+      ],
+      [
+        "676",
+        "Furfrou"
+      ],
+      [
+        "678",
+        "Meowstic"
+      ],
+      [
+        "682",
+        "Spritzee"
+      ],
+      [
+        "694",
+        "Helioptile"
+      ],
+      [
+        "702",
+        "Dedenne"
+      ],
+      [
+        "704",
+        "Goomy"
+      ],
+      [
+        "710",
+        "Pumpkaboo"
+      ],
+      [
+        "716",
+        "Xerneas"
+      ],
+      [
+        "717",
+        "Yveltal"
+      ],
+      [
+        "718",
+        "Zygarde"
+      ],
+      [
+        "034",
+        "Nidoking"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "077",
+        "Ponyta"
+      ]
+    ]
+  },
+  "SS037": {
+    "episode": "SS037",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SS037",
+    "broadcastDates": {
+      "ja": "2016-11-10",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "最強の二人！シトロンとデント！！",
+      "eng": "The Strongest Duo! Citron and Dent!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "129",
+        "Magikarp"
+      ],
+      [
+        "511",
+        "Pansage"
+      ],
+      [
+        "604",
+        "Eelektross"
+      ],
+      [
+        "618",
+        "Stunfisk"
+      ],
+      [
+        "650",
+        "Chespin"
+      ],
+      [
+        "693",
+        "Clawitzer"
+      ],
+      [
+        "702",
+        "Dedenne"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ]
+    ]
+  },
   "EP001": {
     "episode": "EP001",
     "url": "https://bulbapedia.bulbagarden.net/wiki/EP001",
@@ -48894,10 +51537,6 @@
         "Wobbuffet"
       ],
       [
-        "229",
-        "Houndoom"
-      ],
-      [
         "336",
         "Seviper"
       ],
@@ -84378,7 +87017,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM060",
     "broadcastDates": {
       "ja": "2018-02-01",
-      "us": null
+      "us": "2018-07-09"
     },
     "episodeName": {
       "jpn": "リーリエ飛びます！ポケゾリジャンプ大会！！",
@@ -84521,7 +87160,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM061",
     "broadcastDates": {
       "ja": "2018-02-08",
-      "us": null
+      "us": "2018-07-16"
     },
     "episodeName": {
       "jpn": "出動！僕らのウルトラガーディアンズ！！",
@@ -86895,22 +89534,30 @@
     "episode": "SM082",
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM082",
     "broadcastDates": {
-      "ja": null,
+      "ja": "2018-07-19",
       "us": null
     },
     "episodeName": {
       "jpn": "ダンスダンスで進化せんか？",
       "eng": "Dance Dance in Evolution?"
     },
-    "hasAired": false,
+    "hasAired": true,
     "seen": [
       [
         "105",
         "Marowak"
       ],
       [
+        "172",
+        "Pichu"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "302",
+        "Sableye"
       ],
       [
         "479",
@@ -86929,6 +89576,10 @@
         "Popplio"
       ],
       [
+        "731",
+        "Pikipek"
+      ],
+      [
         "737",
         "Charjabug"
       ],
@@ -86941,8 +89592,91 @@
         "Lycanroc"
       ],
       [
+        "760",
+        "Bewear"
+      ],
+      [
         "762",
         "Steenee"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "766",
+        "Passimian"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "012",
+        "Butterfree"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ]
+    ]
+  },
+  "SM083": {
+    "episode": "SM083",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM083",
+    "broadcastDates": {
+      "ja": null,
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "サトシ、ちいさくなる",
+      "eng": "Satoshi, Becomes Small"
+    },
+    "hasAired": false,
+    "seen": [
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "702",
+        "Dedenne"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "750",
+        "Mudsdale"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
       ],
       [
         "777",
@@ -86961,8 +89695,8 @@
         "Vulpix"
       ],
       [
-        "052",
-        "Meowth"
+        "053",
+        "Persian"
       ]
     ]
   }
