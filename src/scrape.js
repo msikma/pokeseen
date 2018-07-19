@@ -64,8 +64,7 @@ const getEpisodeMetaData = (html) => {
 
         let time
         const $td = $('td', n)
-        if (hasExplainSpan) {
-          time = 'asdf'
+        if (hasExplainSpan.length) {
           $td.find('span').replaceWith('\n')
           $td.find('br').replaceWith('\n')
           const dates = $td.text().trim().split('\n').filter(s => s.trim() !== '')
@@ -78,7 +77,7 @@ const getEpisodeMetaData = (html) => {
         const today = moment().format('YYYY-MM-DD')
         const isValidDate = timeFormatted !== 'Invalid date'
         const isAired = time !== 'Unaired'
-        const useTime = time && isValidDate && isAired && today > timeFormatted
+        const useTime = Boolean(time && isValidDate && isAired && (today >= timeFormatted))
         return { ...bcd, [country]: useTime ? timeFormatted : null }
       }, {})
       return { ...acc, data }
