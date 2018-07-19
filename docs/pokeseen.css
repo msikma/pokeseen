@@ -99,6 +99,11 @@ a:hover {
   color: #a429c1;
   background-color: #f7f2f9;
 }
+/* No Pokémon currently has 'ep' set as its latest series, so... might as well reuse this color. */
+.table.pkspr-overview .main-info .series-ss > span {
+  color: #a429c1;
+  background-color: #f7f2f9;
+}
 .table.pkspr-overview .main-info .time-ago > span + span {
   font-size: 91%;
 }
@@ -108,6 +113,11 @@ a:hover {
 }
 .table.pkspr-overview .episode-info .ep-cols {
   display: flex;
+}
+.table.pkspr-overview .episode-info .ep-cols.specials {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 8px;
+  padding-top: 8px;
 }
 .table.pkspr-overview .episode-info .ep-cols .ep-header {
   white-space: nowrap;
