@@ -25,7 +25,7 @@ export const cacheSeenData = () => new Promise(async (resolve, reject) => {
     episodeData = existingSeenData[episode]
 
     // If cached data exists and has aired (thus is finalized), use that.
-    if (episodeData && episodeData.hasAired) {
+    if (episodeData && (episodeData.hasAired && episodeData.broadcastDates.ja)) {
       seenList.push(episodeData)
       continue
     }
@@ -33,25 +33,25 @@ export const cacheSeenData = () => new Promise(async (resolve, reject) => {
     // If not, or if the episode was unaired, fetch its data.
     try {
       await wait(1000)
-      if (episodeData && !episodeData.hasAired) {
-        console.log(`Episode ${episode} hasn't aired yet. Checking if it has since last time.`)
+      if (episodeData && (!episodeData.hasAired || !episodeData.broadcastDates.ja)) {
+        console.log(`Episode ${episode} hasn't aired yet or has no broadcast date. Checking to see if we can update.`)
       }
       const data = await getPokemonFromEpisode(episode)
       seenList.push(data)
       gotNewData = true
-      console.log(`Retrieved information from episode ${episode}`)
+      console.log(`Retrieved information from episode ${episode}.`)
       if (data.hasAired === false) {
-        console.log(`Stopping: episode ${episode} has not been aired yet`)
+        console.log(`Stopping: episode ${episode} has not been aired yet.`)
         break
       }
     }
     catch (err) {
       if (err.statusCode === 404) {
-        console.log(`Stopping: episode ${episode} is 404`)
+        console.log(`Stopping: episode ${episode} is 404.`)
         break
       }
       if (err.statusCode) {
-        console.log(`Error: received unexpected status code ${err.statusCode}${err.options ? ` (URL: ${err.options.url})` : ''}`)
+        console.log(`Error: received unexpected status code ${err.statusCode}${err.options ? ` (URL: ${err.options.url})` : ''}.`)
         break
       }
       console.log(err.stack)
@@ -82,7 +82,13 @@ export const checkData = async () => {
  */
 export const generatePage = async () => {
   const seenData = await cacheSeenData()
-  const { appearancesRanking, lastSeenRanking, airedEpisodesList } = sortPokemonByAppearances(seenData)
-  await createSeenPage(appearancesRanking, lastSeenRanking, airedEpisodesList)
+  const {
+    appearancesRanking,
+    appearanceDataSpecials,
+    lastSeenRanking,
+    airedEpisodesList,
+    specialEpisodesList
+  } = sortPokemonByAppearances(seenData)
+  await createSeenPage(appearancesRanking, appearanceDataSpecials, lastSeenRanking, airedEpisodesList, specialEpisodesList)
   process.exit(0)
 }

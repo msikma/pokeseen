@@ -7,42 +7,65 @@ import { get } from 'lodash'
 import { pokedex } from './data'
 
 /**
+ * Pushes data about the Pokémon from an episode to the appearance object.
+ */
+const pushSeenToData = (targetData, ep, epNr, special = false) => {
+  if (special) {
+    ep.seen.forEach(pkmn => targetData[pkmn[0]].amountIncSpecials += 1)
+    return
+  }
+  ep.seen.forEach(pkmn => targetData[pkmn[0]].episodes.push(epNr))
+  ep.seen.forEach(pkmn => targetData[pkmn[0]].amount += 1)
+  ep.seen.forEach(pkmn => targetData[pkmn[0]].amountIncSpecials += 1)
+  ep.seen.forEach(pkmn => {
+    const curr = targetData[pkmn[0]].lastSeen
+    targetData[pkmn[0]].lastSeen = {
+      ja: !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja,
+      us: !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us
+    }
+  })
+}
+
+/**
  * Returns an object containing every Pokémon and how often it appeared in the show,
  * when its last appearance was an how many days it has been since it was seen.
  */
 export const sortPokemonByAppearances = seenData => {
   const appearanceData = {}
+  const appearanceDataSpecials = {}
   const airedEpisodesList = []
+  const specialEpisodesList = []
 
   // Set all Pokémon's values to zero initially.
-  Object.keys(pokedex).forEach(id => appearanceData[id] = { id, amount: 0, lastSeen: null, episodes: [] })
+  Object.keys(pokedex).forEach(id => appearanceData[id] = { id, amount: 0, amountIncSpecials: 0, lastSeen: null, episodes: [] })
+  Object.keys(pokedex).forEach(id => appearanceDataSpecials[id] = { id, amount: 0, amountIncSpecials: 0, lastSeen: null, episodes: [] })
 
   // Add up all appearances and last seen dates in the episodes.
   Object.keys(seenData).forEach(epNr => {
     const ep = seenData[epNr]
     if (!ep.hasAired) return
-    airedEpisodesList.push(epNr)
-    ep.seen.forEach(pkmn => appearanceData[pkmn[0]].episodes.push(epNr))
-    ep.seen.forEach(pkmn => appearanceData[pkmn[0]].amount += 1)
-    ep.seen.forEach(pkmn => {
-      const curr = appearanceData[pkmn[0]].lastSeen
-      appearanceData[pkmn[0]].lastSeen = {
-        ja: !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja,
-        us: !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us
-      }
-    })
+    const series = ep.episode.slice(0, 2).toLowerCase()
+    if (series === 'ss') {
+      specialEpisodesList.push(epNr)
+      pushSeenToData(appearanceDataSpecials, ep, epNr)
+      pushSeenToData(appearanceData, ep, epNr, true)
+    }
+    else {
+      airedEpisodesList.push(epNr)
+      pushSeenToData(appearanceData, ep, epNr)
+    }
   })
 
   // Make two rankings: one based primarily on appearances, and one on last seen date.
   const appearancesRanking = Object.values(appearanceData)
-    .sort(compareProps('amount', 'lastSeen.ja', 'id'))
+    .sort(compareProps('amountIncSpecials', 'lastSeen.ja', 'id'))
     .reverse()
 
   const lastSeenRanking = Object.values(appearanceData)
     .sort(compareProps('lastSeen.ja', 'amount', 'id'))
     .reverse()
 
-  return { appearancesRanking, lastSeenRanking, airedEpisodesList }
+  return { appearancesRanking, appearanceDataSpecials, lastSeenRanking, airedEpisodesList, specialEpisodesList }
 }
 
 /**
