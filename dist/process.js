@@ -13,6 +13,14 @@ var _values = require('babel-runtime/core-js/object/values');
 
 var _values2 = _interopRequireDefault(_values);
 
+var _defineProperty2 = require('babel-runtime/helpers/defineProperty');
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _extends3 = require('babel-runtime/helpers/extends');
+
+var _extends4 = _interopRequireDefault(_extends3);
+
 var _keys = require('babel-runtime/core-js/object/keys');
 
 var _keys2 = _interopRequireDefault(_keys);
@@ -49,12 +57,18 @@ var pushSeenToData = function pushSeenToData(targetData, ep, epNr) {
   ep.seen.forEach(function (pkmn) {
     return targetData[pkmn[0]].amountIncSpecials += 1;
   });
+  setLatestDate(ep, targetData);
+};
+
+/**
+ * Checks if the latest date needs to be updated, and set it to the new value if needed.
+ */
+var setLatestDate = function setLatestDate(ep, targetData) {
   ep.seen.forEach(function (pkmn) {
     var curr = targetData[pkmn[0]].lastSeen;
-    targetData[pkmn[0]].lastSeen = {
-      ja: !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja,
-      us: !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us
-    };
+    var ja = !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja;
+    var us = !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us;
+    targetData[pkmn[0]].lastSeen = { ja: ja, us: us };
   });
 };
 
@@ -91,10 +105,19 @@ var sortPokemonByAppearances = exports.sortPokemonByAppearances = function sortP
     }
   });
 
-  // Make two rankings: one based primarily on appearances, and one on last seen date.
-  var appearancesRanking = (0, _values2.default)(appearanceData).sort(compareProps('amountIncSpecials', 'lastSeen.ja', 'id')).reverse();
+  // Add a global 'most recent' to the data, which can be either from a special or from a regular episode.
+  var appearanceDataGlobal = (0, _keys2.default)(appearanceData).reduce(function (acc, pkmn) {
+    var lastSeenRegular = (0, _lodash.get)(appearanceData[pkmn], 'lastSeen.ja', '');
+    var lastSeenSpecial = (0, _lodash.get)(appearanceDataSpecials[pkmn], 'lastSeen.ja', '');
+    var mostRecent = lastSeenRegular === '' && lastSeenSpecial === '' ? '' : lastSeenRegular === '' ? lastSeenSpecial : lastSeenRegular >= lastSeenSpecial ? lastSeenRegular : lastSeenSpecial;
 
-  var lastSeenRanking = (0, _values2.default)(appearanceData).sort(compareProps('lastSeen.ja', 'amount', 'id')).reverse();
+    return (0, _extends4.default)({}, acc, (0, _defineProperty3.default)({}, pkmn, (0, _extends4.default)({}, appearanceData[pkmn], { mostRecent: mostRecent })));
+  }, {});
+
+  // Make two rankings: one based primarily on appearances, and one on last seen date.
+  var appearancesRanking = (0, _values2.default)(appearanceDataGlobal).sort(compareProps('amountIncSpecials', 'mostRecent', 'id')).reverse();
+
+  var lastSeenRanking = (0, _values2.default)(appearanceDataGlobal).sort(compareProps('mostRecent', 'amountIncSpecials', 'id')).reverse();
 
   return { appearancesRanking: appearancesRanking, appearanceDataSpecials: appearanceDataSpecials, lastSeenRanking: lastSeenRanking, airedEpisodesList: airedEpisodesList, specialEpisodesList: specialEpisodesList };
 };
