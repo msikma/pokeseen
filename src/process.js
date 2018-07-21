@@ -17,12 +17,18 @@ const pushSeenToData = (targetData, ep, epNr, special = false) => {
   ep.seen.forEach(pkmn => targetData[pkmn[0]].episodes.push(epNr))
   ep.seen.forEach(pkmn => targetData[pkmn[0]].amount += 1)
   ep.seen.forEach(pkmn => targetData[pkmn[0]].amountIncSpecials += 1)
+  setLatestDate(ep, targetData)
+}
+
+/**
+ * Checks if the latest date needs to be updated, and set it to the new value if needed.
+ */
+const setLatestDate = (ep, targetData) => {
   ep.seen.forEach(pkmn => {
     const curr = targetData[pkmn[0]].lastSeen
-    targetData[pkmn[0]].lastSeen = {
-      ja: !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja,
-      us: !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us
-    }
+    const ja = !curr || !curr.ja || curr.ja < ep.broadcastDates.ja ? ep.broadcastDates.ja : curr.ja
+    const us = !curr || !curr.us || curr.us < ep.broadcastDates.us ? ep.broadcastDates.us : curr.us
+    targetData[pkmn[0]].lastSeen = { ja, us }
   })
 }
 
@@ -56,13 +62,28 @@ export const sortPokemonByAppearances = seenData => {
     }
   })
 
+  // Add a global 'most recent' to the data, which can be either from a special or from a regular episode.
+  const appearanceDataGlobal = Object.keys(appearanceData).reduce((acc, pkmn) => {
+    const lastSeenRegular = get(appearanceData[pkmn], 'lastSeen.ja', '')
+    const lastSeenSpecial = get(appearanceDataSpecials[pkmn], 'lastSeen.ja', '')
+    const mostRecent = lastSeenRegular === '' && lastSeenSpecial === ''
+      ? ''
+      : lastSeenRegular === ''
+        ? lastSeenSpecial
+        : lastSeenRegular >= lastSeenSpecial
+          ? lastSeenRegular
+          : lastSeenSpecial
+
+    return { ...acc, [pkmn]: { ...appearanceData[pkmn], mostRecent } }
+  }, {})
+
   // Make two rankings: one based primarily on appearances, and one on last seen date.
-  const appearancesRanking = Object.values(appearanceData)
-    .sort(compareProps('amountIncSpecials', 'lastSeen.ja', 'id'))
+  const appearancesRanking = Object.values(appearanceDataGlobal)
+    .sort(compareProps('amountIncSpecials', 'mostRecent', 'id'))
     .reverse()
 
-  const lastSeenRanking = Object.values(appearanceData)
-    .sort(compareProps('lastSeen.ja', 'amount', 'id'))
+  const lastSeenRanking = Object.values(appearanceDataGlobal)
+    .sort(compareProps('mostRecent', 'amountIncSpecials', 'id'))
     .reverse()
 
   return { appearancesRanking, appearanceDataSpecials, lastSeenRanking, airedEpisodesList, specialEpisodesList }
