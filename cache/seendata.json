@@ -89641,18 +89641,58 @@
     "episode": "SM083",
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM083",
     "broadcastDates": {
-      "ja": null,
+      "ja": "2018-07-26",
       "us": null
     },
     "episodeName": {
       "jpn": "サトシ、ちいさくなる",
-      "eng": "Satoshi, Becomes Small"
+      "eng": "Satoshi Becomes Small"
     },
-    "hasAired": false,
+    "hasAired": true,
     "seen": [
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "198",
+        "Murkrow"
+      ],
+      [
+        "296",
+        "Makuhita"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "425",
+        "Drifloon"
+      ],
       [
         "479",
         "Rotom"
+      ],
+      [
+        "661",
+        "Fletchling"
       ],
       [
         "702",
@@ -89661,6 +89701,10 @@
       [
         "722",
         "Rowlet"
+      ],
+      [
+        "725",
+        "Litten"
       ],
       [
         "728",
@@ -89687,6 +89731,14 @@
         "Poipole"
       ],
       [
+        "006",
+        "Charizard"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
         "025",
         "Pikachu"
       ],
@@ -89697,6 +89749,347 @@
       [
         "053",
         "Persian"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ]
+    ]
+  },
+  "SM084": {
+    "episode": "SM084",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM084",
+    "broadcastDates": {
+      "ja": "2018-08-02",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "家族のカタチ、ベベノムのキモチ！",
+      "eng": "The Shape of Family, Bevenom's Feelings!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "446",
+        "Munchlax"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "569",
+        "Garbodor"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "731",
+        "Pikipek"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "743",
+        "Ribombee"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "755",
+        "Morelull"
+      ],
+      [
+        "757",
+        "Salandit"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "804",
+        "Naganadel"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "026",
+        "Raichu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "041",
+        "Zubat"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ]
+    ]
+  },
+  "SM085": {
+    "episode": "SM085",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM085",
+    "broadcastDates": {
+      "ja": "2018-08-09",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "トンデノボッテ、ツンデツンデ！",
+      "eng": "Leap and Climb, Tundetunde!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "805",
+        "Stakataka"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "050",
+        "Diglett"
+      ]
+    ]
+  },
+  "SM086": {
+    "episode": "SM086",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM086",
+    "broadcastDates": {
+      "ja": null,
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ココにきめた！ポケモン湯けむりパラダイス！！",
+      "eng": "I Choose Here! Pokémon Hot Spring Paradise!!"
+    },
+    "hasAired": false,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "765",
+        "Oranguru"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
       ]
     ]
   }
