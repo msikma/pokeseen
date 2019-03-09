@@ -33,7 +33,7 @@ export const createSeenPage = async (appearancesRanking, appearanceDataSpecials,
     commits: repoInfo.commits,
     hash: repoInfo.hash,
     homepage: pkgData.homepage,
-    generationTime: moment().format('YYYY-MM-DD HH:mm:ss ZZ')
+    generationTime: moment().format('YYYY-MM-DD HH:mm:ssZZ')
   }
   // Render our React component to HTML and save it using the wrapper string.
   const lastSeenRankingByID = lastSeenRanking
