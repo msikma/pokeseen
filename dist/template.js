@@ -93,7 +93,7 @@ var createSeenPage = exports.createSeenPage = function () {
               commits: repoInfo.commits,
               hash: repoInfo.hash,
               homepage: _data.pkgData.homepage,
-              generationTime: (0, _moment2.default)().format('YYYY-MM-DD HH:mm:ss ZZ')
+              generationTime: (0, _moment2.default)().format('YYYY-MM-DD HH:mm:ssZZ')
               // Render our React component to HTML and save it using the wrapper string.
             };
             lastSeenRankingByID = lastSeenRanking.map(function (item, n) {

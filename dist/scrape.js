@@ -226,7 +226,7 @@ var getSeenForEpisode = function getSeenForEpisode(html) {
 // Returns all Pokémon (by ID and name) seen in a piece of text.
 var getSeenForText = function getSeenForText(text) {
   return _data.engList.reduce(function (acc, name) {
-    if (text.indexOf(name) > -1) return [].concat((0, _toConsumableArray3.default)(acc), [[_data.engToID[name], name]]);
+    if (new RegExp('^\\s*' + name + '(\\s|\\(|\\[|/|$)', 'im').test(text)) return [].concat((0, _toConsumableArray3.default)(acc), [[_data.engToID[name], name]]);
     return acc;
   }, []);
 };
