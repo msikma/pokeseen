@@ -127,6 +127,7 @@ a:hover {
   padding-left: 20px;
   column-width: 60px;
   column-gap: 10px;
+  width: 100%;
 }
 #top .table.pkspr-overview .episode-info .ep-cols .ep-content a {
   color: #050202;
