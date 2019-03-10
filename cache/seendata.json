@@ -274,10 +274,6 @@
         "Nidoran♀"
       ],
       [
-        "031",
-        "Nidoqueen"
-      ],
-      [
         "032",
         "Nidoran♂"
       ],
@@ -290,16 +286,8 @@
         "Oddish"
       ],
       [
-        "046",
-        "Paras"
-      ],
-      [
         "047",
         "Parasect"
-      ],
-      [
-        "076",
-        "Golem"
       ],
       [
         "089",
@@ -1700,10 +1688,6 @@
         "Mewtwo"
       ],
       [
-        "151",
-        "Mew"
-      ],
-      [
         "161",
         "Sentret"
       ],
@@ -1956,10 +1940,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "025",
@@ -2466,10 +2446,6 @@
         "Furret"
       ],
       [
-        "177",
-        "Natu"
-      ],
-      [
         "183",
         "Marill"
       ],
@@ -2822,10 +2798,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "023",
         "Ekans"
       ],
@@ -2893,10 +2865,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -2922,10 +2890,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "025",
@@ -2973,10 +2937,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "023",
@@ -3054,10 +3014,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -3107,10 +3063,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "019",
@@ -3225,10 +3177,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "019",
@@ -3364,10 +3312,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -3486,10 +3430,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "020",
         "Raticate"
       ],
@@ -3563,10 +3503,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "023",
@@ -3687,10 +3623,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "023",
         "Ekans"
       ],
@@ -3748,10 +3680,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "025",
@@ -4222,10 +4150,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -4311,10 +4235,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "019",
@@ -4578,10 +4498,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "019",
         "Rattata"
       ],
@@ -4659,10 +4575,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "024",
@@ -5036,10 +4948,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -5130,10 +5038,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "021",
         "Spearow"
       ],
@@ -5169,12 +5073,20 @@
     "hasAired": true,
     "seen": [
       [
+        "103",
+        "Exeggutor"
+      ],
+      [
         "110",
         "Weezing"
       ],
       [
         "116",
         "Horsea"
+      ],
+      [
+        "121",
+        "Starmie"
       ],
       [
         "133",
@@ -5201,10 +5113,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "024",
         "Arbok"
       ],
@@ -5213,8 +5121,20 @@
         "Pikachu"
       ],
       [
+        "026",
+        "Raichu"
+      ],
+      [
         "037",
         "Vulpix"
+      ],
+      [
+        "038",
+        "Ninetales"
+      ],
+      [
+        "045",
+        "Vileplume"
       ],
       [
         "052",
@@ -5223,6 +5143,22 @@
       [
         "054",
         "Psyduck"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "062",
+        "Poliwrath"
+      ],
+      [
+        "071",
+        "Victreebel"
+      ],
+      [
+        "091",
+        "Cloyster"
       ]
     ]
   },
@@ -5258,10 +5194,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "024",
@@ -5526,10 +5458,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "024",
@@ -5799,10 +5727,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "024",
         "Arbok"
       ],
@@ -5945,10 +5869,6 @@
         "Vulpix"
       ],
       [
-        "046",
-        "Paras"
-      ],
-      [
         "047",
         "Parasect"
       ],
@@ -6030,10 +5950,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "024",
@@ -6182,10 +6098,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -6241,6 +6153,14 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
+        "101",
+        "Electrode"
+      ],
+      [
         "106",
         "Hitmonlee"
       ],
@@ -6271,6 +6191,10 @@
       [
         "136",
         "Flareon"
+      ],
+      [
+        "138",
+        "Omanyte"
       ],
       [
         "175",
@@ -6432,10 +6356,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "019",
         "Rattata"
       ],
@@ -6543,6 +6463,10 @@
         "Hitmonlee"
       ],
       [
+        "107",
+        "Hitmonchan"
+      ],
+      [
         "112",
         "Rhydon"
       ],
@@ -6571,10 +6495,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -6589,6 +6509,22 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "057",
+        "Primeape"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "066",
+        "Machop"
+      ],
+      [
+        "067",
+        "Machoke"
       ]
     ]
   },
@@ -6681,16 +6617,8 @@
         "Starmie"
       ],
       [
-        "126",
-        "Magmar"
-      ],
-      [
         "175",
         "Togepi"
-      ],
-      [
-        "006",
-        "Charizard"
       ],
       [
         "007",
@@ -6827,10 +6755,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -6882,10 +6806,6 @@
         "Mewtwo"
       ],
       [
-        "151",
-        "Mew"
-      ],
-      [
         "175",
         "Togepi"
       ],
@@ -6900,10 +6820,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "022",
@@ -6979,10 +6895,6 @@
       [
         "150",
         "Mewtwo"
-      ],
-      [
-        "151",
-        "Mew"
       ],
       [
         "175",
@@ -7092,10 +7004,6 @@
         "Mewtwo"
       ],
       [
-        "151",
-        "Mew"
-      ],
-      [
         "175",
         "Togepi"
       ],
@@ -7118,10 +7026,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "019",
@@ -7440,10 +7344,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "020",
         "Raticate"
       ],
@@ -7629,10 +7529,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "024",
         "Arbok"
       ],
@@ -7746,10 +7642,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "024",
@@ -7902,10 +7794,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "020",
         "Raticate"
       ],
@@ -7983,10 +7871,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "025",
@@ -8135,10 +8019,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "024",
         "Arbok"
       ],
@@ -8222,10 +8102,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -8293,10 +8169,6 @@
         "Charmander"
       ],
       [
-        "006",
-        "Charizard"
-      ],
-      [
         "007",
         "Squirtle"
       ],
@@ -8311,10 +8183,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "020",
@@ -8343,10 +8211,6 @@
       [
         "044",
         "Gloom"
-      ],
-      [
-        "046",
-        "Paras"
       ],
       [
         "047",
@@ -8416,12 +8280,20 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
         "118",
         "Goldeen"
       ],
       [
         "120",
         "Staryu"
+      ],
+      [
+        "122",
+        "Mr. Mime"
       ],
       [
         "175",
@@ -8438,6 +8310,10 @@
       [
         "007",
         "Squirtle"
+      ],
+      [
+        "012",
+        "Butterfree"
       ],
       [
         "016",
@@ -8476,12 +8352,32 @@
         "Zubat"
       ],
       [
+        "043",
+        "Oddish"
+      ],
+      [
+        "050",
+        "Diglett"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
         "054",
         "Psyduck"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "069",
+        "Bellsprout"
       ],
       [
         "074",
@@ -8749,6 +8645,10 @@
         "Meowth"
       ],
       [
+        "085",
+        "Dodrio"
+      ],
+      [
         "098",
         "Krabby"
       ]
@@ -8774,10 +8674,6 @@
       [
         "117",
         "Seadra"
-      ],
-      [
-        "121",
-        "Starmie"
       ],
       [
         "131",
@@ -8827,6 +8723,14 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
+        "107",
+        "Hitmonchan"
+      ],
+      [
         "108",
         "Lickitung"
       ],
@@ -8835,12 +8739,44 @@
         "Weezing"
       ],
       [
+        "119",
+        "Seaking"
+      ],
+      [
+        "121",
+        "Starmie"
+      ],
+      [
+        "125",
+        "Electabuzz"
+      ],
+      [
+        "129",
+        "Magikarp"
+      ],
+      [
         "131",
         "Lapras"
       ],
       [
+        "134",
+        "Vaporeon"
+      ],
+      [
+        "135",
+        "Jolteon"
+      ],
+      [
+        "136",
+        "Flareon"
+      ],
+      [
         "175",
         "Togepi"
+      ],
+      [
+        "008",
+        "Wartortle"
       ],
       [
         "024",
@@ -8851,12 +8787,44 @@
         "Pikachu"
       ],
       [
+        "037",
+        "Vulpix"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
+        "056",
+        "Mankey"
+      ],
+      [
+        "057",
+        "Primeape"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
         "071",
         "Victreebel"
+      ],
+      [
+        "077",
+        "Ponyta"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ],
+      [
+        "088",
+        "Grimer"
       ],
       [
         "092",
@@ -8865,6 +8833,10 @@
       [
         "096",
         "Drowzee"
+      ],
+      [
+        "099",
+        "Kingler"
       ]
     ]
   },
@@ -8945,12 +8917,32 @@
     "hasAired": true,
     "seen": [
       [
+        "103",
+        "Exeggutor"
+      ],
+      [
         "108",
         "Lickitung"
       ],
       [
         "110",
         "Weezing"
+      ],
+      [
+        "111",
+        "Rhyhorn"
+      ],
+      [
+        "112",
+        "Rhydon"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "125",
+        "Electabuzz"
       ],
       [
         "131",
@@ -8965,6 +8957,26 @@
         "Marill"
       ],
       [
+        "010",
+        "Caterpie"
+      ],
+      [
+        "013",
+        "Weedle"
+      ],
+      [
+        "016",
+        "Pidgey"
+      ],
+      [
+        "017",
+        "Pidgeotto"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
         "024",
         "Arbok"
       ],
@@ -8973,8 +8985,40 @@
         "Pikachu"
       ],
       [
+        "029",
+        "Nidoran♀"
+      ],
+      [
+        "032",
+        "Nidoran♂"
+      ],
+      [
+        "034",
+        "Nidoking"
+      ],
+      [
         "039",
         "Jigglypuff"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "045",
+        "Vileplume"
+      ],
+      [
+        "046",
+        "Paras"
+      ],
+      [
+        "048",
+        "Venonat"
+      ],
+      [
+        "050",
+        "Diglett"
       ],
       [
         "052",
@@ -8985,8 +9029,32 @@
         "Psyduck"
       ],
       [
+        "056",
+        "Mankey"
+      ],
+      [
+        "057",
+        "Primeape"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
         "071",
         "Victreebel"
+      ],
+      [
+        "074",
+        "Geodude"
+      ],
+      [
+        "085",
+        "Dodrio"
       ],
       [
         "089",
@@ -9067,12 +9135,28 @@
     "hasAired": true,
     "seen": [
       [
+        "107",
+        "Hitmonchan"
+      ],
+      [
         "110",
         "Weezing"
       ],
       [
+        "113",
+        "Chansey"
+      ],
+      [
         "120",
         "Staryu"
+      ],
+      [
+        "122",
+        "Mr. Mime"
+      ],
+      [
+        "124",
+        "Jynx"
       ],
       [
         "175",
@@ -9091,12 +9175,28 @@
         "Pikachu"
       ],
       [
+        "026",
+        "Raichu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
         "054",
         "Psyduck"
+      ],
+      [
+        "063",
+        "Abra"
+      ],
+      [
+        "067",
+        "Machoke"
       ],
       [
         "071",
@@ -10038,6 +10138,14 @@
         "Exeggutor"
       ],
       [
+        "107",
+        "Hitmonchan"
+      ],
+      [
+        "112",
+        "Rhydon"
+      ],
+      [
         "120",
         "Staryu"
       ],
@@ -10070,12 +10178,32 @@
         "Squirtle"
       ],
       [
+        "018",
+        "Pidgeot"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "038",
+        "Ninetales"
+      ],
+      [
+        "049",
+        "Venomoth"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "065",
+        "Alakazam"
+      ],
+      [
+        "076",
+        "Golem"
       ],
       [
         "086",
@@ -10558,6 +10686,10 @@
         "Chansey"
       ],
       [
+        "117",
+        "Seadra"
+      ],
+      [
         "121",
         "Starmie"
       ],
@@ -10576,6 +10708,10 @@
       [
         "132",
         "Ditto"
+      ],
+      [
+        "135",
+        "Jolteon"
       ],
       [
         "143",
@@ -10610,6 +10746,10 @@
         "Pikachu"
       ],
       [
+        "028",
+        "Sandslash"
+      ],
+      [
         "031",
         "Nidoqueen"
       ],
@@ -10624,6 +10764,14 @@
       [
         "074",
         "Geodude"
+      ],
+      [
+        "076",
+        "Golem"
+      ],
+      [
+        "082",
+        "Magneton"
       ],
       [
         "089",
@@ -10838,6 +10986,10 @@
         "Lickitung"
       ],
       [
+        "111",
+        "Rhyhorn"
+      ],
+      [
         "122",
         "Mr. Mime"
       ],
@@ -10862,8 +11014,16 @@
         "Pikachu"
       ],
       [
+        "030",
+        "Nidorina"
+      ],
+      [
         "031",
         "Nidoqueen"
+      ],
+      [
+        "033",
+        "Nidorino"
       ],
       [
         "037",
@@ -10878,6 +11038,10 @@
         "Zubat"
       ],
       [
+        "045",
+        "Vileplume"
+      ],
+      [
         "052",
         "Meowth"
       ],
@@ -10888,6 +11052,10 @@
       [
         "074",
         "Geodude"
+      ],
+      [
+        "085",
+        "Dodrio"
       ],
       [
         "089",
@@ -10917,6 +11085,22 @@
     "hasAired": true,
     "seen": [
       [
+        "111",
+        "Rhyhorn"
+      ],
+      [
+        "112",
+        "Rhydon"
+      ],
+      [
+        "120",
+        "Staryu"
+      ],
+      [
+        "121",
+        "Starmie"
+      ],
+      [
         "122",
         "Mr. Mime"
       ],
@@ -10925,8 +11109,16 @@
         "Scyther"
       ],
       [
+        "125",
+        "Electabuzz"
+      ],
+      [
         "128",
         "Tauros"
+      ],
+      [
+        "130",
+        "Gyarados"
       ],
       [
         "133",
@@ -10941,16 +11133,64 @@
         "Marill"
       ],
       [
+        "012",
+        "Butterfree"
+      ],
+      [
+        "015",
+        "Beedrill"
+      ],
+      [
         "025",
         "Pikachu"
+      ],
+      [
+        "034",
+        "Nidoking"
+      ],
+      [
+        "047",
+        "Parasect"
       ],
       [
         "048",
         "Venonat"
       ],
       [
+        "049",
+        "Venomoth"
+      ],
+      [
+        "050",
+        "Diglett"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "059",
+        "Arcanine"
+      ],
+      [
+        "064",
+        "Kadabra"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "086",
+        "Seel"
+      ],
+      [
+        "087",
+        "Dewgong"
+      ],
+      [
+        "095",
+        "Onix"
       ]
     ]
   },
@@ -11307,6 +11547,22 @@
     "hasAired": true,
     "seen": [
       [
+        "101",
+        "Electrode"
+      ],
+      [
+        "121",
+        "Starmie"
+      ],
+      [
+        "132",
+        "Ditto"
+      ],
+      [
+        "136",
+        "Flareon"
+      ],
+      [
         "175",
         "Togepi"
       ],
@@ -11319,6 +11575,14 @@
         "Heracross"
       ],
       [
+        "008",
+        "Wartortle"
+      ],
+      [
+        "017",
+        "Pidgeotto"
+      ],
+      [
         "024",
         "Arbok"
       ],
@@ -11327,12 +11591,44 @@
         "Pikachu"
       ],
       [
+        "043",
+        "Oddish"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "065",
+        "Alakazam"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
         "071",
         "Victreebel"
+      ],
+      [
+        "079",
+        "Slowpoke"
+      ],
+      [
+        "098",
+        "Krabby"
       ]
     ]
   },
@@ -12389,12 +12685,36 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
+        "104",
+        "Cubone"
+      ],
+      [
+        "106",
+        "Hitmonlee"
+      ],
+      [
+        "107",
+        "Hitmonchan"
+      ],
+      [
         "108",
         "Lickitung"
       ],
       [
         "110",
         "Weezing"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "152",
+        "Chikorita"
       ],
       [
         "175",
@@ -12409,6 +12729,18 @@
         "Heracross"
       ],
       [
+        "001",
+        "Bulbasaur"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "007",
+        "Squirtle"
+      ],
+      [
         "024",
         "Arbok"
       ],
@@ -12417,12 +12749,64 @@
         "Pikachu"
       ],
       [
+        "034",
+        "Nidoking"
+      ],
+      [
+        "035",
+        "Clefairy"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "041",
+        "Zubat"
+      ],
+      [
+        "045",
+        "Vileplume"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "055",
+        "Golduck"
+      ],
+      [
+        "057",
+        "Primeape"
+      ],
+      [
+        "062",
+        "Poliwrath"
+      ],
+      [
+        "067",
+        "Machoke"
+      ],
+      [
         "071",
         "Victreebel"
+      ],
+      [
+        "074",
+        "Geodude"
+      ],
+      [
+        "076",
+        "Golem"
+      ],
+      [
+        "094",
+        "Gengar"
       ]
     ]
   },
@@ -12771,8 +13155,32 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
         "108",
         "Lickitung"
+      ],
+      [
+        "111",
+        "Rhyhorn"
+      ],
+      [
+        "113",
+        "Chansey"
+      ],
+      [
+        "121",
+        "Starmie"
+      ],
+      [
+        "123",
+        "Scyther"
       ],
       [
         "128",
@@ -12787,20 +13195,116 @@
         "Chikorita"
       ],
       [
+        "161",
+        "Sentret"
+      ],
+      [
+        "163",
+        "Hoothoot"
+      ],
+      [
+        "165",
+        "Ledyba"
+      ],
+      [
         "175",
         "Togepi"
+      ],
+      [
+        "179",
+        "Mareep"
+      ],
+      [
+        "182",
+        "Bellossom"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
+        "195",
+        "Quagsire"
       ],
       [
         "202",
         "Wobbuffet"
       ],
       [
+        "204",
+        "Pineco"
+      ],
+      [
+        "207",
+        "Gligar"
+      ],
+      [
         "209",
         "Snubbull"
       ],
       [
+        "212",
+        "Scizor"
+      ],
+      [
+        "232",
+        "Donphan"
+      ],
+      [
+        "234",
+        "Stantler"
+      ],
+      [
+        "242",
+        "Blissey"
+      ],
+      [
+        "012",
+        "Butterfree"
+      ],
+      [
+        "020",
+        "Raticate"
+      ],
+      [
         "025",
         "Pikachu"
+      ],
+      [
+        "026",
+        "Raichu"
+      ],
+      [
+        "028",
+        "Sandslash"
+      ],
+      [
+        "030",
+        "Nidorina"
+      ],
+      [
+        "033",
+        "Nidorino"
+      ],
+      [
+        "040",
+        "Wigglytuff"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "048",
+        "Venonat"
       ],
       [
         "052",
@@ -12811,8 +13315,44 @@
         "Psyduck"
       ],
       [
+        "057",
+        "Primeape"
+      ],
+      [
+        "067",
+        "Machoke"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
         "071",
         "Victreebel"
+      ],
+      [
+        "076",
+        "Golem"
+      ],
+      [
+        "079",
+        "Slowpoke"
+      ],
+      [
+        "083",
+        "Farfetch'd"
+      ],
+      [
+        "084",
+        "Doduo"
+      ],
+      [
+        "096",
+        "Drowzee"
+      ],
+      [
+        "098",
+        "Krabby"
       ]
     ]
   },
@@ -12834,6 +13374,10 @@
         "Staryu"
       ],
       [
+        "134",
+        "Vaporeon"
+      ],
+      [
         "152",
         "Chikorita"
       ],
@@ -12844,6 +13388,14 @@
       [
         "175",
         "Togepi"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "195",
+        "Quagsire"
       ],
       [
         "214",
@@ -12870,10 +13422,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -12888,6 +13436,22 @@
       [
         "054",
         "Psyduck"
+      ],
+      [
+        "055",
+        "Golduck"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "089",
+        "Muk"
       ],
       [
         "095",
@@ -13592,6 +14156,10 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
         "120",
         "Staryu"
       ],
@@ -13612,6 +14180,10 @@
         "Totodile"
       ],
       [
+        "161",
+        "Sentret"
+      ],
+      [
         "175",
         "Togepi"
       ],
@@ -13624,8 +14196,40 @@
         "Raticate"
       ],
       [
+        "021",
+        "Spearow"
+      ],
+      [
         "025",
         "Pikachu"
+      ],
+      [
+        "027",
+        "Sandshrew"
+      ],
+      [
+        "029",
+        "Nidoran♀"
+      ],
+      [
+        "032",
+        "Nidoran♂"
+      ],
+      [
+        "042",
+        "Golbat"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "044",
+        "Gloom"
+      ],
+      [
+        "046",
+        "Paras"
       ],
       [
         "052",
@@ -14004,10 +14608,6 @@
       [
         "139",
         "Omastar"
-      ],
-      [
-        "140",
-        "Kabuto"
       ],
       [
         "141",
@@ -14492,12 +15092,56 @@
     "hasAired": true,
     "seen": [
       [
+        "101",
+        "Electrode"
+      ],
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "106",
+        "Hitmonlee"
+      ],
+      [
+        "107",
+        "Hitmonchan"
+      ],
+      [
+        "108",
+        "Lickitung"
+      ],
+      [
         "110",
         "Weezing"
       ],
       [
         "113",
         "Chansey"
+      ],
+      [
+        "114",
+        "Tangela"
+      ],
+      [
+        "118",
+        "Goldeen"
+      ],
+      [
+        "121",
+        "Starmie"
+      ],
+      [
+        "127",
+        "Pinsir"
+      ],
+      [
+        "128",
+        "Tauros"
       ],
       [
         "164",
@@ -14508,8 +15152,36 @@
         "Togepi"
       ],
       [
+        "183",
+        "Marill"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "214",
+        "Heracross"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "018",
+        "Pidgeot"
       ],
       [
         "024",
@@ -14520,8 +15192,20 @@
         "Pikachu"
       ],
       [
+        "026",
+        "Raichu"
+      ],
+      [
+        "027",
+        "Sandshrew"
+      ],
+      [
         "029",
         "Nidoran♀"
+      ],
+      [
+        "036",
+        "Clefable"
       ],
       [
         "037",
@@ -14532,12 +15216,60 @@
         "Ninetales"
       ],
       [
+        "040",
+        "Wigglytuff"
+      ],
+      [
         "043",
         "Oddish"
       ],
       [
+        "048",
+        "Venonat"
+      ],
+      [
+        "051",
+        "Dugtrio"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "053",
+        "Persian"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "057",
+        "Primeape"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "067",
+        "Machoke"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
+        "070",
+        "Weepinbell"
       ],
       [
         "071",
@@ -14546,6 +15278,38 @@
       [
         "074",
         "Geodude"
+      ],
+      [
+        "079",
+        "Slowpoke"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ],
+      [
+        "085",
+        "Dodrio"
+      ],
+      [
+        "094",
+        "Gengar"
+      ],
+      [
+        "095",
+        "Onix"
+      ],
+      [
+        "096",
+        "Drowzee"
+      ],
+      [
+        "097",
+        "Hypno"
+      ],
+      [
+        "098",
+        "Krabby"
       ]
     ]
   },
@@ -14741,10 +15505,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -14855,6 +15615,18 @@
         "Ditto"
       ],
       [
+        "139",
+        "Omastar"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "149",
+        "Dragonite"
+      ],
+      [
         "158",
         "Totodile"
       ],
@@ -14875,8 +15647,24 @@
         "Mareep"
       ],
       [
+        "194",
+        "Wooper"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "212",
+        "Scizor"
+      ],
+      [
+        "213",
+        "Shuckle"
+      ],
+      [
+        "216",
+        "Teddiursa"
       ],
       [
         "217",
@@ -14891,8 +15679,20 @@
         "Pikachu"
       ],
       [
+        "035",
+        "Clefairy"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "059",
+        "Arcanine"
+      ],
+      [
+        "069",
+        "Bellsprout"
       ],
       [
         "095",
@@ -15060,6 +15860,18 @@
         "Togepi"
       ],
       [
+        "182",
+        "Bellossom"
+      ],
+      [
+        "190",
+        "Aipom"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
         "193",
         "Yanma"
       ],
@@ -15072,12 +15884,20 @@
         "Caterpie"
       ],
       [
+        "012",
+        "Butterfree"
+      ],
+      [
         "024",
         "Arbok"
       ],
       [
         "025",
         "Pikachu"
+      ],
+      [
+        "039",
+        "Jigglypuff"
       ],
       [
         "052",
@@ -16409,10 +17229,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -16495,6 +17311,10 @@
     "hasAired": true,
     "seen": [
       [
+        "104",
+        "Cubone"
+      ],
+      [
         "110",
         "Weezing"
       ],
@@ -16507,6 +17327,10 @@
         "Totodile"
       ],
       [
+        "161",
+        "Sentret"
+      ],
+      [
         "164",
         "Noctowl"
       ],
@@ -16515,8 +17339,24 @@
         "Togepi"
       ],
       [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
+        "020",
+        "Raticate"
       ],
       [
         "024",
@@ -16535,12 +17375,24 @@
         "Nidorino"
       ],
       [
+        "048",
+        "Venonat"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
         "061",
         "Poliwhirl"
+      ],
+      [
+        "090",
+        "Shellder"
+      ],
+      [
+        "099",
+        "Kingler"
       ]
     ]
   },
@@ -16704,6 +17556,14 @@
     "hasAired": true,
     "seen": [
       [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "104",
+        "Cubone"
+      ],
+      [
         "110",
         "Weezing"
       ],
@@ -16724,8 +17584,16 @@
         "Natu"
       ],
       [
+        "190",
+        "Aipom"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "237",
+        "Hitmontop"
       ],
       [
         "024",
@@ -16742,6 +17610,10 @@
       [
         "061",
         "Poliwhirl"
+      ],
+      [
+        "067",
+        "Machoke"
       ],
       [
         "071",
@@ -17208,10 +18080,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "024",
@@ -18382,6 +19250,10 @@
     "hasAired": true,
     "seen": [
       [
+        "114",
+        "Tangela"
+      ],
+      [
         "120",
         "Staryu"
       ],
@@ -18422,8 +19294,16 @@
         "Bulbasaur"
       ],
       [
+        "019",
+        "Rattata"
+      ],
+      [
         "025",
         "Pikachu"
+      ],
+      [
+        "027",
+        "Sandshrew"
       ],
       [
         "034",
@@ -18432,6 +19312,10 @@
       [
         "039",
         "Jigglypuff"
+      ],
+      [
+        "047",
+        "Parasect"
       ],
       [
         "052",
@@ -18446,8 +19330,24 @@
         "Machoke"
       ],
       [
+        "069",
+        "Bellsprout"
+      ],
+      [
+        "070",
+        "Weepinbell"
+      ],
+      [
+        "077",
+        "Ponyta"
+      ],
+      [
         "081",
         "Magnemite"
+      ],
+      [
+        "084",
+        "Doduo"
       ],
       [
         "095",
@@ -18528,8 +19428,16 @@
     "hasAired": true,
     "seen": [
       [
+        "104",
+        "Cubone"
+      ],
+      [
         "118",
         "Goldeen"
+      ],
+      [
+        "120",
+        "Staryu"
       ],
       [
         "122",
@@ -18538,6 +19446,14 @@
       [
         "123",
         "Scyther"
+      ],
+      [
+        "127",
+        "Pinsir"
+      ],
+      [
+        "129",
+        "Magikarp"
       ],
       [
         "153",
@@ -18608,6 +19524,14 @@
         "Bulbasaur"
       ],
       [
+        "010",
+        "Caterpie"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
         "025",
         "Pikachu"
       ],
@@ -18628,6 +19552,10 @@
         "Vileplume"
       ],
       [
+        "046",
+        "Paras"
+      ],
+      [
         "048",
         "Venonat"
       ],
@@ -18642,6 +19570,14 @@
       [
         "061",
         "Poliwhirl"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
+        "070",
+        "Weepinbell"
       ],
       [
         "086",
@@ -18778,8 +19714,20 @@
         "Gligar"
       ],
       [
+        "243",
+        "Raikou"
+      ],
+      [
+        "244",
+        "Entei"
+      ],
+      [
         "245",
         "Suicune"
+      ],
+      [
+        "250",
+        "Ho-Oh"
       ],
       [
         "010",
@@ -18796,10 +19744,6 @@
       [
         "025",
         "Pikachu"
-      ],
-      [
-        "046",
-        "Paras"
       ],
       [
         "047",
@@ -18836,6 +19780,26 @@
     },
     "hasAired": true,
     "seen": [
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "107",
+        "Hitmonchan"
+      ],
+      [
+        "108",
+        "Lickitung"
+      ],
+      [
+        "112",
+        "Rhydon"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
       [
         "128",
         "Tauros"
@@ -18877,8 +19841,20 @@
         "Wobbuffet"
       ],
       [
+        "210",
+        "Granbull"
+      ],
+      [
         "216",
         "Teddiursa"
+      ],
+      [
+        "015",
+        "Beedrill"
+      ],
+      [
+        "020",
+        "Raticate"
       ],
       [
         "024",
@@ -18889,12 +19865,32 @@
         "Pikachu"
       ],
       [
+        "031",
+        "Nidoqueen"
+      ],
+      [
+        "045",
+        "Vileplume"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
         "059",
         "Arcanine"
+      ],
+      [
+        "062",
+        "Poliwrath"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "085",
+        "Dodrio"
       ]
     ]
   },
@@ -19786,10 +20782,6 @@
       [
         "025",
         "Pikachu"
-      ],
-      [
-        "046",
-        "Paras"
       ],
       [
         "047",
@@ -21598,6 +22590,10 @@
         "Togepi"
       ],
       [
+        "199",
+        "Slowking"
+      ],
+      [
         "201",
         "Unown"
       ],
@@ -21606,8 +22602,20 @@
         "Wobbuffet"
       ],
       [
+        "239",
+        "Elekid"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
         "246",
         "Larvitar"
+      ],
+      [
+        "248",
+        "Tyranitar"
       ],
       [
         "025",
@@ -21616,6 +22624,10 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "090",
+        "Shellder"
       ]
     ]
   },
@@ -22325,6 +23337,14 @@
     "hasAired": true,
     "seen": [
       [
+        "106",
+        "Hitmonlee"
+      ],
+      [
+        "107",
+        "Hitmonchan"
+      ],
+      [
         "111",
         "Rhyhorn"
       ],
@@ -22335,6 +23355,30 @@
       [
         "122",
         "Mr. Mime"
+      ],
+      [
+        "129",
+        "Magikarp"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "134",
+        "Vaporeon"
+      ],
+      [
+        "135",
+        "Jolteon"
+      ],
+      [
+        "136",
+        "Flareon"
       ],
       [
         "164",
@@ -22349,6 +23393,14 @@
         "Politoed"
       ],
       [
+        "196",
+        "Espeon"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
         "200",
         "Misdreavus"
       ],
@@ -22357,12 +23409,56 @@
         "Wobbuffet"
       ],
       [
+        "223",
+        "Remoraid"
+      ],
+      [
+        "224",
+        "Octillery"
+      ],
+      [
+        "228",
+        "Houndour"
+      ],
+      [
         "229",
         "Houndoom"
       ],
       [
+        "236",
+        "Tyrogue"
+      ],
+      [
+        "237",
+        "Hitmontop"
+      ],
+      [
         "257",
         "Blaziken"
+      ],
+      [
+        "263",
+        "Zigzagoon"
+      ],
+      [
+        "270",
+        "Lotad"
+      ],
+      [
+        "273",
+        "Seedot"
+      ],
+      [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "319",
+        "Sharpedo"
+      ],
+      [
+        "320",
+        "Wailmer"
       ],
       [
         "006",
@@ -22377,12 +23473,32 @@
         "Blastoise"
       ],
       [
+        "019",
+        "Rattata"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "043",
+        "Oddish"
+      ],
+      [
+        "044",
+        "Gloom"
+      ],
+      [
+        "045",
+        "Vileplume"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "069",
+        "Bellsprout"
       ],
       [
         "078",
@@ -23180,6 +24296,22 @@
         "Tauros"
       ],
       [
+        "133",
+        "Eevee"
+      ],
+      [
+        "134",
+        "Vaporeon"
+      ],
+      [
+        "135",
+        "Jolteon"
+      ],
+      [
+        "136",
+        "Flareon"
+      ],
+      [
         "161",
         "Sentret"
       ],
@@ -23208,12 +24340,24 @@
         "Aipom"
       ],
       [
+        "196",
+        "Espeon"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
         "198",
         "Murkrow"
       ],
       [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "204",
+        "Pineco"
       ],
       [
         "205",
@@ -23262,6 +24406,10 @@
       [
         "025",
         "Pikachu"
+      ],
+      [
+        "026",
+        "Raichu"
       ],
       [
         "038",
@@ -23528,6 +24676,74 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
+        "104",
+        "Cubone"
+      ],
+      [
+        "120",
+        "Staryu"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "132",
+        "Ditto"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "157",
+        "Typhlosion"
+      ],
+      [
+        "160",
+        "Feraligatr"
+      ],
+      [
+        "161",
+        "Sentret"
+      ],
+      [
+        "163",
+        "Hoothoot"
+      ],
+      [
+        "182",
+        "Bellossom"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "188",
+        "Skiploom"
+      ],
+      [
+        "189",
+        "Jumpluff"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
         "202",
         "Wobbuffet"
       ],
@@ -23536,8 +24752,44 @@
         "Forretress"
       ],
       [
+        "215",
+        "Sneasel"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "220",
+        "Swinub"
+      ],
+      [
+        "235",
+        "Smeargle"
+      ],
+      [
+        "237",
+        "Hitmontop"
+      ],
+      [
+        "238",
+        "Smoochum"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
         "252",
         "Treecko"
+      ],
+      [
+        "258",
+        "Mudkip"
       ],
       [
         "265",
@@ -23560,16 +24812,104 @@
         "Seviper"
       ],
       [
+        "001",
+        "Bulbasaur"
+      ],
+      [
+        "004",
+        "Charmander"
+      ],
+      [
+        "007",
+        "Squirtle"
+      ],
+      [
+        "008",
+        "Wartortle"
+      ],
+      [
+        "010",
+        "Caterpie"
+      ],
+      [
+        "011",
+        "Metapod"
+      ],
+      [
+        "013",
+        "Weedle"
+      ],
+      [
+        "015",
+        "Beedrill"
+      ],
+      [
+        "016",
+        "Pidgey"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
+        "024",
+        "Arbok"
+      ],
+      [
         "025",
         "Pikachu"
+      ],
+      [
+        "027",
+        "Sandshrew"
+      ],
+      [
+        "029",
+        "Nidoran♀"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "048",
+        "Venonat"
       ],
       [
         "052",
         "Meowth"
       ],
       [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
+        "070",
+        "Weepinbell"
+      ],
+      [
         "074",
         "Geodude"
+      ],
+      [
+        "090",
+        "Shellder"
       ]
     ]
   },
@@ -25288,10 +26628,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -25680,7 +27016,7 @@
     },
     "episodeName": {
       "jpn": "ポケモンコンテスト・ハジツゲ大会！！",
-      "eng": "Pokémon Contest - Hajitsuge Convention!!"
+      "eng": "Pokémon Contest - Hazitsuge Convention!!"
     },
     "hasAired": true,
     "seen": [
@@ -26335,12 +27671,60 @@
     "hasAired": true,
     "seen": [
       [
+        "178",
+        "Xatu"
+      ],
+      [
         "202",
         "Wobbuffet"
       ],
       [
+        "217",
+        "Ursaring"
+      ],
+      [
+        "218",
+        "Slugma"
+      ],
+      [
+        "235",
+        "Smeargle"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "255",
+        "Torchic"
+      ],
+      [
         "258",
         "Mudkip"
+      ],
+      [
+        "259",
+        "Marshtomp"
+      ],
+      [
+        "260",
+        "Swampert"
+      ],
+      [
+        "261",
+        "Poochyena"
+      ],
+      [
+        "267",
+        "Beautifly"
+      ],
+      [
+        "281",
+        "Kirlia"
+      ],
+      [
+        "294",
+        "Loudred"
       ],
       [
         "296",
@@ -26363,20 +27747,44 @@
         "Torkoal"
       ],
       [
+        "330",
+        "Flygon"
+      ],
+      [
         "331",
         "Cacnea"
+      ],
+      [
+        "335",
+        "Zangoose"
       ],
       [
         "336",
         "Seviper"
       ],
       [
+        "360",
+        "Wynaut"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "027",
+        "Sandshrew"
+      ],
+      [
+        "049",
+        "Venomoth"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
       ]
     ]
   },
@@ -26714,10 +28122,6 @@
         "Pikachu"
       ],
       [
-        "046",
-        "Paras"
-      ],
-      [
         "047",
         "Parasect"
       ],
@@ -26887,6 +28291,14 @@
         "Chansey"
       ],
       [
+        "174",
+        "Igglybuff"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
         "202",
         "Wobbuffet"
       ],
@@ -26907,12 +28319,24 @@
         "Taillow"
       ],
       [
+        "285",
+        "Shroomish"
+      ],
+      [
         "288",
         "Vigoroth"
       ],
       [
         "300",
         "Skitty"
+      ],
+      [
+        "304",
+        "Aron"
+      ],
+      [
+        "313",
+        "Volbeat"
       ],
       [
         "324",
@@ -26923,6 +28347,14 @@
         "Cacnea"
       ],
       [
+        "333",
+        "Swablu"
+      ],
+      [
+        "335",
+        "Zangoose"
+      ],
+      [
         "336",
         "Seviper"
       ],
@@ -26931,12 +28363,36 @@
         "Corphish"
       ],
       [
+        "352",
+        "Kecleon"
+      ],
+      [
+        "363",
+        "Spheal"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
         "052",
         "Meowth"
+      ],
+      [
+        "055",
+        "Golduck"
+      ],
+      [
+        "063",
+        "Abra"
+      ],
+      [
+        "066",
+        "Machop"
+      ],
+      [
+        "084",
+        "Doduo"
       ]
     ]
   },
@@ -27748,6 +29204,10 @@
         "Dustox"
       ],
       [
+        "270",
+        "Lotad"
+      ],
+      [
         "300",
         "Skitty"
       ],
@@ -27803,8 +29263,32 @@
     "hasAired": true,
     "seen": [
       [
+        "169",
+        "Crobat"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "188",
+        "Skiploom"
+      ],
+      [
+        "189",
+        "Jumpluff"
+      ],
+      [
+        "193",
+        "Yanma"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "227",
+        "Skarmory"
       ],
       [
         "267",
@@ -27823,6 +29307,18 @@
         "Swellow"
       ],
       [
+        "278",
+        "Wingull"
+      ],
+      [
+        "279",
+        "Pelipper"
+      ],
+      [
+        "291",
+        "Ninjask"
+      ],
+      [
         "313",
         "Volbeat"
       ],
@@ -27833,6 +29329,10 @@
       [
         "025",
         "Pikachu"
+      ],
+      [
+        "042",
+        "Golbat"
       ],
       [
         "052",
@@ -28229,16 +29729,100 @@
     "hasAired": true,
     "seen": [
       [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "161",
+        "Sentret"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "177",
+        "Natu"
+      ],
+      [
+        "178",
+        "Xatu"
+      ],
+      [
+        "182",
+        "Bellossom"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "217",
+        "Ursaring"
+      ],
+      [
+        "223",
+        "Remoraid"
       ],
       [
         "253",
         "Grovyle"
       ],
       [
+        "259",
+        "Marshtomp"
+      ],
+      [
+        "265",
+        "Wurmple"
+      ],
+      [
         "271",
         "Lombre"
+      ],
+      [
+        "281",
+        "Kirlia"
+      ],
+      [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "295",
+        "Exploud"
+      ],
+      [
+        "311",
+        "Plusle"
+      ],
+      [
+        "312",
+        "Minun"
+      ],
+      [
+        "316",
+        "Gulpin"
       ],
       [
         "323",
@@ -28255,6 +29839,10 @@
       [
         "341",
         "Corphish"
+      ],
+      [
+        "348",
+        "Armaldo"
       ],
       [
         "358",
@@ -28275,6 +29863,10 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "067",
+        "Machoke"
       ]
     ]
   },
@@ -28535,10 +30127,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "025",
@@ -29885,16 +31473,64 @@
     "hasAired": true,
     "seen": [
       [
+        "117",
+        "Seadra"
+      ],
+      [
+        "118",
+        "Goldeen"
+      ],
+      [
         "119",
         "Seaking"
+      ],
+      [
+        "120",
+        "Staryu"
+      ],
+      [
+        "170",
+        "Chinchou"
+      ],
+      [
+        "171",
+        "Lanturn"
       ],
       [
         "202",
         "Wobbuffet"
       ],
       [
+        "222",
+        "Corsola"
+      ],
+      [
         "253",
         "Grovyle"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "279",
+        "Pelipper"
+      ],
+      [
+        "284",
+        "Masquerain"
+      ],
+      [
+        "298",
+        "Azurill"
+      ],
+      [
+        "320",
+        "Wailmer"
+      ],
+      [
+        "339",
+        "Barboach"
       ],
       [
         "341",
@@ -29913,8 +31549,16 @@
         "Snorunt"
       ],
       [
+        "363",
+        "Spheal"
+      ],
+      [
         "364",
         "Sealeo"
+      ],
+      [
+        "368",
+        "Gorebyss"
       ],
       [
         "370",
@@ -29927,6 +31571,10 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "073",
+        "Tentacruel"
       ]
     ]
   },
@@ -30403,6 +32051,10 @@
     "hasAired": true,
     "seen": [
       [
+        "112",
+        "Rhydon"
+      ],
+      [
         "124",
         "Jynx"
       ],
@@ -30415,16 +32067,44 @@
         "Houndoom"
       ],
       [
+        "231",
+        "Phanpy"
+      ],
+      [
         "256",
         "Combusken"
+      ],
+      [
+        "262",
+        "Mightyena"
       ],
       [
         "267",
         "Beautifly"
       ],
       [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "298",
+        "Azurill"
+      ],
+      [
         "300",
         "Skitty"
+      ],
+      [
+        "328",
+        "Trapinch"
+      ],
+      [
+        "333",
+        "Swablu"
+      ],
+      [
+        "351",
+        "Castform"
       ],
       [
         "358",
@@ -30435,12 +32115,20 @@
         "Snorunt"
       ],
       [
+        "363",
+        "Spheal"
+      ],
+      [
         "001",
         "Bulbasaur"
       ],
       [
         "025",
         "Pikachu"
+      ],
+      [
+        "032",
+        "Nidoran♂"
       ],
       [
         "052",
@@ -30632,20 +32320,60 @@
         "Ditto"
       ],
       [
+        "183",
+        "Marill"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "252",
+        "Treecko"
       ],
       [
         "256",
         "Combusken"
       ],
       [
+        "258",
+        "Mudkip"
+      ],
+      [
+        "265",
+        "Wurmple"
+      ],
+      [
         "267",
         "Beautifly"
       ],
       [
+        "270",
+        "Lotad"
+      ],
+      [
+        "274",
+        "Nuzleaf"
+      ],
+      [
+        "276",
+        "Taillow"
+      ],
+      [
         "278",
         "Wingull"
+      ],
+      [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "287",
+        "Slakoth"
+      ],
+      [
+        "293",
+        "Whismur"
       ],
       [
         "300",
@@ -30664,12 +32392,20 @@
         "Chimecho"
       ],
       [
+        "372",
+        "Shelgon"
+      ],
+      [
         "446",
         "Munchlax"
       ],
       [
         "001",
         "Bulbasaur"
+      ],
+      [
+        "016",
+        "Pidgey"
       ],
       [
         "025",
@@ -30680,12 +32416,24 @@
         "Golbat"
       ],
       [
+        "043",
+        "Oddish"
+      ],
+      [
+        "051",
+        "Dugtrio"
+      ],
+      [
         "052",
         "Meowth"
       ],
       [
         "058",
         "Growlithe"
+      ],
+      [
+        "069",
+        "Bellsprout"
       ]
     ]
   },
@@ -30698,7 +32446,7 @@
     },
     "episodeName": {
       "jpn": "サトシとハルカ！ホウエンでの熱きバトル！！",
-      "eng": "Satoshi and Haruka! Heated Battles of Hōen!!"
+      "eng": "Satoshi and Haruka! Heated Battles of Hoenn!!"
     },
     "hasAired": true,
     "seen": [
@@ -31017,12 +32765,96 @@
     "hasAired": true,
     "seen": [
       [
+        "100",
+        "Voltorb"
+      ],
+      [
+        "101",
+        "Electrode"
+      ],
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "108",
+        "Lickitung"
+      ],
+      [
         "113",
         "Chansey"
       ],
       [
+        "134",
+        "Vaporeon"
+      ],
+      [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "149",
+        "Dragonite"
+      ],
+      [
+        "156",
+        "Quilava"
+      ],
+      [
+        "166",
+        "Ledian"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "190",
+        "Aipom"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
+        "196",
+        "Espeon"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "213",
+        "Shuckle"
+      ],
+      [
+        "214",
+        "Heracross"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "227",
+        "Skarmory"
+      ],
+      [
+        "228",
+        "Houndour"
+      ],
+      [
+        "232",
+        "Donphan"
+      ],
+      [
+        "237",
+        "Hitmontop"
+      ],
+      [
+        "241",
+        "Miltank"
       ],
       [
         "256",
@@ -31033,12 +32865,20 @@
         "Marshtomp"
       ],
       [
+        "260",
+        "Swampert"
+      ],
+      [
         "267",
         "Beautifly"
       ],
       [
         "284",
         "Masquerain"
+      ],
+      [
+        "286",
+        "Breloom"
       ],
       [
         "287",
@@ -31053,12 +32893,32 @@
         "Slaking"
       ],
       [
+        "292",
+        "Shedinja"
+      ],
+      [
+        "293",
+        "Whismur"
+      ],
+      [
+        "296",
+        "Makuhita"
+      ],
+      [
         "300",
         "Skitty"
       ],
       [
         "301",
         "Delcatty"
+      ],
+      [
+        "305",
+        "Lairon"
+      ],
+      [
+        "314",
+        "Illumise"
       ],
       [
         "315",
@@ -31077,12 +32937,24 @@
         "Grumpig"
       ],
       [
+        "328",
+        "Trapinch"
+      ],
+      [
         "332",
         "Cacturne"
       ],
       [
         "336",
         "Seviper"
+      ],
+      [
+        "338",
+        "Solrock"
+      ],
+      [
+        "342",
+        "Crawdaunt"
       ],
       [
         "350",
@@ -31105,6 +32977,18 @@
         "Snorunt"
       ],
       [
+        "364",
+        "Sealeo"
+      ],
+      [
+        "371",
+        "Bagon"
+      ],
+      [
+        "372",
+        "Shelgon"
+      ],
+      [
         "446",
         "Munchlax"
       ],
@@ -31113,12 +32997,48 @@
         "Bulbasaur"
       ],
       [
+        "022",
+        "Fearow"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "026",
+        "Raichu"
+      ],
+      [
+        "027",
+        "Sandshrew"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "038",
+        "Ninetales"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "065",
+        "Alakazam"
+      ],
+      [
+        "093",
+        "Haunter"
       ]
     ]
   },
@@ -31345,7 +33265,7 @@
     },
     "episodeName": {
       "jpn": "サイユウシティ到着！長靴をはいたニャース！？",
-      "eng": "Arrival in Saiyū City! Nyarth in Boots!?"
+      "eng": "Arrival in Saiyu City! Nyarth in Boots!?"
     },
     "hasAired": true,
     "seen": [
@@ -31417,8 +33337,24 @@
         "Hitmonlee"
       ],
       [
+        "107",
+        "Hitmonchan"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
         "125",
         "Electabuzz"
+      ],
+      [
+        "126",
+        "Magmar"
+      ],
+      [
+        "149",
+        "Dragonite"
       ],
       [
         "202",
@@ -31437,6 +33373,10 @@
         "Steelix"
       ],
       [
+        "239",
+        "Elekid"
+      ],
+      [
         "253",
         "Grovyle"
       ],
@@ -31449,6 +33389,14 @@
         "Swellow"
       ],
       [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "291",
+        "Ninjask"
+      ],
+      [
         "324",
         "Torkoal"
       ],
@@ -31457,12 +33405,24 @@
         "Corphish"
       ],
       [
+        "351",
+        "Castform"
+      ],
+      [
+        "352",
+        "Kecleon"
+      ],
+      [
         "358",
         "Chimecho"
       ],
       [
         "362",
         "Glalie"
+      ],
+      [
+        "366",
+        "Clamperl"
       ],
       [
         "374",
@@ -31477,6 +33437,14 @@
         "Pikachu"
       ],
       [
+        "034",
+        "Nidoking"
+      ],
+      [
+        "048",
+        "Venonat"
+      ],
+      [
         "052",
         "Meowth"
       ],
@@ -31485,8 +33453,20 @@
         "Persian"
       ],
       [
+        "055",
+        "Golduck"
+      ],
+      [
         "058",
         "Growlithe"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "088",
+        "Grimer"
       ]
     ]
   },
@@ -31499,7 +33479,7 @@
     },
     "episodeName": {
       "jpn": "開幕！サイユウ大会！！",
-      "eng": "Opening! Saiyū Tournament!"
+      "eng": "Opening! Saiyu Tournament!"
     },
     "hasAired": true,
     "seen": [
@@ -31567,8 +33547,32 @@
     "hasAired": true,
     "seen": [
       [
+        "105",
+        "Marowak"
+      ],
+      [
+        "106",
+        "Hitmonlee"
+      ],
+      [
+        "107",
+        "Hitmonchan"
+      ],
+      [
         "122",
         "Mr. Mime"
+      ],
+      [
+        "123",
+        "Scyther"
+      ],
+      [
+        "125",
+        "Electabuzz"
+      ],
+      [
+        "126",
+        "Magmar"
       ],
       [
         "156",
@@ -31615,12 +33619,20 @@
         "Aggron"
       ],
       [
+        "317",
+        "Swalot"
+      ],
+      [
         "324",
         "Torkoal"
       ],
       [
         "341",
         "Corphish"
+      ],
+      [
+        "357",
+        "Tropius"
       ],
       [
         "362",
@@ -31643,6 +33655,14 @@
         "Pikachu"
       ],
       [
+        "034",
+        "Nidoking"
+      ],
+      [
+        "048",
+        "Venonat"
+      ],
+      [
         "049",
         "Venomoth"
       ],
@@ -31655,12 +33675,24 @@
         "Meowth"
       ],
       [
+        "053",
+        "Persian"
+      ],
+      [
         "055",
         "Golduck"
       ],
       [
         "058",
         "Growlithe"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "088",
+        "Grimer"
       ]
     ]
   },
@@ -32832,6 +34864,22 @@
         "Ariados"
       ],
       [
+        "183",
+        "Marill"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "189",
+        "Jumpluff"
+      ],
+      [
+        "190",
+        "Aipom"
+      ],
+      [
         "196",
         "Espeon"
       ],
@@ -32844,8 +34892,28 @@
         "Scizor"
       ],
       [
+        "231",
+        "Phanpy"
+      ],
+      [
         "256",
         "Combusken"
+      ],
+      [
+        "292",
+        "Shedinja"
+      ],
+      [
+        "300",
+        "Skitty"
+      ],
+      [
+        "314",
+        "Illumise"
+      ],
+      [
+        "328",
+        "Trapinch"
       ],
       [
         "331",
@@ -32860,12 +34928,60 @@
         "Squirtle"
       ],
       [
+        "013",
+        "Weedle"
+      ],
+      [
+        "016",
+        "Pidgey"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "027",
+        "Sandshrew"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "048",
+        "Venonat"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "069",
+        "Bellsprout"
       ]
     ]
   },
@@ -33366,6 +35482,10 @@
       [
         "103",
         "Exeggutor"
+      ],
+      [
+        "156",
+        "Quilava"
       ],
       [
         "182",
@@ -34000,12 +36120,48 @@
         "Igglybuff"
       ],
       [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "189",
+        "Jumpluff"
+      ],
+      [
+        "190",
+        "Aipom"
+      ],
+      [
         "194",
         "Wooper"
       ],
       [
         "205",
         "Forretress"
+      ],
+      [
+        "207",
+        "Gligar"
+      ],
+      [
+        "215",
+        "Sneasel"
+      ],
+      [
+        "217",
+        "Ursaring"
+      ],
+      [
+        "223",
+        "Remoraid"
+      ],
+      [
+        "231",
+        "Phanpy"
       ],
       [
         "232",
@@ -34016,16 +36172,40 @@
         "Smoochum"
       ],
       [
+        "240",
+        "Magby"
+      ],
+      [
+        "246",
+        "Larvitar"
+      ],
+      [
         "253",
         "Grovyle"
+      ],
+      [
+        "255",
+        "Torchic"
       ],
       [
         "256",
         "Combusken"
       ],
       [
+        "258",
+        "Mudkip"
+      ],
+      [
         "259",
         "Marshtomp"
+      ],
+      [
+        "261",
+        "Poochyena"
+      ],
+      [
+        "263",
+        "Zigzagoon"
       ],
       [
         "269",
@@ -34034,6 +36214,10 @@
       [
         "277",
         "Swellow"
+      ],
+      [
+        "294",
+        "Loudred"
       ],
       [
         "298",
@@ -34046,6 +36230,10 @@
       [
         "341",
         "Corphish"
+      ],
+      [
+        "353",
+        "Shuppet"
       ],
       [
         "438",
@@ -34076,8 +36264,20 @@
         "Nidoran♂"
       ],
       [
+        "043",
+        "Oddish"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "069",
+        "Bellsprout"
       ]
     ]
   },
@@ -34095,20 +36295,96 @@
     "hasAired": true,
     "seen": [
       [
+        "104",
+        "Cubone"
+      ],
+      [
+        "106",
+        "Hitmonlee"
+      ],
+      [
+        "111",
+        "Rhyhorn"
+      ],
+      [
+        "112",
+        "Rhydon"
+      ],
+      [
         "133",
         "Eevee"
+      ],
+      [
+        "162",
+        "Furret"
       ],
       [
         "168",
         "Ariados"
       ],
       [
+        "170",
+        "Chinchou"
+      ],
+      [
+        "173",
+        "Cleffa"
+      ],
+      [
+        "186",
+        "Politoed"
+      ],
+      [
+        "188",
+        "Skiploom"
+      ],
+      [
+        "192",
+        "Sunflora"
+      ],
+      [
+        "195",
+        "Quagsire"
+      ],
+      [
         "202",
         "Wobbuffet"
       ],
       [
+        "210",
+        "Granbull"
+      ],
+      [
+        "220",
+        "Swinub"
+      ],
+      [
         "224",
         "Octillery"
+      ],
+      [
+        "280",
+        "Ralts"
+      ],
+      [
+        "291",
+        "Ninjask"
+      ],
+      [
+        "303",
+        "Mawile"
+      ],
+      [
+        "323",
+        "Camerupt"
+      ],
+      [
+        "329",
+        "Vibrava"
+      ],
+      [
+        "372",
+        "Shelgon"
       ],
       [
         "438",
@@ -34123,12 +36399,52 @@
         "Squirtle"
       ],
       [
+        "015",
+        "Beedrill"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "032",
+        "Nidoran♂"
+      ],
+      [
+        "044",
+        "Gloom"
+      ],
+      [
+        "046",
+        "Paras"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "069",
+        "Bellsprout"
+      ],
+      [
+        "082",
+        "Magneton"
+      ],
+      [
+        "087",
+        "Dewgong"
+      ],
+      [
+        "092",
+        "Gastly"
       ]
     ]
   },
@@ -34585,12 +36901,24 @@
     "hasAired": true,
     "seen": [
       [
+        "113",
+        "Chansey"
+      ],
+      [
         "123",
         "Scyther"
       ],
       [
         "133",
         "Eevee"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "189",
+        "Jumpluff"
       ],
       [
         "202",
@@ -34601,12 +36929,44 @@
         "Scizor"
       ],
       [
+        "214",
+        "Heracross"
+      ],
+      [
+        "231",
+        "Phanpy"
+      ],
+      [
         "254",
         "Sceptile"
       ],
       [
         "256",
         "Combusken"
+      ],
+      [
+        "258",
+        "Mudkip"
+      ],
+      [
+        "285",
+        "Shroomish"
+      ],
+      [
+        "298",
+        "Azurill"
+      ],
+      [
+        "316",
+        "Gulpin"
+      ],
+      [
+        "341",
+        "Corphish"
+      ],
+      [
+        "361",
+        "Snorunt"
       ],
       [
         "446",
@@ -34839,6 +37199,14 @@
     "hasAired": true,
     "seen": [
       [
+        "118",
+        "Goldeen"
+      ],
+      [
+        "122",
+        "Mr. Mime"
+      ],
+      [
         "124",
         "Jynx"
       ],
@@ -34851,8 +37219,16 @@
         "Wobbuffet"
       ],
       [
+        "209",
+        "Snubbull"
+      ],
+      [
         "238",
         "Smoochum"
+      ],
+      [
+        "246",
+        "Larvitar"
       ],
       [
         "256",
@@ -34863,8 +37239,32 @@
         "Swellow"
       ],
       [
+        "281",
+        "Kirlia"
+      ],
+      [
+        "294",
+        "Loudred"
+      ],
+      [
+        "303",
+        "Mawile"
+      ],
+      [
         "439",
         "Mime Jr."
+      ],
+      [
+        "013",
+        "Weedle"
+      ],
+      [
+        "015",
+        "Beedrill"
+      ],
+      [
+        "018",
+        "Pidgeot"
       ],
       [
         "021",
@@ -34877,6 +37277,14 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "083",
+        "Farfetch'd"
+      ],
+      [
+        "085",
+        "Dodrio"
       ]
     ]
   },
@@ -35437,10 +37845,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "020",
@@ -36772,12 +39176,32 @@
     "hasAired": true,
     "seen": [
       [
+        "129",
+        "Magikarp"
+      ],
+      [
         "133",
         "Eevee"
       ],
       [
+        "164",
+        "Noctowl"
+      ],
+      [
+        "187",
+        "Hoppip"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "224",
+        "Octillery"
       ],
       [
         "254",
@@ -36796,12 +39220,92 @@
         "Mime Jr."
       ],
       [
+        "005",
+        "Charmeleon"
+      ],
+      [
+        "013",
+        "Weedle"
+      ],
+      [
+        "016",
+        "Pidgey"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
+        "021",
+        "Spearow"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "027",
+        "Sandshrew"
+      ],
+      [
+        "029",
+        "Nidoran♀"
+      ],
+      [
+        "035",
+        "Clefairy"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "041",
+        "Zubat"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "044",
+        "Gloom"
+      ],
+      [
+        "046",
+        "Paras"
+      ],
+      [
+        "048",
+        "Venonat"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "063",
+        "Abra"
+      ],
+      [
+        "072",
+        "Tentacool"
+      ],
+      [
+        "084",
+        "Doduo"
+      ],
+      [
+        "086",
+        "Seel"
       ]
     ]
   },
@@ -37721,10 +40225,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "019",
         "Rattata"
       ],
@@ -38199,10 +40699,6 @@
         "Omanyte"
       ],
       [
-        "140",
-        "Kabuto"
-      ],
-      [
         "141",
         "Kabutops"
       ],
@@ -38523,6 +41019,18 @@
         "Wobbuffet"
       ],
       [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
+        "260",
+        "Swampert"
+      ],
+      [
         "281",
         "Kirlia"
       ],
@@ -38533,6 +41041,14 @@
       [
         "336",
         "Seviper"
+      ],
+      [
+        "359",
+        "Absol"
+      ],
+      [
+        "369",
+        "Relicanth"
       ],
       [
         "373",
@@ -38561,6 +41077,10 @@
       [
         "025",
         "Pikachu"
+      ],
+      [
+        "038",
+        "Ninetales"
       ],
       [
         "042",
@@ -39858,7 +42378,7 @@
     },
     "episodeName": {
       "jpn": "シンオウ時空伝説！",
-      "eng": "The Shin'ō Space-Time Legend!"
+      "eng": "The Sinnoh Space-Time Legend!"
     },
     "hasAired": true,
     "seen": [
@@ -40025,6 +42545,14 @@
         "Chansey"
       ],
       [
+        "115",
+        "Kangaskhan"
+      ],
+      [
+        "170",
+        "Chinchou"
+      ],
+      [
         "185",
         "Sudowoodo"
       ],
@@ -40033,8 +42561,20 @@
         "Wobbuffet"
       ],
       [
+        "246",
+        "Larvitar"
+      ],
+      [
+        "263",
+        "Zigzagoon"
+      ],
+      [
         "269",
         "Dustox"
+      ],
+      [
+        "270",
+        "Lotad"
       ],
       [
         "331",
@@ -40043,6 +42583,14 @@
       [
         "336",
         "Seviper"
+      ],
+      [
+        "340",
+        "Whiscash"
+      ],
+      [
+        "352",
+        "Kecleon"
       ],
       [
         "393",
@@ -40057,6 +42605,18 @@
         "Staravia"
       ],
       [
+        "399",
+        "Bidoof"
+      ],
+      [
+        "403",
+        "Shinx"
+      ],
+      [
+        "431",
+        "Glameow"
+      ],
+      [
         "439",
         "Mime Jr."
       ],
@@ -40069,8 +42629,16 @@
         "Croagunk"
       ],
       [
+        "010",
+        "Caterpie"
+      ],
+      [
         "013",
         "Weedle"
+      ],
+      [
+        "016",
+        "Pidgey"
       ],
       [
         "025",
@@ -40079,6 +42647,18 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "055",
+        "Golduck"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "065",
+        "Alakazam"
       ]
     ]
   },
@@ -41085,8 +43665,24 @@
         "Piplup"
       ],
       [
+        "408",
+        "Cranidos"
+      ],
+      [
+        "410",
+        "Shieldon"
+      ],
+      [
+        "414",
+        "Mothim"
+      ],
+      [
         "422",
         "Shellos"
+      ],
+      [
+        "425",
+        "Drifloon"
       ],
       [
         "431",
@@ -41107,6 +43703,10 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "092",
+        "Gastly"
       ]
     ]
   },
@@ -41657,10 +44257,6 @@
       [
         "025",
         "Pikachu"
-      ],
-      [
-        "046",
-        "Paras"
       ],
       [
         "047",
@@ -42525,12 +45121,20 @@
         "Shinx"
       ],
       [
+        "406",
+        "Budew"
+      ],
+      [
         "420",
         "Cherubi"
       ],
       [
         "430",
         "Honchkrow"
+      ],
+      [
+        "434",
+        "Stunky"
       ],
       [
         "448",
@@ -42966,10 +45570,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "019",
@@ -49445,6 +52045,10 @@
         "Pachirisu"
       ],
       [
+        "427",
+        "Buneary"
+      ],
+      [
         "431",
         "Glameow"
       ],
@@ -49875,7 +52479,7 @@
     },
     "episodeName": {
       "jpn": "ジョウトフェスタ！チコリータとワニノコ登場！！",
-      "eng": "Jōto Festa! Enter Chicorita and Waninoko!!"
+      "eng": "Johto Festa! Enter Chicorita and Waninoko!!"
     },
     "hasAired": true,
     "seen": [
@@ -51091,8 +53695,80 @@
         "Snorlax"
       ],
       [
+        "181",
+        "Ampharos"
+      ],
+      [
+        "186",
+        "Politoed"
+      ],
+      [
+        "190",
+        "Aipom"
+      ],
+      [
+        "195",
+        "Quagsire"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "210",
+        "Granbull"
+      ],
+      [
+        "214",
+        "Heracross"
+      ],
+      [
+        "215",
+        "Sneasel"
+      ],
+      [
+        "216",
+        "Teddiursa"
+      ],
+      [
+        "217",
+        "Ursaring"
+      ],
+      [
+        "235",
+        "Smeargle"
+      ],
+      [
+        "236",
+        "Tyrogue"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "240",
+        "Magby"
+      ],
+      [
+        "241",
+        "Miltank"
+      ],
+      [
+        "274",
+        "Nuzleaf"
+      ],
+      [
+        "308",
+        "Medicham"
+      ],
+      [
+        "325",
+        "Spoink"
+      ],
+      [
+        "326",
+        "Grumpig"
       ],
       [
         "391",
@@ -51107,12 +53783,28 @@
         "Staraptor"
       ],
       [
+        "404",
+        "Luxio"
+      ],
+      [
+        "434",
+        "Stunky"
+      ],
+      [
         "439",
         "Mime Jr."
       ],
       [
+        "461",
+        "Weavile"
+      ],
+      [
         "469",
         "Yanmega"
+      ],
+      [
+        "471",
+        "Glaceon"
       ],
       [
         "025",
@@ -51121,6 +53813,22 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "063",
+        "Abra"
+      ],
+      [
+        "067",
+        "Machoke"
+      ],
+      [
+        "096",
+        "Drowzee"
       ]
     ]
   },
@@ -51533,8 +54241,16 @@
     "hasAired": true,
     "seen": [
       [
+        "183",
+        "Marill"
+      ],
+      [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "216",
+        "Teddiursa"
       ],
       [
         "336",
@@ -51555,6 +54271,14 @@
       [
         "405",
         "Luxray"
+      ],
+      [
+        "420",
+        "Cherubi"
+      ],
+      [
+        "438",
+        "Bonsly"
       ],
       [
         "443",
@@ -52933,6 +55657,18 @@
         "Noctowl"
       ],
       [
+        "178",
+        "Xatu"
+      ],
+      [
+        "184",
+        "Azumarill"
+      ],
+      [
+        "189",
+        "Jumpluff"
+      ],
+      [
         "202",
         "Wobbuffet"
       ],
@@ -52945,8 +55681,24 @@
         "Donphan"
       ],
       [
+        "236",
+        "Tyrogue"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "261",
+        "Poochyena"
+      ],
+      [
         "278",
         "Wingull"
+      ],
+      [
+        "293",
+        "Whismur"
       ],
       [
         "296",
@@ -52957,8 +55709,16 @@
         "Torkoal"
       ],
       [
+        "325",
+        "Spoink"
+      ],
+      [
         "341",
         "Corphish"
+      ],
+      [
+        "361",
+        "Snorunt"
       ],
       [
         "362",
@@ -52973,20 +55733,72 @@
         "Luxray"
       ],
       [
+        "419",
+        "Floatzel"
+      ],
+      [
+        "428",
+        "Lopunny"
+      ],
+      [
+        "432",
+        "Purugly"
+      ],
+      [
+        "437",
+        "Bronzong"
+      ],
+      [
+        "444",
+        "Gabite"
+      ],
+      [
         "453",
         "Croagunk"
+      ],
+      [
+        "463",
+        "Lickilicky"
+      ],
+      [
+        "471",
+        "Glaceon"
+      ],
+      [
+        "476",
+        "Probopass"
+      ],
+      [
+        "485",
+        "Heatran"
       ],
       [
         "001",
         "Bulbasaur"
       ],
       [
+        "021",
+        "Spearow"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "039",
+        "Jigglypuff"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "074",
+        "Geodude"
+      ],
+      [
+        "084",
+        "Doduo"
       ],
       [
         "089",
@@ -53003,7 +55815,7 @@
     },
     "episodeName": {
       "jpn": "開幕！シンオウリーグ・スズラン大会！！",
-      "eng": "Raise the Curtain! Shin'ō League - Suzuran Tournament!!"
+      "eng": "Raise the Curtain! Sinnoh League - Suzuran Tournament!!"
     },
     "hasAired": true,
     "seen": [
@@ -53060,6 +55872,18 @@
         "Armaldo"
       ],
       [
+        "387",
+        "Turtwig"
+      ],
+      [
+        "390",
+        "Chimchar"
+      ],
+      [
+        "392",
+        "Infernape"
+      ],
+      [
         "393",
         "Piplup"
       ],
@@ -53080,12 +55904,56 @@
         "Kricketune"
       ],
       [
+        "405",
+        "Luxray"
+      ],
+      [
         "407",
         "Roserade"
       ],
       [
+        "409",
+        "Rampardos"
+      ],
+      [
+        "411",
+        "Bastiodon"
+      ],
+      [
+        "418",
+        "Buizel"
+      ],
+      [
+        "419",
+        "Floatzel"
+      ],
+      [
         "420",
         "Cherubi"
+      ],
+      [
+        "426",
+        "Drifblim"
+      ],
+      [
+        "428",
+        "Lopunny"
+      ],
+      [
+        "448",
+        "Lucario"
+      ],
+      [
+        "460",
+        "Abomasnow"
+      ],
+      [
+        "472",
+        "Gliscor"
+      ],
+      [
+        "491",
+        "Darkrai"
       ],
       [
         "025",
@@ -53106,6 +55974,10 @@
       [
         "060",
         "Poliwag"
+      ],
+      [
+        "068",
+        "Machamp"
       ]
     ]
   },
@@ -53118,7 +55990,7 @@
     },
     "episodeName": {
       "jpn": "シンオウリーグ三回戦！シンジ対ジュン！！",
-      "eng": "Shin'ō League Third Round! Shinji VS Jun!!"
+      "eng": "Sinnoh League Third Round! Shinji VS Jun!!"
     },
     "hasAired": true,
     "seen": [
@@ -53513,7 +56385,7 @@
     },
     "episodeName": {
       "jpn": "シンオウリーグ準決勝！ダークライ登場！！",
-      "eng": "Shin'ō League Semi-Finals! Enter Darkrai!!!"
+      "eng": "Sinnoh League Semi-Finals! Enter Darkrai!!!"
     },
     "hasAired": true,
     "seen": [
@@ -53684,6 +56556,10 @@
         "Sudowoodo"
       ],
       [
+        "190",
+        "Aipom"
+      ],
+      [
         "202",
         "Wobbuffet"
       ],
@@ -53704,8 +56580,16 @@
         "Salamence"
       ],
       [
+        "387",
+        "Turtwig"
+      ],
+      [
         "389",
         "Torterra"
+      ],
+      [
+        "390",
+        "Chimchar"
       ],
       [
         "392",
@@ -53716,8 +56600,24 @@
         "Piplup"
       ],
       [
+        "394",
+        "Prinplup"
+      ],
+      [
+        "395",
+        "Empoleon"
+      ],
+      [
+        "397",
+        "Staravia"
+      ],
+      [
         "398",
         "Staraptor"
+      ],
+      [
+        "417",
+        "Pachirisu"
       ],
       [
         "427",
@@ -53726,6 +56626,10 @@
       [
         "428",
         "Lopunny"
+      ],
+      [
+        "440",
+        "Happiny"
       ],
       [
         "445",
@@ -53960,12 +56864,32 @@
         "Umbreon"
       ],
       [
+        "496",
+        "Servine"
+      ],
+      [
         "498",
         "Tepig"
       ],
       [
         "501",
         "Oshawott"
+      ],
+      [
+        "502",
+        "Dewott"
+      ],
+      [
+        "504",
+        "Patrat"
+      ],
+      [
+        "527",
+        "Woobat"
+      ],
+      [
+        "585",
+        "Deerling"
       ],
       [
         "610",
@@ -54302,12 +57226,32 @@
         "Oshawott"
       ],
       [
+        "502",
+        "Dewott"
+      ],
+      [
+        "504",
+        "Patrat"
+      ],
+      [
         "519",
         "Pidove"
       ],
       [
         "520",
         "Tranquill"
+      ],
+      [
+        "527",
+        "Woobat"
+      ],
+      [
+        "551",
+        "Sandile"
+      ],
+      [
+        "585",
+        "Deerling"
       ],
       [
         "592",
@@ -56749,8 +59693,24 @@
         "Swadloon"
       ],
       [
+        "546",
+        "Cottonee"
+      ],
+      [
         "551",
         "Sandile"
+      ],
+      [
+        "574",
+        "Gothita"
+      ],
+      [
+        "576",
+        "Gothitelle"
+      ],
+      [
+        "581",
+        "Swanna"
       ],
       [
         "585",
@@ -56978,8 +59938,80 @@
     "hasAired": true,
     "seen": [
       [
+        "128",
+        "Tauros"
+      ],
+      [
+        "363",
+        "Spheal"
+      ],
+      [
+        "364",
+        "Sealeo"
+      ],
+      [
+        "397",
+        "Staravia"
+      ],
+      [
+        "399",
+        "Bidoof"
+      ],
+      [
+        "403",
+        "Shinx"
+      ],
+      [
+        "405",
+        "Luxray"
+      ],
+      [
+        "415",
+        "Combee"
+      ],
+      [
+        "420",
+        "Cherubi"
+      ],
+      [
+        "451",
+        "Skorupi"
+      ],
+      [
+        "463",
+        "Lickilicky"
+      ],
+      [
+        "505",
+        "Watchog"
+      ],
+      [
+        "507",
+        "Herdier"
+      ],
+      [
+        "510",
+        "Liepard"
+      ],
+      [
+        "517",
+        "Munna"
+      ],
+      [
         "519",
         "Pidove"
+      ],
+      [
+        "522",
+        "Blitzle"
+      ],
+      [
+        "523",
+        "Zebstrika"
+      ],
+      [
+        "526",
+        "Gigalith"
       ],
       [
         "528",
@@ -56990,12 +60022,40 @@
         "Audino"
       ],
       [
+        "540",
+        "Sewaddle"
+      ],
+      [
         "541",
         "Swadloon"
       ],
       [
         "546",
         "Cottonee"
+      ],
+      [
+        "550",
+        "Basculin"
+      ],
+      [
+        "551",
+        "Sandile"
+      ],
+      [
+        "555",
+        "Darmanitan"
+      ],
+      [
+        "570",
+        "Zorua"
+      ],
+      [
+        "572",
+        "Minccino"
+      ],
+      [
+        "581",
+        "Swanna"
       ],
       [
         "585",
@@ -57006,6 +60066,14 @@
         "Sawsbuck"
       ],
       [
+        "587",
+        "Emolga"
+      ],
+      [
+        "590",
+        "Foongus"
+      ],
+      [
         "591",
         "Amoonguss"
       ],
@@ -57014,8 +60082,24 @@
         "Alomomola"
       ],
       [
+        "596",
+        "Galvantula"
+      ],
+      [
         "610",
         "Axew"
+      ],
+      [
+        "613",
+        "Cubchoo"
+      ],
+      [
+        "614",
+        "Beartic"
+      ],
+      [
+        "626",
+        "Bouffalant"
       ],
       [
         "025",
@@ -57100,8 +60184,24 @@
     "hasAired": true,
     "seen": [
       [
+        "519",
+        "Pidove"
+      ],
+      [
+        "522",
+        "Blitzle"
+      ],
+      [
         "541",
         "Swadloon"
+      ],
+      [
+        "546",
+        "Cottonee"
+      ],
+      [
+        "554",
+        "Darumaka"
       ],
       [
         "557",
@@ -57112,8 +60212,28 @@
         "Scraggy"
       ],
       [
+        "572",
+        "Minccino"
+      ],
+      [
+        "580",
+        "Ducklett"
+      ],
+      [
+        "581",
+        "Swanna"
+      ],
+      [
+        "590",
+        "Foongus"
+      ],
+      [
         "602",
         "Tynamo"
+      ],
+      [
+        "608",
+        "Lampent"
       ],
       [
         "610",
@@ -57126,6 +60246,14 @@
       [
         "618",
         "Stunfisk"
+      ],
+      [
+        "621",
+        "Druddigon"
+      ],
+      [
+        "633",
+        "Deino"
       ],
       [
         "025",
@@ -57197,10 +60325,6 @@
       [
         "610",
         "Axew"
-      ],
-      [
-        "615",
-        "Cryogonal"
       ],
       [
         "617",
@@ -57768,10 +60892,6 @@
         "Emolga"
       ],
       [
-        "599",
-        "Klink"
-      ],
-      [
         "601",
         "Klinklang"
       ],
@@ -57853,10 +60973,6 @@
       [
         "596",
         "Galvantula"
-      ],
-      [
-        "599",
-        "Klink"
       ],
       [
         "601",
@@ -59351,6 +62467,10 @@
     "hasAired": true,
     "seen": [
       [
+        "120",
+        "Staryu"
+      ],
+      [
         "393",
         "Piplup"
       ],
@@ -60810,10 +63930,6 @@
         "Darmanitan"
       ],
       [
-        "599",
-        "Klink"
-      ],
-      [
         "601",
         "Klinklang"
       ],
@@ -60861,8 +63977,24 @@
         "Vaporeon"
       ],
       [
+        "135",
+        "Jolteon"
+      ],
+      [
+        "136",
+        "Flareon"
+      ],
+      [
         "183",
         "Marill"
+      ],
+      [
+        "196",
+        "Espeon"
+      ],
+      [
+        "197",
+        "Umbreon"
       ],
       [
         "300",
@@ -60877,12 +64009,28 @@
         "Riolu"
       ],
       [
+        "470",
+        "Leafeon"
+      ],
+      [
+        "471",
+        "Glaceon"
+      ],
+      [
         "497",
         "Serperior"
       ],
       [
+        "498",
+        "Tepig"
+      ],
+      [
         "500",
         "Emboar"
+      ],
+      [
+        "501",
+        "Oshawott"
       ],
       [
         "504",
@@ -60901,6 +64049,14 @@
         "Herdier"
       ],
       [
+        "511",
+        "Pansage"
+      ],
+      [
+        "513",
+        "Pansear"
+      ],
+      [
         "515",
         "Panpour"
       ],
@@ -60913,6 +64069,10 @@
         "Tranquill"
       ],
       [
+        "521",
+        "Unfezant"
+      ],
+      [
         "522",
         "Blitzle"
       ],
@@ -60921,8 +64081,20 @@
         "Zebstrika"
       ],
       [
+        "525",
+        "Boldore"
+      ],
+      [
+        "530",
+        "Excadrill"
+      ],
+      [
         "531",
         "Audino"
+      ],
+      [
+        "542",
+        "Leavanny"
       ],
       [
         "546",
@@ -60933,6 +64105,10 @@
         "Sandile"
       ],
       [
+        "552",
+        "Krokorok"
+      ],
+      [
         "557",
         "Dwebble"
       ],
@@ -60941,12 +64117,20 @@
         "Crustle"
       ],
       [
+        "569",
+        "Garbodor"
+      ],
+      [
         "572",
         "Minccino"
       ],
       [
         "574",
         "Gothita"
+      ],
+      [
+        "581",
+        "Swanna"
       ],
       [
         "585",
@@ -60961,12 +64145,12 @@
         "Ferrothorn"
       ],
       [
-        "599",
-        "Klink"
-      ],
-      [
         "601",
         "Klinklang"
+      ],
+      [
+        "602",
+        "Tynamo"
       ],
       [
         "604",
@@ -60979,6 +64163,10 @@
       [
         "613",
         "Cubchoo"
+      ],
+      [
+        "614",
+        "Beartic"
       ],
       [
         "628",
@@ -61488,6 +64676,10 @@
         "Espeon"
       ],
       [
+        "447",
+        "Riolu"
+      ],
+      [
         "448",
         "Lucario"
       ],
@@ -61496,12 +64688,76 @@
         "Snivy"
       ],
       [
+        "501",
+        "Oshawott"
+      ],
+      [
+        "503",
+        "Samurott"
+      ],
+      [
+        "505",
+        "Watchog"
+      ],
+      [
+        "511",
+        "Pansage"
+      ],
+      [
+        "523",
+        "Zebstrika"
+      ],
+      [
+        "526",
+        "Gigalith"
+      ],
+      [
         "535",
         "Tympole"
       ],
       [
-        "599",
-        "Klink"
+        "537",
+        "Seismitoad"
+      ],
+      [
+        "539",
+        "Sawk"
+      ],
+      [
+        "542",
+        "Leavanny"
+      ],
+      [
+        "549",
+        "Lilligant"
+      ],
+      [
+        "555",
+        "Darmanitan"
+      ],
+      [
+        "563",
+        "Cofagrigus"
+      ],
+      [
+        "570",
+        "Zorua"
+      ],
+      [
+        "581",
+        "Swanna"
+      ],
+      [
+        "587",
+        "Emolga"
+      ],
+      [
+        "596",
+        "Galvantula"
+      ],
+      [
+        "598",
+        "Ferrothorn"
       ],
       [
         "601",
@@ -61516,8 +64772,36 @@
         "Axew"
       ],
       [
+        "614",
+        "Beartic"
+      ],
+      [
         "621",
         "Druddigon"
+      ],
+      [
+        "622",
+        "Golett"
+      ],
+      [
+        "624",
+        "Pawniard"
+      ],
+      [
+        "630",
+        "Mandibuzz"
+      ],
+      [
+        "631",
+        "Heatmor"
+      ],
+      [
+        "632",
+        "Durant"
+      ],
+      [
+        "635",
+        "Hydreigon"
       ],
       [
         "025",
@@ -62142,10 +65426,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "021",
@@ -63519,8 +66799,112 @@
     "hasAired": true,
     "seen": [
       [
+        "101",
+        "Electrode"
+      ],
+      [
+        "128",
+        "Tauros"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "152",
+        "Chikorita"
+      ],
+      [
+        "203",
+        "Girafarig"
+      ],
+      [
+        "204",
+        "Pineco"
+      ],
+      [
+        "274",
+        "Nuzleaf"
+      ],
+      [
+        "281",
+        "Kirlia"
+      ],
+      [
+        "289",
+        "Slaking"
+      ],
+      [
+        "308",
+        "Medicham"
+      ],
+      [
+        "358",
+        "Chimecho"
+      ],
+      [
+        "401",
+        "Kricketot"
+      ],
+      [
+        "403",
+        "Shinx"
+      ],
+      [
+        "420",
+        "Cherubi"
+      ],
+      [
+        "453",
+        "Croagunk"
+      ],
+      [
+        "471",
+        "Glaceon"
+      ],
+      [
+        "472",
+        "Gliscor"
+      ],
+      [
+        "498",
+        "Tepig"
+      ],
+      [
+        "499",
+        "Pignite"
+      ],
+      [
+        "501",
+        "Oshawott"
+      ],
+      [
+        "509",
+        "Purrloin"
+      ],
+      [
+        "526",
+        "Gigalith"
+      ],
+      [
+        "527",
+        "Woobat"
+      ],
+      [
+        "528",
+        "Swoobat"
+      ],
+      [
         "531",
         "Audino"
+      ],
+      [
+        "540",
+        "Sewaddle"
+      ],
+      [
+        "541",
+        "Swadloon"
       ],
       [
         "606",
@@ -63531,12 +66915,56 @@
         "Axew"
       ],
       [
+        "613",
+        "Cubchoo"
+      ],
+      [
+        "619",
+        "Mienfoo"
+      ],
+      [
+        "621",
+        "Druddigon"
+      ],
+      [
+        "625",
+        "Bisharp"
+      ],
+      [
+        "014",
+        "Kakuna"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
         "025",
         "Pikachu"
       ],
       [
+        "048",
+        "Venonat"
+      ],
+      [
         "052",
         "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "063",
+        "Abra"
+      ],
+      [
+        "094",
+        "Gengar"
+      ],
+      [
+        "098",
+        "Krabby"
       ]
     ]
   },
@@ -63558,12 +66986,28 @@
         "Exeggutor"
       ],
       [
+        "127",
+        "Pinsir"
+      ],
+      [
         "149",
         "Dragonite"
       ],
       [
+        "151",
+        "Mew"
+      ],
+      [
         "181",
         "Ampharos"
+      ],
+      [
+        "194",
+        "Wooper"
+      ],
+      [
+        "206",
+        "Dunsparce"
       ],
       [
         "217",
@@ -63572,6 +67016,18 @@
       [
         "248",
         "Tyranitar"
+      ],
+      [
+        "252",
+        "Treecko"
+      ],
+      [
+        "257",
+        "Blaziken"
+      ],
+      [
+        "284",
+        "Masquerain"
       ],
       [
         "288",
@@ -63590,8 +67046,36 @@
         "Aggron"
       ],
       [
+        "308",
+        "Medicham"
+      ],
+      [
+        "360",
+        "Wynaut"
+      ],
+      [
+        "387",
+        "Turtwig"
+      ],
+      [
+        "388",
+        "Grotle"
+      ],
+      [
+        "389",
+        "Torterra"
+      ],
+      [
+        "393",
+        "Piplup"
+      ],
+      [
         "403",
         "Shinx"
+      ],
+      [
+        "448",
+        "Lucario"
       ],
       [
         "464",
@@ -63604,6 +67088,10 @@
       [
         "501",
         "Oshawott"
+      ],
+      [
+        "503",
+        "Samurott"
       ],
       [
         "504",
@@ -63654,6 +67142,10 @@
         "Minccino"
       ],
       [
+        "577",
+        "Solosis"
+      ],
+      [
         "581",
         "Swanna"
       ],
@@ -63668,6 +67160,10 @@
       [
         "596",
         "Galvantula"
+      ],
+      [
+        "605",
+        "Elgyem"
       ],
       [
         "610",
@@ -63690,6 +67186,30 @@
         "Helioptile"
       ],
       [
+        "001",
+        "Bulbasaur"
+      ],
+      [
+        "003",
+        "Venusaur"
+      ],
+      [
+        "004",
+        "Charmander"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "007",
+        "Squirtle"
+      ],
+      [
+        "010",
+        "Caterpie"
+      ],
+      [
         "025",
         "Pikachu"
       ],
@@ -63700,6 +67220,10 @@
       [
         "066",
         "Machop"
+      ],
+      [
+        "098",
+        "Krabby"
       ]
     ]
   },
@@ -63735,6 +67259,18 @@
       [
         "149",
         "Dragonite"
+      ],
+      [
+        "198",
+        "Murkrow"
+      ],
+      [
+        "200",
+        "Misdreavus"
+      ],
+      [
+        "274",
+        "Nuzleaf"
       ],
       [
         "275",
@@ -63783,6 +67319,10 @@
       [
         "025",
         "Pikachu"
+      ],
+      [
+        "032",
+        "Nidoran♂"
       ],
       [
         "034",
@@ -64861,10 +68401,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -65495,10 +69031,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -65525,10 +69057,6 @@
     },
     "hasAired": true,
     "seen": [
-      [
-        "177",
-        "Natu"
-      ],
       [
         "186",
         "Politoed"
@@ -67915,10 +71443,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -68335,10 +71859,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -68697,10 +72217,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "021",
         "Spearow"
       ],
@@ -68914,10 +72430,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "021",
@@ -71184,10 +74696,6 @@
         "Pidgeotto"
       ],
       [
-        "018",
-        "Pidgeot"
-      ],
-      [
         "025",
         "Pikachu"
       ],
@@ -72243,10 +75751,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "025",
@@ -73585,10 +77089,6 @@
       [
         "017",
         "Pidgeotto"
-      ],
-      [
-        "018",
-        "Pidgeot"
       ],
       [
         "025",
@@ -78776,10 +82276,6 @@
         "Igglybuff"
       ],
       [
-        "177",
-        "Natu"
-      ],
-      [
         "187",
         "Hoppip"
       ],
@@ -79148,10 +82644,6 @@
       [
         "168",
         "Ariados"
-      ],
-      [
-        "177",
-        "Natu"
       ],
       [
         "187",
@@ -80234,10 +83726,6 @@
         "Pikachu"
       ],
       [
-        "046",
-        "Paras"
-      ],
-      [
         "047",
         "Parasect"
       ],
@@ -80750,10 +84238,6 @@
     "hasAired": true,
     "seen": [
       [
-        "102",
-        "Exeggcute"
-      ],
-      [
         "104",
         "Cubone"
       ],
@@ -80979,6 +84463,14 @@
       [
         "025",
         "Pikachu"
+      ],
+      [
+        "041",
+        "Zubat"
+      ],
+      [
+        "042",
+        "Golbat"
       ],
       [
         "052",
@@ -83601,14 +87093,6 @@
         "Wishiwashi"
       ],
       [
-        "749",
-        "Mudbray"
-      ],
-      [
-        "750",
-        "Mudsdale"
-      ],
-      [
         "760",
         "Bewear"
       ],
@@ -83891,10 +87375,6 @@
         "Vulpix"
       ],
       [
-        "046",
-        "Paras"
-      ],
-      [
         "047",
         "Parasect"
       ],
@@ -84031,10 +87511,6 @@
       [
         "772",
         "Type: Null"
-      ],
-      [
-        "773",
-        "Silvally"
       ],
       [
         "776",
@@ -84429,10 +87905,6 @@
     "hasAired": true,
     "seen": [
       [
-        "121",
-        "Starmie"
-      ],
-      [
         "202",
         "Wobbuffet"
       ],
@@ -84515,7 +87987,7 @@
     },
     "episodeName": {
       "jpn": "カントーでアローラ！タケシとカスミ！！",
-      "eng": "Alola at Kantō! Takeshi and Kasumi!!"
+      "eng": "Alola at Kanto! Takeshi and Kasumi!!"
     },
     "hasAired": true,
     "seen": [
@@ -85054,10 +88526,6 @@
         "Type: Null"
       ],
       [
-        "773",
-        "Silvally"
-      ],
-      [
         "775",
         "Komala"
       ],
@@ -85474,6 +88942,10 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
       ]
     ]
   },
@@ -85549,10 +89021,6 @@
       [
         "772",
         "Type: Null"
-      ],
-      [
-        "773",
-        "Silvally"
       ],
       [
         "777",
@@ -85680,10 +89148,6 @@
       [
         "772",
         "Type: Null"
-      ],
-      [
-        "773",
-        "Silvally"
       ],
       [
         "776",
@@ -85974,6 +89438,14 @@
       [
         "790",
         "Cosmoem"
+      ],
+      [
+        "791",
+        "Solgaleo"
+      ],
+      [
+        "792",
+        "Lunala"
       ],
       [
         "793",
@@ -87311,7 +90783,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM062",
     "broadcastDates": {
       "ja": "2018-02-15",
-      "us": null
+      "us": "2018-07-23"
     },
     "episodeName": {
       "jpn": "悪のニャースはアローラニャース！？",
@@ -87394,6 +90866,10 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "053",
+        "Persian"
       ]
     ]
   },
@@ -87402,7 +90878,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM063",
     "broadcastDates": {
       "ja": "2018-02-22",
-      "us": null
+      "us": "2018-07-30"
     },
     "episodeName": {
       "jpn": "燃え上がれニャビー！打倒ガオガエン！！",
@@ -87592,7 +91068,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM065",
     "broadcastDates": {
       "ja": "2018-03-08",
-      "us": null
+      "us": "2018-08-06"
     },
     "episodeName": {
       "jpn": "イリマとイーブイまイリマす！！",
@@ -87735,7 +91211,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM066",
     "broadcastDates": {
       "ja": "2018-03-15",
-      "us": null
+      "us": "2018-08-13"
     },
     "episodeName": {
       "jpn": "スケッチでスマッシュ！激闘ポケピンポン！",
@@ -87838,7 +91314,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM067",
     "broadcastDates": {
       "ja": "2018-03-22",
-      "us": null
+      "us": "2018-08-25"
     },
     "episodeName": {
       "jpn": "ピカピカだいすき！くるくるベベノム！！",
@@ -87961,7 +91437,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM068",
     "broadcastDates": {
       "ja": "2018-04-05",
-      "us": null
+      "us": "2018-09-01"
     },
     "episodeName": {
       "jpn": "お仕事体験！ポケモンセンター24時！！",
@@ -88060,7 +91536,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM069",
     "broadcastDates": {
       "ja": "2018-04-12",
-      "us": null
+      "us": "2018-09-08"
     },
     "episodeName": {
       "jpn": "輝け星舟テッカグヤ！",
@@ -88187,7 +91663,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM070",
     "broadcastDates": {
       "ja": "2018-04-19",
-      "us": null
+      "us": "2018-09-15"
     },
     "episodeName": {
       "jpn": "牧場を守れ！逆襲の蒼き炎！！",
@@ -88278,7 +91754,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM071",
     "broadcastDates": {
       "ja": "2018-04-26",
-      "us": null
+      "us": "2018-09-22"
     },
     "episodeName": {
       "jpn": "シズクモ、スイレンゲットだぜ！",
@@ -88441,7 +91917,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM072",
     "broadcastDates": {
       "ja": "2018-04-26",
-      "us": null
+      "us": "2018-09-29"
     },
     "episodeName": {
       "jpn": "パンパカパーン！燃えよマオファミリー！！",
@@ -88580,7 +92056,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM073",
     "broadcastDates": {
       "ja": "2018-05-03",
-      "us": null
+      "us": "2018-10-06"
     },
     "episodeName": {
       "jpn": "ロケット団の島めぐり！？Zリングをゲットせよ！！",
@@ -88647,7 +92123,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM074",
     "broadcastDates": {
       "ja": "2018-05-10",
-      "us": null
+      "us": "2018-10-13"
     },
     "episodeName": {
       "jpn": "ちょーワルおやじはしまキング！？",
@@ -88724,10 +92200,6 @@
         "Type: Null"
       ],
       [
-        "773",
-        "Silvally"
-      ],
-      [
         "776",
         "Turtonator"
       ],
@@ -88790,7 +92262,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM075",
     "broadcastDates": {
       "ja": "2018-05-17",
-      "us": null
+      "us": "2018-10-20"
     },
     "episodeName": {
       "jpn": "カプ・ブルル！ぐーたらモー特訓！！",
@@ -88889,7 +92361,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM076",
     "broadcastDates": {
       "ja": "2018-05-24",
-      "us": null
+      "us": "2018-10-27"
     },
     "episodeName": {
       "jpn": "スーパー決戦！ピカチュウVSミミッキュ！！",
@@ -88912,10 +92384,6 @@
       [
         "745",
         "Lycanroc"
-      ],
-      [
-        "747",
-        "Mareanie"
       ],
       [
         "760",
@@ -88960,7 +92428,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM077",
     "broadcastDates": {
       "ja": "2018-05-31",
-      "us": null
+      "us": "2018-11-03"
     },
     "episodeName": {
       "jpn": "クチナシの大試練！ルガルガン覚醒！！",
@@ -89027,7 +92495,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM078",
     "broadcastDates": {
       "ja": "2018-06-07",
-      "us": null
+      "us": "2018-11-10"
     },
     "episodeName": {
       "jpn": "激突ウルトラビースト！ドンドンバチバチ大作戦！！",
@@ -89150,7 +92618,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM079",
     "broadcastDates": {
       "ja": "2018-06-14",
-      "us": null
+      "us": "2018-11-17"
     },
     "episodeName": {
       "jpn": "メテノとベベノム、星空に消えた約束！",
@@ -89217,7 +92685,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM080",
     "broadcastDates": {
       "ja": "2018-06-28",
-      "us": null
+      "us": "2018-11-24"
     },
     "episodeName": {
       "jpn": "サンドの嵐！氷穴のダブルバトル！！",
@@ -89312,7 +92780,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM081",
     "broadcastDates": {
       "ja": "2018-07-05",
-      "us": null
+      "us": "2018-12-01"
     },
     "episodeName": {
       "jpn": "アローラの若き炎！ロイヤルサトシ誕生！！",
@@ -89535,7 +93003,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM082",
     "broadcastDates": {
       "ja": "2018-07-19",
-      "us": null
+      "us": "2018-12-08"
     },
     "episodeName": {
       "jpn": "ダンスダンスで進化せんか？",
@@ -89642,7 +93110,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM083",
     "broadcastDates": {
       "ja": "2018-07-26",
-      "us": null
+      "us": "2018-12-15"
     },
     "episodeName": {
       "jpn": "サトシ、ちいさくなる",
@@ -89769,7 +93237,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM084",
     "broadcastDates": {
       "ja": "2018-08-02",
-      "us": null
+      "us": "2018-12-22"
     },
     "episodeName": {
       "jpn": "家族のカタチ、ベベノムのキモチ！",
@@ -89788,6 +93256,10 @@
       [
         "479",
         "Rotom"
+      ],
+      [
+        "506",
+        "Lillipup"
       ],
       [
         "569",
@@ -89876,6 +93348,10 @@
       [
         "058",
         "Growlithe"
+      ],
+      [
+        "066",
+        "Machop"
       ]
     ]
   },
@@ -89884,7 +93360,7 @@
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM085",
     "broadcastDates": {
       "ja": "2018-08-09",
-      "us": null
+      "us": "2018-12-29"
     },
     "episodeName": {
       "jpn": "トンデノボッテ、ツンデツンデ！",
@@ -89998,14 +93474,253 @@
     "episode": "SM086",
     "url": "https://bulbapedia.bulbagarden.net/wiki/SM086",
     "broadcastDates": {
-      "ja": null,
-      "us": null
+      "ja": "2018-08-16",
+      "us": "2019-01-12"
     },
     "episodeName": {
       "jpn": "ココにきめた！ポケモン湯けむりパラダイス！！",
       "eng": "I Choose Here! Pokémon Hot Spring Paradise!!"
     },
-    "hasAired": false,
+    "hasAired": true,
+    "seen": [
+      [
+        "104",
+        "Cubone"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "120",
+        "Staryu"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "316",
+        "Gulpin"
+      ],
+      [
+        "328",
+        "Trapinch"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "371",
+        "Bagon"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "438",
+        "Bonsly"
+      ],
+      [
+        "443",
+        "Gible"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "446",
+        "Munchlax"
+      ],
+      [
+        "447",
+        "Riolu"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "501",
+        "Oshawott"
+      ],
+      [
+        "674",
+        "Pancham"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "731",
+        "Pikipek"
+      ],
+      [
+        "734",
+        "Yungoos"
+      ],
+      [
+        "736",
+        "Grubbin"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "741",
+        "Oricorio"
+      ],
+      [
+        "743",
+        "Ribombee"
+      ],
+      [
+        "744",
+        "Rockruff"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "747",
+        "Mareanie"
+      ],
+      [
+        "757",
+        "Salandit"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "765",
+        "Oranguru"
+      ],
+      [
+        "771",
+        "Pyukumuku"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "011",
+        "Metapod"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "026",
+        "Raichu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "055",
+        "Golduck"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "072",
+        "Tentacool"
+      ],
+      [
+        "079",
+        "Slowpoke"
+      ],
+      [
+        "090",
+        "Shellder"
+      ]
+    ]
+  },
+  "SM087": {
+    "episode": "SM087",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM087",
+    "broadcastDates": {
+      "ja": "2018-08-23",
+      "us": "2019-01-19"
+    },
+    "episodeName": {
+      "jpn": "アローラの危機！かがやきを喰らう闇！！",
+      "eng": "A Crisis in Alola! The Darkness that Devours Radiance!!"
+    },
+    "hasAired": true,
     "seen": [
       [
         "105",
@@ -90018,6 +93733,161 @@
       [
         "202",
         "Wobbuffet"
+      ],
+      [
+        "320",
+        "Wailmer"
+      ],
+      [
+        "321",
+        "Wailord"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "370",
+        "Luvdisc"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "425",
+        "Drifloon"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "715",
+        "Noivern"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "749",
+        "Mudbray"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "765",
+        "Oranguru"
+      ],
+      [
+        "773",
+        "Silvally"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "791",
+        "Solgaleo"
+      ],
+      [
+        "792",
+        "Lunala"
+      ],
+      [
+        "800",
+        "Necrozma"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "067",
+        "Machoke"
+      ]
+    ]
+  },
+  "SM088": {
+    "episode": "SM088",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM088",
+    "broadcastDates": {
+      "ja": "2018-08-30",
+      "us": "2019-01-26"
+    },
+    "episodeName": {
+      "jpn": "ルナアーラ対UB:BLACK！満月の戦い！！",
+      "eng": "Lunala VS UB:BLACK! A Full Moon Battle!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "297",
+        "Hariyama"
       ],
       [
         "330",
@@ -90034,6 +93904,941 @@
       [
         "445",
         "Garchomp"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "715",
+        "Noivern"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "773",
+        "Silvally"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "778",
+        "Mimikyu"
+      ],
+      [
+        "785",
+        "Tapu Koko"
+      ],
+      [
+        "786",
+        "Tapu Lele"
+      ],
+      [
+        "787",
+        "Tapu Bulu"
+      ],
+      [
+        "791",
+        "Solgaleo"
+      ],
+      [
+        "792",
+        "Lunala"
+      ],
+      [
+        "800",
+        "Necrozma"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ]
+    ]
+  },
+  "SM089": {
+    "episode": "SM089",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM089",
+    "broadcastDates": {
+      "ja": "2018-09-06",
+      "us": "2019-02-02"
+    },
+    "episodeName": {
+      "jpn": "光と闇のプリズム、その名はネクロズマ！！",
+      "eng": "The Prism of Light and Darkness - Its Name is Necrozma!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "306",
+        "Aggron"
+      ],
+      [
+        "320",
+        "Wailmer"
+      ],
+      [
+        "321",
+        "Wailord"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "425",
+        "Drifloon"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "628",
+        "Braviary"
+      ],
+      [
+        "715",
+        "Noivern"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "773",
+        "Silvally"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "791",
+        "Solgaleo"
+      ],
+      [
+        "792",
+        "Lunala"
+      ],
+      [
+        "800",
+        "Necrozma"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "804",
+        "Naganadel"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "065",
+        "Alakazam"
+      ],
+      [
+        "067",
+        "Machoke"
+      ],
+      [
+        "097",
+        "Hypno"
+      ]
+    ]
+  },
+  "SM090": {
+    "episode": "SM090",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM090",
+    "broadcastDates": {
+      "ja": "2018-09-13",
+      "us": "2019-02-09"
+    },
+    "episodeName": {
+      "jpn": "未来へつなげ！かがやきさまの伝説！！",
+      "eng": "Connect to the Future! The Legend of the Radiant One!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "102",
+        "Exeggcute"
+      ],
+      [
+        "104",
+        "Cubone"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "113",
+        "Chansey"
+      ],
+      [
+        "119",
+        "Seaking"
+      ],
+      [
+        "120",
+        "Staryu"
+      ],
+      [
+        "125",
+        "Electabuzz"
+      ],
+      [
+        "128",
+        "Tauros"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "165",
+        "Ledyba"
+      ],
+      [
+        "167",
+        "Spinarak"
+      ],
+      [
+        "170",
+        "Chinchou"
+      ],
+      [
+        "171",
+        "Lanturn"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "185",
+        "Sudowoodo"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "198",
+        "Murkrow"
+      ],
+      [
+        "200",
+        "Misdreavus"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "235",
+        "Smeargle"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "279",
+        "Pelipper"
+      ],
+      [
+        "296",
+        "Makuhita"
+      ],
+      [
+        "297",
+        "Hariyama"
+      ],
+      [
+        "302",
+        "Sableye"
+      ],
+      [
+        "306",
+        "Aggron"
+      ],
+      [
+        "316",
+        "Gulpin"
+      ],
+      [
+        "319",
+        "Sharpedo"
+      ],
+      [
+        "320",
+        "Wailmer"
+      ],
+      [
+        "328",
+        "Trapinch"
+      ],
+      [
+        "329",
+        "Vibrava"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "340",
+        "Whiscash"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "425",
+        "Drifloon"
+      ],
+      [
+        "438",
+        "Bonsly"
+      ],
+      [
+        "440",
+        "Happiny"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "447",
+        "Riolu"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "506",
+        "Lillipup"
+      ],
+      [
+        "524",
+        "Roggenrola"
+      ],
+      [
+        "525",
+        "Boldore"
+      ],
+      [
+        "546",
+        "Cottonee"
+      ],
+      [
+        "547",
+        "Whimsicott"
+      ],
+      [
+        "548",
+        "Petilil"
+      ],
+      [
+        "551",
+        "Sandile"
+      ],
+      [
+        "552",
+        "Krokorok"
+      ],
+      [
+        "568",
+        "Trubbish"
+      ],
+      [
+        "569",
+        "Garbodor"
+      ],
+      [
+        "587",
+        "Emolga"
+      ],
+      [
+        "627",
+        "Rufflet"
+      ],
+      [
+        "628",
+        "Braviary"
+      ],
+      [
+        "661",
+        "Fletchling"
+      ],
+      [
+        "715",
+        "Noivern"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "727",
+        "Incineroar"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "732",
+        "Trumbeak"
+      ],
+      [
+        "733",
+        "Toucannon"
+      ],
+      [
+        "736",
+        "Grubbin"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "741",
+        "Oricorio"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "747",
+        "Mareanie"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "762",
+        "Steenee"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "765",
+        "Oranguru"
+      ],
+      [
+        "773",
+        "Silvally"
+      ],
+      [
+        "774",
+        "Minior"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "778",
+        "Mimikyu"
+      ],
+      [
+        "785",
+        "Tapu Koko"
+      ],
+      [
+        "786",
+        "Tapu Lele"
+      ],
+      [
+        "787",
+        "Tapu Bulu"
+      ],
+      [
+        "788",
+        "Tapu Fini"
+      ],
+      [
+        "791",
+        "Solgaleo"
+      ],
+      [
+        "792",
+        "Lunala"
+      ],
+      [
+        "796",
+        "Xurkitree"
+      ],
+      [
+        "800",
+        "Necrozma"
+      ],
+      [
+        "803",
+        "Poipole"
+      ],
+      [
+        "804",
+        "Naganadel"
+      ],
+      [
+        "806",
+        "Blacephalon"
+      ],
+      [
+        "001",
+        "Bulbasaur"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "010",
+        "Caterpie"
+      ],
+      [
+        "011",
+        "Metapod"
+      ],
+      [
+        "021",
+        "Spearow"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "041",
+        "Zubat"
+      ],
+      [
+        "043",
+        "Oddish"
+      ],
+      [
+        "046",
+        "Paras"
+      ],
+      [
+        "047",
+        "Parasect"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "053",
+        "Persian"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "057",
+        "Primeape"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "063",
+        "Abra"
+      ],
+      [
+        "065",
+        "Alakazam"
+      ],
+      [
+        "067",
+        "Machoke"
+      ],
+      [
+        "073",
+        "Tentacruel"
+      ],
+      [
+        "079",
+        "Slowpoke"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ],
+      [
+        "082",
+        "Magneton"
+      ],
+      [
+        "092",
+        "Gastly"
+      ],
+      [
+        "093",
+        "Haunter"
+      ],
+      [
+        "094",
+        "Gengar"
+      ],
+      [
+        "097",
+        "Hypno"
+      ]
+    ]
+  },
+  "SM091": {
+    "episode": "SM091",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM091",
+    "broadcastDates": {
+      "ja": "2018-10-07",
+      "us": "2019-02-16"
+    },
+    "episodeName": {
+      "jpn": "大量発生チュウ！ピカチュウのたに！！",
+      "eng": "It's a Pikachu Outbreak! The Pikachu Valley!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "778",
+        "Mimikyu"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "052",
+        "Meowth"
+      ]
+    ]
+  },
+  "SM092": {
+    "episode": "SM092",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM092",
+    "broadcastDates": {
+      "ja": "2018-10-14",
+      "us": "2019-02-23"
+    },
+    "episodeName": {
+      "jpn": "ククイ絶体絶命！もう一人のロイヤルマスク！！",
+      "eng": "Kukui's Desperate Situation! Another Royal Mask!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "108",
+        "Lickitung"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "183",
+        "Marill"
+      ],
+      [
+        "196",
+        "Espeon"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "242",
+        "Blissey"
+      ],
+      [
+        "296",
+        "Makuhita"
+      ],
+      [
+        "447",
+        "Riolu"
+      ],
+      [
+        "467",
+        "Magmortar"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "587",
+        "Emolga"
+      ],
+      [
+        "675",
+        "Pangoro"
+      ],
+      [
+        "702",
+        "Dedenne"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "727",
+        "Incineroar"
+      ],
+      [
+        "744",
+        "Rockruff"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "766",
+        "Passimian"
+      ],
+      [
+        "782",
+        "Jangmo-o"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "053",
+        "Persian"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "061",
+        "Poliwhirl"
+      ],
+      [
+        "068",
+        "Machamp"
+      ],
+      [
+        "076",
+        "Golem"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ],
+      [
+        "082",
+        "Magneton"
+      ],
+      [
+        "094",
+        "Gengar"
+      ]
+    ]
+  },
+  "SM093": {
+    "episode": "SM093",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM093",
+    "broadcastDates": {
+      "ja": "2018-10-21",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "勇者リリエルとアローラの杖！",
+      "eng": "The Hero Lilier and the Staff of Alola!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "122",
+        "Mr. Mime"
+      ],
+      [
+        "202",
+        "Wobbuffet"
       ],
       [
         "479",
@@ -90060,8 +94865,16 @@
         "Lycanroc"
       ],
       [
-        "765",
-        "Oranguru"
+        "760",
+        "Bewear"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "775",
+        "Komala"
       ],
       [
         "776",
@@ -90072,8 +94885,1218 @@
         "Togedemaru"
       ],
       [
-        "803",
-        "Poipole"
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ]
+    ]
+  },
+  "SM094": {
+    "episode": "SM094",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM094",
+    "broadcastDates": {
+      "ja": "2018-10-28",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ゴーストポケモン大集合！みんなのお化け屋敷！！",
+      "eng": "Great Gathering of Ghost Pokémon! Everyone's Haunted House!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "131",
+        "Lapras"
+      ],
+      [
+        "200",
+        "Misdreavus"
+      ],
+      [
+        "353",
+        "Shuppet"
+      ],
+      [
+        "354",
+        "Banette"
+      ],
+      [
+        "355",
+        "Duskull"
+      ],
+      [
+        "425",
+        "Drifloon"
+      ],
+      [
+        "426",
+        "Drifblim"
+      ],
+      [
+        "429",
+        "Mismagius"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "607",
+        "Litwick"
+      ],
+      [
+        "608",
+        "Lampent"
+      ],
+      [
+        "609",
+        "Chandelure"
+      ],
+      [
+        "708",
+        "Phantump"
+      ],
+      [
+        "711",
+        "Gourgeist"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "771",
+        "Pyukumuku"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "778",
+        "Mimikyu"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "092",
+        "Gastly"
+      ],
+      [
+        "093",
+        "Haunter"
+      ]
+    ]
+  },
+  "SM095": {
+    "episode": "SM095",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM095",
+    "broadcastDates": {
+      "ja": "2018-11-04",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ヴェラ火山、ゴローンゴローニャやまおとこ！",
+      "eng": "Wela Volcano, Golone, Golonya, and the Mountaineers!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "126",
+        "Magmar"
+      ],
+      [
+        "127",
+        "Pinsir"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "074",
+        "Geodude"
+      ],
+      [
+        "075",
+        "Graveler"
+      ],
+      [
+        "076",
+        "Golem"
+      ]
+    ]
+  },
+  "SM096": {
+    "episode": "SM096",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM096",
+    "broadcastDates": {
+      "ja": "2018-11-11",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ロケット団とヌイコグマ！",
+      "eng": "Rocket-dan and Nuikoguma!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "102",
+        "Exeggcute"
+      ],
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "132",
+        "Ditto"
+      ],
+      [
+        "143",
+        "Snorlax"
+      ],
+      [
+        "165",
+        "Ledyba"
+      ],
+      [
+        "167",
+        "Spinarak"
+      ],
+      [
+        "185",
+        "Sudowoodo"
+      ],
+      [
+        "195",
+        "Quagsire"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "239",
+        "Elekid"
+      ],
+      [
+        "241",
+        "Miltank"
+      ],
+      [
+        "328",
+        "Trapinch"
+      ],
+      [
+        "438",
+        "Bonsly"
+      ],
+      [
+        "446",
+        "Munchlax"
+      ],
+      [
+        "456",
+        "Finneon"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "507",
+        "Herdier"
+      ],
+      [
+        "525",
+        "Boldore"
+      ],
+      [
+        "547",
+        "Whimsicott"
+      ],
+      [
+        "548",
+        "Petilil"
+      ],
+      [
+        "551",
+        "Sandile"
+      ],
+      [
+        "581",
+        "Swanna"
+      ],
+      [
+        "628",
+        "Braviary"
+      ],
+      [
+        "661",
+        "Fletchling"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "731",
+        "Pikipek"
+      ],
+      [
+        "742",
+        "Cutiefly"
+      ],
+      [
+        "743",
+        "Ribombee"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "746",
+        "Wishiwashi"
+      ],
+      [
+        "747",
+        "Mareanie"
+      ],
+      [
+        "759",
+        "Stufful"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "769",
+        "Sandygast"
+      ],
+      [
+        "773",
+        "Silvally"
+      ],
+      [
+        "780",
+        "Drampa"
+      ],
+      [
+        "791",
+        "Solgaleo"
+      ],
+      [
+        "792",
+        "Lunala"
+      ],
+      [
+        "800",
+        "Necrozma"
+      ],
+      [
+        "804",
+        "Naganadel"
+      ],
+      [
+        "002",
+        "Ivysaur"
+      ],
+      [
+        "021",
+        "Spearow"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ]
+    ]
+  },
+  "SM097": {
+    "episode": "SM097",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM097",
+    "broadcastDates": {
+      "ja": "2018-11-18",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "匠のフクスロー！！！眠りのモクローzzz",
+      "eng": "Fukuthrow the Artisan!!! Sleeping Mokuroh zzz"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "297",
+        "Hariyama"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "723",
+        "Dartrix"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "731",
+        "Pikipek"
+      ],
+      [
+        "732",
+        "Trumbeak"
+      ],
+      [
+        "733",
+        "Toucannon"
+      ],
+      [
+        "739",
+        "Crabrawler"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ]
+    ]
+  },
+  "SM098": {
+    "episode": "SM098",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM098",
+    "broadcastDates": {
+      "ja": "2018-11-25",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "コンビ解散！？サトシとロトム",
+      "eng": "Splitting Up the Combination!? Satoshi and Rotom"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "235",
+        "Smeargle"
+      ],
+      [
+        "441",
+        "Chatot"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ]
+    ]
+  },
+  "SM099": {
+    "episode": "SM099",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM099",
+    "broadcastDates": {
+      "ja": "2018-12-02",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "イーブイどこいくの？あのコに会いにどこまでも！",
+      "eng": "Eievui, Where Are You Going? To Go Anywhere to Meet Up!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "129",
+        "Magikarp"
+      ],
+      [
+        "131",
+        "Lapras"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "185",
+        "Sudowoodo"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "223",
+        "Remoraid"
+      ],
+      [
+        "226",
+        "Mantine"
+      ],
+      [
+        "228",
+        "Houndour"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "302",
+        "Sableye"
+      ],
+      [
+        "321",
+        "Wailord"
+      ],
+      [
+        "382",
+        "Kyogre"
+      ],
+      [
+        "418",
+        "Buizel"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "507",
+        "Herdier"
+      ],
+      [
+        "546",
+        "Cottonee"
+      ],
+      [
+        "569",
+        "Garbodor"
+      ],
+      [
+        "587",
+        "Emolga"
+      ],
+      [
+        "676",
+        "Furfrou"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "732",
+        "Trumbeak"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "739",
+        "Crabrawler"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "755",
+        "Morelull"
+      ],
+      [
+        "757",
+        "Salandit"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "771",
+        "Pyukumuku"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "004",
+        "Charmander"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "022",
+        "Fearow"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "041",
+        "Zubat"
+      ],
+      [
+        "053",
+        "Persian"
+      ],
+      [
+        "056",
+        "Mankey"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ],
+      [
+        "066",
+        "Machop"
+      ]
+    ]
+  },
+  "SM100": {
+    "episode": "SM100",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM100",
+    "broadcastDates": {
+      "ja": "2018-12-09",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "風を断つ稲妻！その名はゼラオラ！！",
+      "eng": "The Lightning Bolt that Severs the Wind! Its Name is Zeraora!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "229",
+        "Houndoom"
+      ],
+      [
+        "242",
+        "Blissey"
+      ],
+      [
+        "427",
+        "Buneary"
+      ],
+      [
+        "446",
+        "Munchlax"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "725",
+        "Litten"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "731",
+        "Pikipek"
+      ],
+      [
+        "736",
+        "Grubbin"
+      ],
+      [
+        "742",
+        "Cutiefly"
+      ],
+      [
+        "743",
+        "Ribombee"
+      ],
+      [
+        "744",
+        "Rockruff"
+      ],
+      [
+        "746",
+        "Wishiwashi"
+      ],
+      [
+        "761",
+        "Bounsweet"
+      ],
+      [
+        "766",
+        "Passimian"
+      ],
+      [
+        "771",
+        "Pyukumuku"
+      ],
+      [
+        "785",
+        "Tapu Koko"
+      ],
+      [
+        "799",
+        "Guzzlord"
+      ],
+      [
+        "807",
+        "Zeraora"
+      ],
+      [
+        "009",
+        "Blastoise"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "076",
+        "Golem"
+      ]
+    ]
+  },
+  "SM101": {
+    "episode": "SM101",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM101",
+    "broadcastDates": {
+      "ja": "2018-12-16",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "放て！友情のツインスパーキングギガボルト！！",
+      "eng": "Fire! The Twin Sparking Gigavolt of Friendship!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "587",
+        "Emolga"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "736",
+        "Grubbin"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "785",
+        "Tapu Koko"
+      ],
+      [
+        "799",
+        "Guzzlord"
+      ],
+      [
+        "807",
+        "Zeraora"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "086",
+        "Seel"
+      ]
+    ]
+  },
+  "SM102": {
+    "episode": "SM102",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM102",
+    "broadcastDates": {
+      "ja": "2018-12-23",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "アローラでアローラ！タケシとカスミ！",
+      "eng": "Alola at Alola! Takeshi and Kasumi!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "118",
+        "Goldeen"
+      ],
+      [
+        "119",
+        "Seaking"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "166",
+        "Ledian"
+      ],
+      [
+        "167",
+        "Spinarak"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "222",
+        "Corsola"
+      ],
+      [
+        "226",
+        "Mantine"
+      ],
+      [
+        "242",
+        "Blissey"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "405",
+        "Luxray"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "731",
+        "Pikipek"
+      ],
+      [
+        "734",
+        "Yungoos"
+      ],
+      [
+        "742",
+        "Cutiefly"
+      ],
+      [
+        "743",
+        "Ribombee"
+      ],
+      [
+        "759",
+        "Stufful"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "767",
+        "Wimpod"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "786",
+        "Tapu Lele"
+      ],
+      [
+        "012",
+        "Butterfree"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "026",
+        "Raichu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "090",
+        "Shellder"
+      ]
+    ]
+  },
+  "SM103": {
+    "episode": "SM103",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM103",
+    "broadcastDates": {
+      "ja": "2019-01-06",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "岩をも砕く熱きハート！ライチとタケシ！！",
+      "eng": "A Passionate Heart That Can Smash Even Rock! Lychee and Takeshi!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "115",
+        "Kangaskhan"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "148",
+        "Dragonair"
+      ],
+      [
+        "165",
+        "Ledyba"
+      ],
+      [
+        "172",
+        "Pichu"
+      ],
+      [
+        "185",
+        "Sudowoodo"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "241",
+        "Miltank"
+      ],
+      [
+        "330",
+        "Flygon"
+      ],
+      [
+        "334",
+        "Altaria"
+      ],
+      [
+        "375",
+        "Metang"
+      ],
+      [
+        "445",
+        "Garchomp"
+      ],
+      [
+        "446",
+        "Munchlax"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "749",
+        "Mudbray"
+      ],
+      [
+        "759",
+        "Stufful"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
       ],
       [
         "006",
@@ -90090,6 +96113,1004 @@
       [
         "052",
         "Meowth"
+      ],
+      [
+        "054",
+        "Psyduck"
+      ],
+      [
+        "081",
+        "Magnemite"
+      ]
+    ]
+  },
+  "SM104": {
+    "episode": "SM104",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM104",
+    "broadcastDates": {
+      "ja": "2019-01-13",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ポニ島の自由研究！しまキングをさがせ！！",
+      "eng": "Poni Island Research Project! Search for the Island King!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "242",
+        "Blissey"
+      ],
+      [
+        "369",
+        "Relicanth"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "569",
+        "Garbodor"
+      ],
+      [
+        "623",
+        "Golurk"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "741",
+        "Oricorio"
+      ],
+      [
+        "750",
+        "Mudsdale"
+      ],
+      [
+        "757",
+        "Salandit"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "788",
+        "Tapu Fini"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "041",
+        "Zubat"
+      ]
+    ]
+  },
+  "SM105": {
+    "episode": "SM105",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM105",
+    "broadcastDates": {
+      "ja": "2019-01-20",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ルガルガン決戦！サトシVSグラジオ！！",
+      "eng": "Decisive Lugarugan Battle! Satoshi VS Glazio!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "127",
+        "Pinsir"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "167",
+        "Spinarak"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "210",
+        "Granbull"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "732",
+        "Trumbeak"
+      ],
+      [
+        "735",
+        "Gumshoos"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "750",
+        "Mudsdale"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "773",
+        "Silvally"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "788",
+        "Tapu Fini"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ]
+    ]
+  },
+  "SM106": {
+    "episode": "SM106",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM106",
+    "broadcastDates": {
+      "ja": "2019-01-27",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "海あり谷あり！ポケモン進化大特訓！！",
+      "eng": "We Have a Sea and We Have a Valley! Great Intensive Pokémon Evolution Training!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "198",
+        "Murkrow"
+      ],
+      [
+        "242",
+        "Blissey"
+      ],
+      [
+        "278",
+        "Wingull"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "525",
+        "Boldore"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "728",
+        "Popplio"
+      ],
+      [
+        "729",
+        "Brionne"
+      ],
+      [
+        "730",
+        "Primarina"
+      ],
+      [
+        "737",
+        "Charjabug"
+      ],
+      [
+        "738",
+        "Vikavolt"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "746",
+        "Wishiwashi"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "783",
+        "Hakamo-o"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "042",
+        "Golbat"
+      ],
+      [
+        "055",
+        "Golduck"
+      ]
+    ]
+  },
+  "SM107": {
+    "episode": "SM107",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM107",
+    "broadcastDates": {
+      "ja": "2019-02-03",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "走れカキ！己を超えて！！",
+      "eng": "Run Kaki! Surpass Yourself!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "623",
+        "Golurk"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "729",
+        "Brionne"
+      ],
+      [
+        "738",
+        "Vikavolt"
+      ],
+      [
+        "750",
+        "Mudsdale"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "786",
+        "Tapu Lele"
+      ],
+      [
+        "788",
+        "Tapu Fini"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ]
+    ]
+  },
+  "SM108": {
+    "episode": "SM108",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM108",
+    "broadcastDates": {
+      "ja": "2019-02-10",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "カプ・レヒレの霧の中で",
+      "eng": "Inside Kapu-Rehire's Mist"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "197",
+        "Umbreon"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "492",
+        "Shaymin"
+      ],
+      [
+        "508",
+        "Stoutland"
+      ],
+      [
+        "623",
+        "Golurk"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "725",
+        "Litten"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "738",
+        "Vikavolt"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "750",
+        "Mudsdale"
+      ],
+      [
+        "761",
+        "Bounsweet"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "773",
+        "Silvally"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "788",
+        "Tapu Fini"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ]
+    ]
+  },
+  "SM109": {
+    "episode": "SM109",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM109",
+    "broadcastDates": {
+      "ja": "2019-02-17",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "しまクイーン誕生！サトシの大試練！！",
+      "eng": "The Birth of an Island Queen! Satoshi's Grand Trial!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "492",
+        "Shaymin"
+      ],
+      [
+        "623",
+        "Golurk"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "729",
+        "Brionne"
+      ],
+      [
+        "738",
+        "Vikavolt"
+      ],
+      [
+        "741",
+        "Oricorio"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "750",
+        "Mudsdale"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "788",
+        "Tapu Fini"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ]
+    ]
+  },
+  "SM110": {
+    "episode": "SM110",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM110",
+    "broadcastDates": {
+      "ja": "2019-02-24",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "ポケゴルフでホールインワン！",
+      "eng": "Hole in One at PokéGolf!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "103",
+        "Exeggutor"
+      ],
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "118",
+        "Goldeen"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "167",
+        "Spinarak"
+      ],
+      [
+        "456",
+        "Finneon"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "492",
+        "Shaymin"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "729",
+        "Brionne"
+      ],
+      [
+        "733",
+        "Toucannon"
+      ],
+      [
+        "738",
+        "Vikavolt"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "769",
+        "Sandygast"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "050",
+        "Diglett"
+      ],
+      [
+        "060",
+        "Poliwag"
+      ],
+      [
+        "098",
+        "Krabby"
+      ]
+    ]
+  },
+  "SM111": {
+    "episode": "SM111",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM111",
+    "broadcastDates": {
+      "ja": "2019-03-03",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "アローラ上陸！タルタルメタルパニック！！",
+      "eng": "Arrival in Alola! Dripping Metal Panic!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "198",
+        "Murkrow"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "492",
+        "Shaymin"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "747",
+        "Mareanie"
+      ],
+      [
+        "759",
+        "Stufful"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "775",
+        "Komala"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "778",
+        "Mimikyu"
+      ],
+      [
+        "019",
+        "Rattata"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "082",
+        "Magneton"
+      ],
+      [
+        "089",
+        "Muk"
+      ]
+    ]
+  },
+  "SM112": {
+    "episode": "SM112",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM112",
+    "broadcastDates": {
+      "ja": "2019-03-10",
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "新種発見！メルタン、ゲットだぜ！！",
+      "eng": "Discovering a New Species! Get, Meltan!!"
+    },
+    "hasAired": true,
+    "seen": [
+      [
+        "105",
+        "Marowak"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "177",
+        "Natu"
+      ],
+      [
+        "178",
+        "Xatu"
+      ],
+      [
+        "198",
+        "Murkrow"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "370",
+        "Luvdisc"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "492",
+        "Shaymin"
+      ],
+      [
+        "707",
+        "Klefki"
+      ],
+      [
+        "722",
+        "Rowlet"
+      ],
+      [
+        "726",
+        "Torracat"
+      ],
+      [
+        "729",
+        "Brionne"
+      ],
+      [
+        "738",
+        "Vikavolt"
+      ],
+      [
+        "742",
+        "Cutiefly"
+      ],
+      [
+        "745",
+        "Lycanroc"
+      ],
+      [
+        "747",
+        "Mareanie"
+      ],
+      [
+        "759",
+        "Stufful"
+      ],
+      [
+        "760",
+        "Bewear"
+      ],
+      [
+        "763",
+        "Tsareena"
+      ],
+      [
+        "764",
+        "Comfey"
+      ],
+      [
+        "769",
+        "Sandygast"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "006",
+        "Charizard"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "036",
+        "Clefable"
+      ],
+      [
+        "037",
+        "Vulpix"
+      ],
+      [
+        "039",
+        "Jigglypuff"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "058",
+        "Growlithe"
+      ]
+    ]
+  },
+  "SM113": {
+    "episode": "SM113",
+    "url": "https://bulbapedia.bulbagarden.net/wiki/SM113",
+    "broadcastDates": {
+      "ja": null,
+      "us": null
+    },
+    "episodeName": {
+      "jpn": "新番組！？小さなコイキングのメロディ",
+      "eng": "A New Program!? The Small Melody of Koiking"
+    },
+    "hasAired": false,
+    "seen": [
+      [
+        "129",
+        "Magikarp"
+      ],
+      [
+        "130",
+        "Gyarados"
+      ],
+      [
+        "133",
+        "Eevee"
+      ],
+      [
+        "202",
+        "Wobbuffet"
+      ],
+      [
+        "460",
+        "Abomasnow"
+      ],
+      [
+        "478",
+        "Froslass"
+      ],
+      [
+        "479",
+        "Rotom"
+      ],
+      [
+        "492",
+        "Shaymin"
+      ],
+      [
+        "731",
+        "Pikipek"
+      ],
+      [
+        "739",
+        "Crabrawler"
+      ],
+      [
+        "776",
+        "Turtonator"
+      ],
+      [
+        "777",
+        "Togedemaru"
+      ],
+      [
+        "025",
+        "Pikachu"
+      ],
+      [
+        "052",
+        "Meowth"
+      ],
+      [
+        "089",
+        "Muk"
       ]
     ]
   }
