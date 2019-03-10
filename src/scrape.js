@@ -166,7 +166,7 @@ const getSeenForEpisode = (html) => {
 // Returns all Pokémon (by ID and name) seen in a piece of text.
 const getSeenForText = text => (
   engList.reduce((acc, name) => {
-    if (new RegExp(`\n?${name}(\\s|\\(|\\[|\/|$)`, 'i').test(text)) return [...acc, [engToID[name], name]]
+    if (new RegExp(`^\\s*${name}(\\s|\\(|\\[|\/|$)`, 'im').test(text)) return [...acc, [engToID[name], name]]
     return acc
   }, [])
 )
