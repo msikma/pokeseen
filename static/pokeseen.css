@@ -37,11 +37,24 @@ a:hover {
 .episode-info td {
   padding: 8px !important;
 }
+.table.pkspr-overview .pkspr {
+  vertical-align: bottom;
+  width: 40px;
+  height: 42px;
+}
+.table.pkspr-overview .pkspr img {
+  position: relative;
+  left: -14px;
+  top: -18px;
+}
 .table.pkspr-overview .main-info td.last-episode,
 .table.pkspr-overview .main-info td.last-ja,
 .table.pkspr-overview .main-info td.time-ago {
   white-space: nowrap;
   width: 1%;
+}
+.table.pkspr-overview .last-episode {
+  text-align: center;
 }
 .table.pkspr-overview .main-info.last td:first-child {
   border-bottom-left-radius: 3px;
@@ -66,7 +79,7 @@ a:hover {
 .table.pkspr-overview .main-info.showing-episodes .name {
   font-weight: bold;
 }
-.table.pkspr-overview .main-info .series > span {
+.t {
   border-radius: 3px;
   padding: 2px 8px;
   font-size: 13px;
@@ -74,34 +87,53 @@ a:hover {
   text-align: center;
   display: inline-block;
   line-height: 19px;
+  mix-blend-mode: multiply;
 }
-.table.pkspr-overview .main-info .series-ag > span {
-  color: #c12950;
+.t[href*="wiki/AGS"],
+.t[href*="wiki/AG"],
+.series-ag > .t {
+  color: #c12950 !important;
   background-color: #f8f2f4;
 }
-.table.pkspr-overview .main-info .series-dp > span {
-  color: #e0800e;
+.t[href*="wiki/DPS"],
+.t[href*="wiki/DP"],
+.series-dp > .t {
+  color: #e0800e !important;
   background-color: #f9f5f2;
 }
-.table.pkspr-overview .main-info .series-bw > span {
-  color: #6ec129;
+.t[href*="wiki/BWS"],
+.t[href*="wiki/BW"],
+.series-bw > .t {
+  color: #6ec129 !important;
   background-color: #f5f9f2;
 }
-.table.pkspr-overview .main-info .series-xy > span {
-  color: #29c195;
+.t[href*="wiki/XYS"],
+.t[href*="wiki/XY"],
+.series-xy > .t {
+  color: #29c195 !important;
   background-color: #f1f8f5;
 }
-.table.pkspr-overview .main-info .series-sm > span {
-  color: #2996c1;
+.t[href*="wiki/SMS"],
+.t[href*="wiki/SM"],
+.series-sm > .t {
+  color: #2996c1 !important;
   background-color: #f2f7f9;
 }
-.table.pkspr-overview .main-info .series-ep > span {
-  color: #a429c1;
+.t[href*="wiki/JNS"],
+.t[href*="wiki/JN"],
+.series-jn > .t {
+  color: #2961c1 !important;
+  background-color: #f2f5f9;
+}
+.t[href*="wiki/EPS"],
+.t[href*="wiki/EP"],
+.series-ep > .t {
+  color: #a429c1 !important;
   background-color: #f7f2f9;
 }
 /* No Pokémon currently has 'ep' set as its latest series, so... might as well reuse this color. */
-.table.pkspr-overview .main-info .series-ss > span {
-  color: #a429c1;
+.series-ss > .t {
+  color: #a429c1 !important;
   background-color: #f7f2f9;
 }
 .table.pkspr-overview .main-info .time-ago > span + span {
@@ -114,6 +146,11 @@ a:hover {
 .table.pkspr-overview .episode-info .ep-cols {
   display: flex;
 }
+.table.pkspr-overview .episode-info .ep-cols.general {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
 .table.pkspr-overview .episode-info .ep-cols.specials {
   border-top: 1px solid #e3e3e3;
   margin-top: 8px;
@@ -121,21 +158,46 @@ a:hover {
 }
 .table.pkspr-overview .episode-info .ep-cols .ep-header {
   white-space: nowrap;
+  min-width: 10em;
+}
+.table.pkspr-overview .episode-info .ep-cols .general-content {
+  margin: 0;
+  padding-left: 8px;
+  width: 100%;
+}
+.table.pkspr-overview .episode-info .ep-cols .general-content ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+.table.pkspr-overview .episode-info .ep-cols .ep-content-header {
+  padding-left: 8px;
+  padding-bottom: 8px;
+}
+.table.pkspr-overview .episode-info .ep-cols .ep-content + .ep-content-header {
+  padding-top: 12px;
+}
+.table.pkspr-overview .episode-info .ep-cols .ep-content-group {
+  width: 100%;
+  padding-left: 8px;
+  margin: 0;
+  margin-left: -8px;
 }
 .table.pkspr-overview .episode-info .ep-cols .ep-content {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 8px;
   column-width: 60px;
   column-gap: 10px;
   width: 100%;
 }
+.table.pkspr-overview .episode-info .ep-cols ul.ep-content {
+  margin-bottom: -3px;
+}
 #top .table.pkspr-overview .episode-info .ep-cols .ep-content a {
-  color: #050202;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #top .table.pkspr-overview .episode-info .ep-cols .ep-content a:hover {
-  color: #1F85EB;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .table.pkspr-overview .episode-info .ep-cols.short .ep-content {
   column-width: inherit;
@@ -144,9 +206,9 @@ a:hover {
 .table.pkspr-overview .episode-info .ep-cols .ep-content li {
   display: inline-block;
   width: 70px;
+  margin-bottom: 3px;
 }
 .table.pkspr-overview .episode-info .ep-cols .ep-content li:before {
-  content: '\2022\00a0';
 }
 .table.pkspr-overview .episode-info.last td {
   border-bottom-left-radius: 3px;

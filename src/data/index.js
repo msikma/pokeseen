@@ -15,13 +15,19 @@ export { pkgData }
 
 // Used to determine the exact episode names, which change prefix per season.
 const seasons = [
-  [37, 'SS'],  // Special episodes
-  [274, 'EP'], // Original series and Johto
-  [192, 'AG'], // Advanced Generation
-  [191, 'DP'], // Diamond and Pearl
-  [142, 'BW'], // Best Wishes
-  [140, 'XY'], // XY
-  [85, 'SM', true]   // Sun and Moon (ongoing)
+  // Main series
+  [274, 'EP'],   // Original series and Johto
+  [192, 'AG'],   // Advanced Generation
+  [191, 'DP'],   // Diamond and Pearl
+  [142, 'BW'],   // Best Wishes
+  [140, 'XY'],   // XY
+  [146, 'SM'],   // Sun and Moon
+  [147, 'JN'],   // Journeys
+  // Special episodes
+  [  2, 'DPS'],   // Diamond and Pearl
+  [  2, 'BWS'],   // Best Wishes
+  [  6, 'XYS'],   // XY
+  [  5, 'JNS'],   // Journeys
 ]
 
 // Location where we'll store cache data.
@@ -59,7 +65,7 @@ export const episodeList = seasons.reduce((list, season) => {
   // (As a result, there will be a ridiculous number of episodes for whichever
   // series is going on right now...)
   const episodeCount = season[2] ? 999 : season[0]
-  const episodes = new Array(episodeCount).fill().map((_, n) => `${season[1]}${sprintf('%03d', n + 1)}`)
+  const episodes = new Array(episodeCount).fill().map((_, n) => `${season[1]}${sprintf(`%0${(5 - season[1].length)}d`, n + 1)}`)
   return [...list, ...episodes]
 }, [])
 

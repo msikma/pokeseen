@@ -65,6 +65,18 @@ const copyFile = (src, destDir) => new Promise((resolve, reject) => {
 })
 
 /**
+ * Pokémon icon component.
+ */
+const PokemonIcon = ({ pkmnInfo, id }) => {
+  const slug = pkmnInfo.slug.eng
+  return (
+    <span id={ `icon_${id}` } className={ `pkspr pkmn-${slug}` }>
+      <img src={ `https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/${slug}.png` } />
+    </span>
+  )
+}
+
+/**
  * Main component.
  *
  * The Pokémon ranking data uses the following format:
@@ -112,12 +124,17 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.decorateSorters('appearance_sort', 'last_seen_sort')` }}></script>
         { appearancesRanking.map((pokemon, n) => {
           // Construct two rows: one with the sorted data, and one with the episode IDs.
-          const { id, amount, amountIncSpecials, lastSeen, episodes } = pokemon
+          const { amount, amountIncSpecials, lastSeen, episodes } = pokemon
+          const id = String(Number(pokemon.id)).padStart(3, '0')
+          const idNumber = Number(id)
 
           // Check if it's faster to see which episodes a Pokémon did *not* appear in.
           const episodesInverse = xor(airedEpisodesList, episodes)
+          // If this Pokémon is in more episodes than half.
+          const hasReallyManyEpisodes = episodes.length > episodesInverse.length
 
           const pkmnInfo = pokedex[id]
+          const bulbaLink = `https://bulbapedia.bulbagarden.net/wiki/${pkmnInfo.name.eng}_(Pokémon)`
 
           const cols = 9
           const isLast = n === appearancesRanking.length - 1
@@ -137,7 +154,7 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
           const specials = pokemonSpecialData.episodes.length === 0 ? null : (
             <div className={ classnames('ep-cols specials', { short: episodes.length < fewEpisodes }) }>
               <div className="ep-header">Specials:<br />サイドストーリー：</div>
-              <ul className="ep-content">{ pokemonSpecialData.episodes.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+              <ul className="ep-content">{ pokemonSpecialData.episodes.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
             </div>
           )
 
@@ -178,11 +195,11 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
             >
               <td className="minimal id">{ n + 1 }</td>
               <td className="minimal">{ id }</td>
-              <td className="minimal"><span id={ `icon_${id}` } className={ `pkspr pkmn-${pkmnInfo.slug.eng}` }></span></td>
+              <td className="minimal"><PokemonIcon pkmnInfo={ pkmnInfo } id={ id } /></td>
               <td className="name name-en">{ pkmnInfo.name.eng }</td>
               <td className="name name-jp"><span title={ pkmnInfo.name.jpn_ro }>{ pkmnInfo.name.jpn }</span></td>
               <td>{ amountIncSpecials }</td>
-              <td className={ neverSeenJa ? 'never' : `last-episode series series-${lastSeries}` } { ...(neverSeenJa ? { colSpan: 3 } : {}) }><span>{ neverSeenJa ? never : (lastIsSpecial ? lastSpecial : lastEpisode) }</span></td>
+              <td className={ neverSeenJa ? 'never' : `last-episode series series-${lastSeries}` } { ...(neverSeenJa ? { colSpan: 3 } : {}) }><span className="t">{ neverSeenJa ? never : (lastIsSpecial ? lastSpecial : lastEpisode) }</span></td>
               { !neverSeenJa ? <td className="last-ja">{ lastJa }</td> : null }
               { !neverSeenJa ? <td className="time-ago" data-time-ago-ms={ isNaN(lastJaInt) ? -1 : lastJaInt }></td> : null }
             </tr>,
@@ -201,9 +218,24 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
                   : episodesInverse.length > episodes.length || !useExceptLists
                     ? (
                       <td colSpan={ cols } className="ep-cols-container">
+                        <div className={ classnames('ep-cols', 'general') }>
+                          <div className="ep-header">General info:<br />基本情報：　</div>
+                          <div className="general-content">
+                            <ul>
+                              <li><a href={ bulbaLink }>{ pkmnInfo.name.eng } article on Bulbapedia</a></li>
+                            </ul>
+                          </div>
+                        </div>
                         <div className={ classnames('ep-cols', { short: episodes.length < fewEpisodes }) }>
                           <div className="ep-header">Appears in:<br />登場エピソード：　</div>
-                          <ul className="ep-content">{ episodes.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+                          <div className="ep-content-group">
+                            { hasReallyManyEpisodes ? [
+                              <div key="a" className="ep-content-header">Appears in all episodes <em>except</em>:</div>,
+                              <ul key="b" className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>,
+                              <div key="c" className="ep-content-header">Episodes it appears in:</div>
+                            ] : null }
+                            <ul className="ep-content">{ episodes.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+                          </div>
                         </div>
                         { specials }
                       </td>
@@ -212,13 +244,13 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
                       <td colSpan={ cols } className="ep-cols-container">
                         <div className={ classnames('ep-cols', { short: episodesInverse.length < fewEpisodes }) }>
                           <div className="ep-header">Appears in every episode <em>except</em>:</div>
-                          <ul className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+                          <ul className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
                         </div>
                         { specials }
                       </td>
                     ) }
             </tr>,
-            <script key={ `js_${id}` } dangerouslySetInnerHTML={{__html: `PkSpr.decorate('icon_${id}')\nPokeSeen.decorate('${id}')` }}></script>
+            <script key={ `js_${id}` } dangerouslySetInnerHTML={{__html: `PokeSeen.decorate('${id}')` }}></script>
           ]
         })}
       </tbody>

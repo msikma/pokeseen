@@ -50,8 +50,8 @@ export const sortPokemonByAppearances = seenData => {
   Object.keys(seenData).forEach(epNr => {
     const ep = seenData[epNr]
     if (!ep.hasAired) return
-    const series = ep.episode.slice(0, 2).toLowerCase()
-    if (series === 'ss') {
+    const series = ep.episode.slice(0, 3).toLowerCase()
+    if (['dps', 'bws', 'xys', 'jns'].includes(series)) {
       specialEpisodesList.push(epNr)
       pushSeenToData(appearanceDataSpecials, ep, epNr)
       pushSeenToData(appearanceData, ep, epNr, true)

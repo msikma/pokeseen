@@ -45,7 +45,7 @@ const getEpisodeMetaData = (html) => {
 
     if ($div.length === 0 || $table.length === 0) return acc
 
-    if ($div.text().trim() === 'First broadcast') {
+    if ($div.text().trim() === 'First broadcast' || $div.text().trim() === 'Web release') {
       // Found the first broadcast data. Now unpack its <table>.
       const data = $('tr', $table).get().reduce((bcd, n) => {
         const countryString = $('th', n).text().trim().toLowerCase()
@@ -103,6 +103,35 @@ const getEpisodeMetaData = (html) => {
   return { broadcastDates: broadcastData.data, ...nameData, hasAired }
 }
 
+// Returns the content from a particular <h3> section.
+const getH3Section = ($, headerText) => {
+  let html = '';
+
+  const headerEl = $('h3 .mw-headline').filter(function() {
+    return $(this).text().trim().toLowerCase() === headerText
+  }).closest('h3')
+
+  if (headerEl.length === 0) {
+    return ''
+  }
+  let nextElement = headerEl.next()
+  while (nextElement.length && !nextElement.is('h1, h2, h3, h4, h5, h6')) {
+    html += $.html(nextElement)
+    html += '\n'
+    nextElement = nextElement.next()
+  }
+
+  return html
+}
+
+// Returns all seen Pokemon from a given section.
+const getSeenPokemon = (html) => {
+  const $ = cheerio.load(html)
+  const links = $(`li a[href*="${encodeURIComponent('(Pokémon)')}"]`)
+  const names = links.get().map(l => $(l).text().trim()).filter(n => n !== '')
+  return [...new Set(names)].map(name => [engToID[name], name])
+}
+
 // Returns all Pokémon seen in an episode by the episode's Bulbapedia HTML content.
 const getSeenForEpisode = (html) => {
   const $ = cheerio.load(html)
@@ -116,60 +145,12 @@ const getSeenForEpisode = (html) => {
   const cats = $('#mw-normal-catlinks a').get().map(a => $(a).text().trim())
   const isMysteryDungeonEpisode = cats.indexOf('Pokémon Mystery Dungeon') > -1
 
-  // Now collect the <h3>Pokémon</h3> and all <ul> tags until the next header tag.
-  // There's probably a nicer way to do this, but it works.
-  const pokemonData = allElements.reduce((acc, item) => {
-    // State 0: searching for the right <h3>.
-    if (acc.state === 0 && item[0] === 'h3' && item[1].toLowerCase() === 'pokémon') {
-      return { state: 1, items: [] }
-    }
-    // State 1: collecting <ul> tags.
-    else if (acc.state === 1 && item[0] === 'ul') {
-      return { state: 2, items: [ ...acc.items, item[1]] }
-    }
-    // State 2: waiting for the next header tag to finish.
-    else if (acc.state === 2 && item[0].startsWith('h')) {
-      return { state: 3, items: acc.items }
-    }
-    return acc
-  }, { state: 0 })
+  // Find the <h3> Pokémon tag. Grab everything in between, then find the links.
+  const pokemonSection = getH3Section($, 'pokémon')
+  const pokemonSeen = getSeenPokemon(pokemonSection)
 
-  // List of Pokémon we will filter for Pokémon appearances.
-  let pokemonAppearances = get(pokemonData, 'items', [])
-
-  // If this is a Mystery Dungeon episode, collect its Pokémon information.
-  if (isMysteryDungeonEpisode) {
-    const pokemonMysteryDungeonData = allElements.reduce((acc, item) => {
-      // State 0: searching for the right <h3>.
-      if (acc.state === 0 && item[0] === 'h2' && item[1].toLowerCase() === 'characters') {
-        return { state: 1, items: [] }
-      }
-      // State 1: collecting <ul> tags.
-      else if (acc.state === 1 && item[0] === 'ul') {
-        return { state: 2, items: [ ...acc.items, item[1]] }
-      }
-      // State 2: waiting for the next header tag to finish.
-      else if (acc.state === 2 && item[0].startsWith('h')) {
-        return { state: 3, items: acc.items }
-      }
-      return acc
-    }, { state: 0 })
-
-    pokemonAppearances = [...pokemonAppearances, ...get(pokemonMysteryDungeonData, 'items', [])]
-  }
-
-  // Extract Pokémon names from all text nodes we saved.
-  const pokemonSeenData = getSeenForText(pokemonAppearances.join('\n'))
-  return pokemonSeenData
+  return pokemonSeen
 }
-
-// Returns all Pokémon (by ID and name) seen in a piece of text.
-const getSeenForText = text => (
-  engList.reduce((acc, name) => {
-    if (new RegExp(`^\\s*${name}(\\s|\\(|\\[|\/|$)`, 'im').test(text)) return [...acc, [engToID[name], name]]
-    return acc
-  }, [])
-)
 
 // Returns all elements inside of the main content, saving the element name, content, and a Cheerio object.
 const getContentElements = ($, $items) => (
