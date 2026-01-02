@@ -43,10 +43,7 @@ export const createSeenPage = async (appearancesRanking, appearanceDataSpecials,
   await saveFile(`${docsPath}/index.html`, wrapPage(pageMarkup, data))
 
   // Copy over some necessary files.
-  await copyFile(`${modulesPath}/pokesprite/pokesprite.png`, docsPath)
   await copyFile(`${modulesPath}/pokesprite/overview.min.css`, docsPath)
-  await copyFile(`${modulesPath}/pokesprite/pokesprite.min.css`, docsPath)
-  await copyFile(`${modulesPath}/pokesprite/pokesprite.min.js`, docsPath)
   await copyFile(`${staticPath}/pokeseen.css`, docsPath)
   await copyFile(`${staticPath}/pokeseen.js`, docsPath)
 
@@ -280,7 +277,6 @@ Generated on ${generationTime}.
   <meta charset="utf-8" />
   <title>Pokémon appearance statistics</title>
   <meta name="viewport" content="width=586,initial-scale=1" />
-  <link type="text/css" href="pokesprite.min.css" rel="stylesheet" media="screen" />
   <link type="text/css" href="overview.min.css" rel="stylesheet" media="screen" />
   <link type="text/css" href="pokeseen.css" rel="stylesheet" media="screen" />
 
@@ -288,7 +284,6 @@ Generated on ${generationTime}.
   <meta property="og:url" content="https://msikma.github.io/pokeseen/" />
   <meta property="og:description" content="Statistics about how often each Pokémon appears in the TV show and when we last saw them" />
 
-  <script charset="utf-8" src="pokesprite.min.js" ></script>
   <script charset="utf-8" src="pokeseen.js" ></script>
 </head>
 <body>

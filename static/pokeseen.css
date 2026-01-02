@@ -41,11 +41,13 @@ a:hover {
   vertical-align: bottom;
   width: 40px;
   height: 42px;
+  display: inline-block;
 }
 .table.pkspr-overview .pkspr img {
   position: relative;
   left: -14px;
   top: -18px;
+  image-rendering: pixelated;
 }
 .table.pkspr-overview .main-info td.last-episode,
 .table.pkspr-overview .main-info td.last-ja,
