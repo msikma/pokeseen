@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "cross-env NODE_PATH=./ eslint src; exit 0",
     "build": "babel src --out-dir dist",
+    "watch": "babel src --out-dir dist --watch",
     "generate-page": "node ./dist/scripts/generatePage.js",
     "check-data": "node ./dist/scripts/checkData.js",
     "get-seen-data": "node ./dist/scripts/getSeenData.js"
