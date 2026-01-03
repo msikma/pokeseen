@@ -1,6 +1,6 @@
 {
   "name": "pokeseen",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Script that determines when each Pokémon was last seen in an episode of the TV show",
   "main": "index.js",
   "scripts": {
