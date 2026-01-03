@@ -133,24 +133,24 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
   <div id="top">
     <div className="description">
       <div className="header">
-        <h1>Pokémon TV appearance statistics</h1>
-        <p>This page ranks Pokémon based on how many times they've appeared in the TV show and lists when we last saw them.</p>
-        <p>このページは、ポケモンがアニメに何度登場したか、いつ最後に登場したかを確認できます。</p>
+        <h1 lang="en">Pokémon TV appearance statistics</h1>
+        <p lang="en">This page ranks Pokémon based on how many times they've appeared in the TV show and lists when we last saw them.</p>
+        <p lang="ja">このページは、ポケモンがアニメに何度登場したかをランキングし、いつ最後に登場したかも掲載しています。</p>
       </div>
       <div className="docs-container">
-        <p>
+        <p lang="en">
           <em>Appearances</em> lists the number of episodes the Pokémon has appeared in.
           Its <em>last appearance</em> is based on the Japanese episode schedule.
           Click on a Pokémon's table row to see the list of episodes it has appeared in.
           The ranking uses statistics from the currently released { airedEpisodesList.length } episodes (and { specialEpisodesList.length } specials).
         </p>
-        <p className="bottom-line">For questions or comments you can <a href="https://twitter.com/dada78641" title="@dada78641">contact me on Twitter.</a></p>
-        <p>
-          「登場数」はポケモンがアニメに何度登場したか示してあります。また、「最後の登場」はポケモンが最後に登場したエピソードの日程を示してあります。
-          テーブルの行をクリックするとそのポケモンが登場したエピソードのリストを見ることができます。
-          このランキングは現在{ airedEpisodesList.length }エピソードのデータを基にしてます。
+        <p className="bottom-line" lang="en">This project covers the anime up to the <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Horizons:_The_Series">Horizons</a> series. No further updates will be made.</p>
+        <p lang="ja">
+          「Appearances」はポケモンがアニメに何度登場したかを示しています。また、「Last appearance」はポケモンが日本で最後に放送されたエピソードの放送日を示しています。
+          テーブルの行をクリックすると、そのポケモンが登場したエピソードのリストを見ることができます。
+          このランキングは現在公開{ airedEpisodesList.length }話（＋スペシャル{ specialEpisodesList.length }話）のデータを基にしています。
         </p>
-        <p className="bottom-line">質問やコメントがあれば、<a href="https://twitter.com/dada78641" title="@dada78641">ツイッターで連絡してください。</a></p>
+        <p className="bottom-line" lang="ja">このプロジェクトは2023年のアニメまでを対象としています。今後の更新は行われません。</p>
         <p id="generation_time">Generated <span className="time-abs-prefix">on</span><span className="time" data-time={ +new Date(generationTime) } title={ generationTime }>{ generationTime }</span>.</p>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.humanizeGenerationTime()` }}></script>
       </div>
