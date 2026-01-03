@@ -10,6 +10,7 @@ test*.js
 
 # Development files.
 _source
+/.scratch
 
 ## Mac OS X
 
