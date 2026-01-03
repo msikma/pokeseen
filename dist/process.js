@@ -94,8 +94,8 @@ var sortPokemonByAppearances = exports.sortPokemonByAppearances = function sortP
   (0, _keys2.default)(seenData).forEach(function (epNr) {
     var ep = seenData[epNr];
     if (!ep.hasAired) return;
-    var series = ep.episode.slice(0, 2).toLowerCase();
-    if (series === 'ss') {
+    var series = ep.episode.slice(0, 3).toLowerCase();
+    if (['dps', 'bws', 'xys', 'jns'].includes(series)) {
       specialEpisodesList.push(epNr);
       pushSeenToData(appearanceDataSpecials, ep, epNr);
       pushSeenToData(appearanceData, ep, epNr, true);

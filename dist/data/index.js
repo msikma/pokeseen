@@ -64,14 +64,20 @@ exports.pkgData = _package2.default;
 
 // Used to determine the exact episode names, which change prefix per season.
 
-var seasons = [[37, 'SS'], // Special episodes
+var seasons = [
+// Main series
 [274, 'EP'], // Original series and Johto
 [192, 'AG'], // Advanced Generation
 [191, 'DP'], // Diamond and Pearl
 [142, 'BW'], // Best Wishes
 [140, 'XY'], // XY
-[85, 'SM', true] // Sun and Moon (ongoing)
-];
+[146, 'SM'], // Sun and Moon
+[147, 'JN'], // Journeys
+// Special episodes
+[2, 'DPS'], // Diamond and Pearl
+[2, 'BWS'], // Best Wishes
+[6, 'XYS'], // XY
+[5, 'JNS']];
 
 // Location where we'll store cache data.
 var cacheFile = _path2.default.resolve(__dirname, '..', '..', 'cache', 'seendata.json');
@@ -131,7 +137,7 @@ var episodeList = exports.episodeList = seasons.reduce(function (list, season) {
   // series is going on right now...)
   var episodeCount = season[2] ? 999 : season[0];
   var episodes = new Array(episodeCount).fill().map(function (_, n) {
-    return '' + season[1] + (0, _sprintfJs.sprintf)('%03d', n + 1);
+    return '' + season[1] + (0, _sprintfJs.sprintf)('%0' + (5 - season[1].length) + 'd', n + 1);
   });
   return [].concat((0, _toConsumableArray3.default)(list), (0, _toConsumableArray3.default)(episodes));
 }, []);

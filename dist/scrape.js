@@ -5,6 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.getPokemonFromEpisode = undefined;
 
+var _set = require('babel-runtime/core-js/set');
+
+var _set2 = _interopRequireDefault(_set);
+
 var _toConsumableArray2 = require('babel-runtime/helpers/toConsumableArray');
 
 var _toConsumableArray3 = _interopRequireDefault(_toConsumableArray2);
@@ -105,7 +109,7 @@ var getEpisodeMetaData = function getEpisodeMetaData(html) {
 
     if ($div.length === 0 || $table.length === 0) return acc;
 
-    if ($div.text().trim() === 'First broadcast') {
+    if ($div.text().trim() === 'First broadcast' || $div.text().trim() === 'Web release') {
       // Found the first broadcast data. Now unpack its <table>.
       var data = $('tr', $table).get().reduce(function (bcd, n) {
         var countryString = $('th', n).text().trim().toLowerCase();
@@ -161,6 +165,41 @@ var getEpisodeMetaData = function getEpisodeMetaData(html) {
   return (0, _extends4.default)({ broadcastDates: broadcastData.data }, nameData, { hasAired: hasAired });
 };
 
+// Returns the content from a particular <h3> section.
+var getH3Section = function getH3Section($, headerText) {
+  var html = '';
+
+  var headerEl = $('h3 .mw-headline').filter(function () {
+    return $(this).text().trim().toLowerCase() === headerText;
+  }).closest('h3');
+
+  if (headerEl.length === 0) {
+    return '';
+  }
+  var nextElement = headerEl.next();
+  while (nextElement.length && !nextElement.is('h1, h2, h3, h4, h5, h6')) {
+    html += $.html(nextElement);
+    html += '\n';
+    nextElement = nextElement.next();
+  }
+
+  return html;
+};
+
+// Returns all seen Pokemon from a given section.
+var getSeenPokemon = function getSeenPokemon(html) {
+  var $ = _cheerio2.default.load(html);
+  var links = $('li a[href*="' + encodeURIComponent('(Pokémon)') + '"]');
+  var names = links.get().map(function (l) {
+    return $(l).text().trim();
+  }).filter(function (n) {
+    return n !== '';
+  });
+  return [].concat((0, _toConsumableArray3.default)(new _set2.default(names))).map(function (name) {
+    return [_data.engToID[name], name];
+  });
+};
+
 // Returns all Pokémon seen in an episode by the episode's Bulbapedia HTML content.
 var getSeenForEpisode = function getSeenForEpisode(html) {
   var $ = _cheerio2.default.load(html);
@@ -176,59 +215,11 @@ var getSeenForEpisode = function getSeenForEpisode(html) {
   });
   var isMysteryDungeonEpisode = cats.indexOf('Pokémon Mystery Dungeon') > -1;
 
-  // Now collect the <h3>Pokémon</h3> and all <ul> tags until the next header tag.
-  // There's probably a nicer way to do this, but it works.
-  var pokemonData = allElements.reduce(function (acc, item) {
-    // State 0: searching for the right <h3>.
-    if (acc.state === 0 && item[0] === 'h3' && item[1].toLowerCase() === 'pokémon') {
-      return { state: 1, items: [] };
-    }
-    // State 1: collecting <ul> tags.
-    else if (acc.state === 1 && item[0] === 'ul') {
-        return { state: 2, items: [].concat((0, _toConsumableArray3.default)(acc.items), [item[1]]) };
-      }
-      // State 2: waiting for the next header tag to finish.
-      else if (acc.state === 2 && item[0].startsWith('h')) {
-          return { state: 3, items: acc.items };
-        }
-    return acc;
-  }, { state: 0 });
+  // Find the <h3> Pokémon tag. Grab everything in between, then find the links.
+  var pokemonSection = getH3Section($, 'pokémon');
+  var pokemonSeen = getSeenPokemon(pokemonSection);
 
-  // List of Pokémon we will filter for Pokémon appearances.
-  var pokemonAppearances = (0, _lodash.get)(pokemonData, 'items', []);
-
-  // If this is a Mystery Dungeon episode, collect its Pokémon information.
-  if (isMysteryDungeonEpisode) {
-    var pokemonMysteryDungeonData = allElements.reduce(function (acc, item) {
-      // State 0: searching for the right <h3>.
-      if (acc.state === 0 && item[0] === 'h2' && item[1].toLowerCase() === 'characters') {
-        return { state: 1, items: [] };
-      }
-      // State 1: collecting <ul> tags.
-      else if (acc.state === 1 && item[0] === 'ul') {
-          return { state: 2, items: [].concat((0, _toConsumableArray3.default)(acc.items), [item[1]]) };
-        }
-        // State 2: waiting for the next header tag to finish.
-        else if (acc.state === 2 && item[0].startsWith('h')) {
-            return { state: 3, items: acc.items };
-          }
-      return acc;
-    }, { state: 0 });
-
-    pokemonAppearances = [].concat((0, _toConsumableArray3.default)(pokemonAppearances), (0, _toConsumableArray3.default)((0, _lodash.get)(pokemonMysteryDungeonData, 'items', [])));
-  }
-
-  // Extract Pokémon names from all text nodes we saved.
-  var pokemonSeenData = getSeenForText(pokemonAppearances.join('\n'));
-  return pokemonSeenData;
-};
-
-// Returns all Pokémon (by ID and name) seen in a piece of text.
-var getSeenForText = function getSeenForText(text) {
-  return _data.engList.reduce(function (acc, name) {
-    if (new RegExp('^\\s*' + name + '(\\s|\\(|\\[|/|$)', 'im').test(text)) return [].concat((0, _toConsumableArray3.default)(acc), [[_data.engToID[name], name]]);
-    return acc;
-  }, []);
+  return pokemonSeen;
 };
 
 // Returns all elements inside of the main content, saving the element name, content, and a Cheerio object.
