@@ -24,6 +24,10 @@ a:hover {
   right: 0;
   top: 0;
 }
+.sort-link.active.desc:before {
+  transform: rotate(0);
+  top: 2px;
+}
 .sort-link:hover {
   color: #1F85EB !important;
   text-decoration: underline;

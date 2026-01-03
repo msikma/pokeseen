@@ -24,11 +24,18 @@ const PokeSeen = {
     const appSorter = document.getElementById(appearancesSorterID)
     const lsSorter = document.getElementById(lastSeenSorterID)
 
-    const sortTable = function(prop) {
+    const sortTable = function(prop, flip, direction, newSorter, oldSorter) {
       // Remove <script> tags if we still have any, since we don't need 'em anymore.
       const scripts = document.querySelectorAll('#data_table script')
       for (let n = 0; n < scripts.length; ++n) {
         scripts[n].parentNode.removeChild(scripts[n])
+      }
+
+      const newDirection = flip ? (direction === 'desc' ? 'asc' : 'desc') : direction
+
+      if (flip) {
+        newSorter.classList.toggle('desc', newDirection === 'desc')
+        newSorter.classList.toggle('asc', newDirection === 'asc')
       }
 
       // Collect all table rows, skipping over the header row.
@@ -38,11 +45,13 @@ const PokeSeen = {
       const trsSorted = trs.sort(function (a, b) {
         const nA = Number(a.getAttribute(prop))
         const nB = Number(b.getAttribute(prop))
-        return nA === nB
-          ? 0
-          : nA > nB
-            ? 1
-            : -1
+        return (
+          nA === nB
+            ? 0
+            : nA > nB
+              ? 1
+              : -1
+        ) * (newDirection === 'desc' ? -1 : 1)
       })
       for (let n = 0; n < trsSorted.length; ++n) {
         tbody.appendChild(trsSorted[n])
@@ -57,15 +66,21 @@ const PokeSeen = {
 
     const callback = function(prop) {
       return function(ev) {
+        let newSorter = null
+        let oldSorter = null
         if (prop === 'data-appearances-n') {
-          appSorter.classList.add('active')
-          lsSorter.classList.remove('active')
+          newSorter = appSorter
+          oldSorter = lsSorter
         }
         if (prop === 'data-last-seen-n') {
-          appSorter.classList.remove('active')
-          lsSorter.classList.add('active')
+          newSorter = lsSorter
+          oldSorter = appSorter
         }
-        sortTable(prop)
+        const flip = newSorter.classList.contains('active')
+        const direction = newSorter.classList.contains('desc') ? 'desc' : 'asc'
+        newSorter.classList.add('active')
+        oldSorter.classList.remove('active')
+        sortTable(prop, flip, direction, newSorter, oldSorter)
         ev.preventDefault()
       }
     }
