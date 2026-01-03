@@ -91,20 +91,9 @@ const timeUnitsEn = {
   month: 30 * 24 * 60 * 1000 * 60,
   year: 365 * 24 * 60 * 1000 * 60
 }
-const timeUnitsJp = {
-  秒: 1000,
-  分: 60 * 1000,
-  時間: 60 * 1000 * 60,
-  日: 24 * 60 * 1000 * 60,
-  週間: 7 * 24 * 60 * 1000 * 60,
-  ヶ月: 30 * 24 * 60 * 1000 * 60,
-  年: 365 * 24 * 60 * 1000 * 60
-}
 
 function humanize(nd, s) {
-  const en = humanizeStr(nd, s, true, timeUnitsEn)
-  const jp = splitByNumbers(humanizeStr(nd, s, false, timeUnitsJp))
-  return ['<span>', en, '</span>/', jp[0], '<span>', jp[1], '</span>'].join('')
+  return ['<span>', humanizeStr(nd, s, true, timeUnitsEn), '</span>'].join('')
 }
 
 // Converts plain numbers to fullwidth numbers.

@@ -91,52 +91,57 @@ a:hover {
   line-height: 19px;
   mix-blend-mode: multiply;
 }
-.t[href*="wiki/AGS"],
-.t[href*="wiki/AG"],
-.series-ag > .t {
+.series-ep > .t,
+.t.ep-series-ep,
+.t.origin-kanto {
+  color: #a429c1 !important;
+  background-color: #f7f2f9;
+}
+.series-gs > .t,
+.t.ep-series-gs,
+.t.origin-johto {
   color: #c12950 !important;
   background-color: #f8f2f4;
 }
-.t[href*="wiki/DPS"],
-.t[href*="wiki/DP"],
-.series-dp > .t {
+.series-ag > .t,
+.t.ep-series-ag,
+.t.origin-hoenn {
   color: #e0800e !important;
   background-color: #f9f5f2;
 }
-.t[href*="wiki/BWS"],
-.t[href*="wiki/BW"],
-.series-bw > .t {
+.series-dp > .t,
+.t.ep-series-dp,
+.t.origin-sinnoh {
+  color: #cdba1d !important;
+  background-color: #f9f8f1;
+}
+.series-bw > .t,
+.t.ep-series-bw,
+.t.origin-unova {
   color: #6ec129 !important;
   background-color: #f5f9f2;
 }
-.t[href*="wiki/XYS"],
-.t[href*="wiki/XY"],
-.series-xy > .t {
+.series-xy > .t,
+.t.ep-series-xy,
+.t.origin-kalos {
   color: #29c195 !important;
   background-color: #f1f8f5;
 }
-.t[href*="wiki/SMS"],
-.t[href*="wiki/SM"],
-.series-sm > .t {
+.series-sm > .t,
+.t.ep-series-sm,
+.t.origin-alola {
   color: #2996c1 !important;
   background-color: #f2f7f9;
 }
-.t[href*="wiki/JNS"],
-.t[href*="wiki/JN"],
-.series-jn > .t {
+.series-jn > .t,
+.t.ep-series-jn,
+.t.origin-galar {
   color: #2961c1 !important;
   background-color: #f2f5f9;
 }
-.t[href*="wiki/EPS"],
-.t[href*="wiki/EP"],
-.series-ep > .t {
-  color: #a429c1 !important;
-  background-color: #f7f2f9;
-}
-/* No Pokémon currently has 'ep' set as its latest series, so... might as well reuse this color. */
-.series-ss > .t {
-  color: #a429c1 !important;
-  background-color: #f7f2f9;
+.table.pkspr-overview th.center,
+.table.pkspr-overview td.center {
+  text-align: center;
 }
 .table.pkspr-overview .main-info .time-ago > span + span {
   font-size: 91%;

@@ -74,6 +74,53 @@ const PokemonIcon = ({ pkmnInfo, id }) => {
 }
 
 /**
+ * Returns the episode series identifier, and whether this is a special.
+ */
+const getEpisodeSeries = (ep) => {
+  if (ep == null) {
+    return 'none'
+  }
+  let isSpecial = false
+  let series = ep.toLowerCase().replace(/[0-9]*/g, '')
+  let number = Number(ep.toLowerCase().replace(/[a-z]*/g, ''))
+  if (series[2] === 's') {
+    series = series.slice(0, 2)
+    isSpecial = true
+  }
+  if (series === 'ep' && number >= 117) {
+    series = 'gs'
+  }
+  return {series, isSpecial, number}
+}
+
+/**
+ * Returns the Pokémon's origin region.
+ */
+const getPokemonOrigin = (pkmnInfo) => {
+  const id = Number(pkmnInfo.idx)
+  let value = 'Kanto'
+  if (id >= 152) value = 'Johto'
+  if (id >= 252) value = 'Hoenn'
+  if (id >= 387) value = 'Sinnoh'
+  if (id >= 494) value = 'Unova' // Issyu
+  if (id >= 650) value = 'Kalos'
+  if (id >= 722) value = 'Alola'
+  if (id >= 810) value = 'Galar'
+  if (id >= 906) value = 'Paldea'
+  return {slug: value.toLowerCase(), title: value}
+}
+
+/**
+ * Episode link component.
+ */
+const EpisodeLink = ({ ep }) => {
+  const {series, isSpecial} = getEpisodeSeries(ep)
+  return (
+    <li><a className={ classnames('t', `ep-series-${series}`, { special: isSpecial }) } target="_blank" href={ epURL(ep) }>{ ep }</a></li>
+  )
+}
+
+/**
  * Main component.
  *
  * The Pokémon ranking data uses the following format:
@@ -113,10 +160,11 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
         <tr>
           <th>#</th>
           <th>ID</th>
-          <th>Icon</th>
-          <th colSpan={ 2 }>Name/名前</th>
-          <th><a href="#" className="sort-link active" id="appearance_sort"><span className="regular-label">Appearances/登場数</span><span className="small-label">Eps</span></a></th>
-          <th colSpan={ 3 } className="last-episode-col"><a href="#" className="sort-link" id="last_seen_sort"><span className="regular-label">Last appearance/最後の登場</span><span className="small-label">Last seen/最後の登場</span></a></th>
+          <th className="center">Icon</th>
+          <th colSpan={ 2 }>Name</th>
+          <th><a href="#" className="sort-link active" id="appearance_sort"><span className="regular-label">Appearances</span><span className="small-label">Eps</span></a></th>
+          <th className="center"><span className="regular-label">Origin</span></th>
+          <th colSpan={ 3 } className="last-episode-col"><a href="#" className="sort-link" id="last_seen_sort"><span className="regular-label">Last appearance</span><span className="small-label">Last seen/最後の登場</span></a></th>
         </tr>
         <script dangerouslySetInnerHTML={{__html: `PokeSeen.decorateSorters('appearance_sort', 'last_seen_sort')` }}></script>
         { appearancesRanking.map((pokemon, n) => {
@@ -133,7 +181,7 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
           const pkmnInfo = pokedex[id]
           const bulbaLink = `https://bulbapedia.bulbagarden.net/wiki/${pkmnInfo.name.eng}_(Pokémon)`
 
-          const cols = 9
+          const cols = 10
           const isLast = n === appearancesRanking.length - 1
 
           // If listing fewer than this amount of episodes, switch to a different layout.
@@ -150,8 +198,8 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
           const pokemonSpecialData = appearanceDataSpecials[id]
           const specials = pokemonSpecialData.episodes.length === 0 ? null : (
             <div className={ classnames('ep-cols specials', { short: episodes.length < fewEpisodes }) }>
-              <div className="ep-header">Specials:<br />サイドストーリー：</div>
-              <ul className="ep-content">{ pokemonSpecialData.episodes.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+              <div className="ep-header">Specials:</div>
+              <ul className="ep-content">{ pokemonSpecialData.episodes.map(ep => (<EpisodeLink ep={ ep } key={ ep } />)) }</ul>
             </div>
           )
 
@@ -175,11 +223,8 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
                 : true
           const lastJa = lastIsSpecial ? lastJaSpecial : lastJaRegular
           const lastJaInt = moment().diff(moment(lastJa), 'ms')
-          const lastSeries = lastIsSpecial
-            ? lastSpecial.slice(0, 2).toLowerCase()
-            : lastEpisode
-              ? lastEpisode.slice(0, 2).toLowerCase()
-              : ''
+          const lastEpisodeSeries = getEpisodeSeries(lastEpisode)
+          const pokemonOrigin = getPokemonOrigin(pkmnInfo)
 
           return [
             <tr
@@ -196,7 +241,8 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
               <td className="name name-en">{ pkmnInfo.name.eng }</td>
               <td className="name name-jp"><span title={ pkmnInfo.name.jpn_ro }>{ pkmnInfo.name.jpn }</span></td>
               <td>{ amountIncSpecials }</td>
-              <td className={ neverSeenJa ? 'never' : `last-episode series series-${lastSeries}` } { ...(neverSeenJa ? { colSpan: 3 } : {}) }><span className="t">{ neverSeenJa ? never : (lastIsSpecial ? lastSpecial : lastEpisode) }</span></td>
+              <td className={ classnames('minimal') }><span className={ classnames('t', `origin-${pokemonOrigin.slug}`) }>{ pokemonOrigin.title }</span></td>
+              <td className={ neverSeenJa ? 'never' : `last-episode series series-${lastEpisodeSeries.series}` } { ...(neverSeenJa ? { colSpan: 3 } : {}) }><span className="t">{ neverSeenJa ? never : (lastIsSpecial ? lastSpecial : lastEpisode) }</span></td>
               { !neverSeenJa ? <td className="last-ja">{ lastJa }</td> : null }
               { !neverSeenJa ? <td className="time-ago" data-time-ago-ms={ isNaN(lastJaInt) ? -1 : lastJaInt }></td> : null }
             </tr>,
@@ -216,7 +262,7 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
                     ? (
                       <td colSpan={ cols } className="ep-cols-container">
                         <div className={ classnames('ep-cols', 'general') }>
-                          <div className="ep-header">General info:<br />基本情報：　</div>
+                          <div className="ep-header">General info:</div>
                           <div className="general-content">
                             <ul>
                               <li><a href={ bulbaLink }>{ pkmnInfo.name.eng } article on Bulbapedia</a></li>
@@ -224,14 +270,14 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
                           </div>
                         </div>
                         <div className={ classnames('ep-cols', { short: episodes.length < fewEpisodes }) }>
-                          <div className="ep-header">Appears in:<br />登場エピソード：　</div>
+                          <div className="ep-header">Appears in:</div>
                           <div className="ep-content-group">
                             { hasReallyManyEpisodes ? [
                               <div key="a" className="ep-content-header">Appears in all episodes <em>except</em>:</div>,
-                              <ul key="b" className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>,
+                              <ul key="b" className="ep-content">{ episodesInverse.map(ep => (<EpisodeLink ep={ ep } key={ ep } />)) }</ul>,
                               <div key="c" className="ep-content-header">Episodes it appears in:</div>
                             ] : null }
-                            <ul className="ep-content">{ episodes.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+                            <ul className="ep-content">{ episodes.map(ep => (<EpisodeLink ep={ ep } key={ ep } />)) }</ul>
                           </div>
                         </div>
                         { specials }
@@ -241,7 +287,7 @@ const SeenPage = ({ lastSeenRankingByID, appearanceDataSpecials, appearancesRank
                       <td colSpan={ cols } className="ep-cols-container">
                         <div className={ classnames('ep-cols', { short: episodesInverse.length < fewEpisodes }) }>
                           <div className="ep-header">Appears in every episode <em>except</em>:</div>
-                          <ul className="ep-content">{ episodesInverse.map(ep => (<li key={ ep }><a className="t" target="_blank" href={ epURL(ep) }>{ ep }</a></li>)) }</ul>
+                          <ul className="ep-content">{ episodesInverse.map(ep => (<EpisodeLink ep={ ep } key={ ep } />)) }</ul>
                         </div>
                         { specials }
                       </td>
